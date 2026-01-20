@@ -1,0 +1,1041 @@
+car	driveType	surface	path	value
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	drivetrain.gearsSet	AlfaRomeoGiuliaGTAJunior1300Set0
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	drivetrain.frontDiff.ratio	25//25
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	drivetrain.frontDiff.lsdRampAngle	N/A
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	drivetrain.frontDiff.lsdPlates	0
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	drivetrain.frontDiff.lsdPreload	0 Nm
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	suspension.frontARB	2500 N/m
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	suspension.springs.FL	200000 N/m
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	suspension.springs.FR	200000 N/m
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	suspension.springs.RL	26000 N/m
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	suspension.springs.RR	26000 N/m
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	suspension.rideHeight.FL	23.3 mm
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	suspension.rideHeight.FR	23.3 mm
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	suspension.rideHeight.RL	71.1 mm
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	suspension.rideHeight.RR	71.1 mm
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	dampers.FL.slowBump	3000
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	dampers.FL.slowRebound	5500
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	dampers.FL.fastBump	2000
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	dampers.FL.fastRebound	4000
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	dampers.FR.slowBump	3000
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	dampers.FR.slowRebound	5500
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	dampers.FR.fastBump	2000
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	dampers.FR.fastRebound	4000
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	dampers.RL.slowBump	750
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	dampers.RL.slowRebound	2500
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	dampers.RL.fastBump	500
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	dampers.RL.fastRebound	1500
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	dampers.RR.slowBump	750
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	dampers.RR.slowRebound	2500
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	dampers.RR.fastBump	500
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	dampers.RR.fastRebound	1500
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	tyres.FL.pressure	32 PSI
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	tyres.FL.camber	-1.5°
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	tyres.FL.toe	0.029°
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	tyres.FR.pressure	32 PSI
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	tyres.FR.camber	-1.5°
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	tyres.FR.toe	0.029°
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	tyres.RL.pressure	32 PSI
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	tyres.RL.camber	0°
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	tyres.RL.toe	0°
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	tyres.RR.pressure	32 PSI
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	tyres.RR.camber	0°
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	tyres.RR.toe	0°
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	brakes.brakeBias	50% front
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	brakes.propValvePressure	2.5
+Alfa Romeo Giulia GTA Junior 1300	FWD	tarmac	brakes.handbrakeMultiplier	1
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	drivetrain.gearsSet	AlfaRomeoGiuliaGTAJunior1300Set4
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	drivetrain.frontDiff.ratio	25//25
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	drivetrain.frontDiff.lsdRampAngle	N/A
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	drivetrain.frontDiff.lsdPlates	0
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	drivetrain.frontDiff.lsdPreload	0 Nm
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	suspension.frontARB	2500 N/m
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	suspension.springs.FL	200000 N/m
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	suspension.springs.FR	200000 N/m
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	suspension.springs.RL	26000 N/m
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	suspension.springs.RR	26000 N/m
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	suspension.rideHeight.FL	23.3 mm
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	suspension.rideHeight.FR	23.3 mm
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	suspension.rideHeight.RL	71.1 mm
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	suspension.rideHeight.RR	71.1 mm
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	dampers.FL.slowBump	3000
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	dampers.FL.slowRebound	5500
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	dampers.FL.fastBump	2000
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	dampers.FL.fastRebound	4000
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	dampers.FR.slowBump	3000
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	dampers.FR.slowRebound	5500
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	dampers.FR.fastBump	2000
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	dampers.FR.fastRebound	4000
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	dampers.RL.slowBump	750
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	dampers.RL.slowRebound	2500
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	dampers.RL.fastBump	500
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	dampers.RL.fastRebound	1500
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	dampers.RR.slowBump	750
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	dampers.RR.slowRebound	2500
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	dampers.RR.fastBump	500
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	dampers.RR.fastRebound	1500
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	tyres.FL.pressure	32 PSI
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	tyres.FL.camber	-1.5°
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	tyres.FL.toe	0.029°
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	tyres.FR.pressure	32 PSI
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	tyres.FR.camber	-1.5°
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	tyres.FR.toe	0.029°
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	tyres.RL.pressure	32 PSI
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	tyres.RL.camber	0°
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	tyres.RL.toe	0°
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	tyres.RR.pressure	32 PSI
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	tyres.RR.camber	0°
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	tyres.RR.toe	0°
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	brakes.brakeBias	50% front
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	brakes.propValvePressure	2.5
+Alfa Romeo Giulia GTA Junior 1300	FWD	gravel	brakes.handbrakeMultiplier	1
+Alpine A110 1800	RWD	tarmac	drivetrain.gearsSet	AlpineA1101800Set1
+Alpine A110 1800	RWD	tarmac	drivetrain.rearDiff.ratio	27//8
+Alpine A110 1800	RWD	tarmac	drivetrain.rearDiff.lsdRampAngle	60_40
+Alpine A110 1800	RWD	tarmac	drivetrain.rearDiff.lsdPlates	4
+Alpine A110 1800	RWD	tarmac	drivetrain.rearDiff.lsdPreload	90 Nm
+Alpine A110 1800	RWD	tarmac	suspension.frontARB	6750 N/m
+Alpine A110 1800	RWD	tarmac	suspension.springs.FL	210000 N/m
+Alpine A110 1800	RWD	tarmac	suspension.springs.FR	210000 N/m
+Alpine A110 1800	RWD	tarmac	suspension.springs.RL	160000 N/m
+Alpine A110 1800	RWD	tarmac	suspension.springs.RR	160000 N/m
+Alpine A110 1800	RWD	tarmac	suspension.rideHeight.FL	15.0 mm
+Alpine A110 1800	RWD	tarmac	suspension.rideHeight.FR	15.0 mm
+Alpine A110 1800	RWD	tarmac	suspension.rideHeight.RL	13.0 mm
+Alpine A110 1800	RWD	tarmac	suspension.rideHeight.RR	13.0 mm
+Alpine A110 1800	RWD	tarmac	dampers.FL.slowBump	12000
+Alpine A110 1800	RWD	tarmac	dampers.FL.slowRebound	30000
+Alpine A110 1800	RWD	tarmac	dampers.FL.fastBump	9000
+Alpine A110 1800	RWD	tarmac	dampers.FL.fastRebound	24000
+Alpine A110 1800	RWD	tarmac	dampers.FR.slowBump	12000
+Alpine A110 1800	RWD	tarmac	dampers.FR.slowRebound	30000
+Alpine A110 1800	RWD	tarmac	dampers.FR.fastBump	9000
+Alpine A110 1800	RWD	tarmac	dampers.FR.fastRebound	24000
+Alpine A110 1800	RWD	tarmac	dampers.RL.slowBump	5000
+Alpine A110 1800	RWD	tarmac	dampers.RL.slowRebound	20000
+Alpine A110 1800	RWD	tarmac	dampers.RL.fastBump	3500
+Alpine A110 1800	RWD	tarmac	dampers.RL.fastRebound	16000
+Alpine A110 1800	RWD	tarmac	dampers.RR.slowBump	5000
+Alpine A110 1800	RWD	tarmac	dampers.RR.slowRebound	20000
+Alpine A110 1800	RWD	tarmac	dampers.RR.fastBump	3500
+Alpine A110 1800	RWD	tarmac	dampers.RR.fastRebound	16000
+Alpine A110 1800	RWD	tarmac	tyres.FL.pressure	32 PSI
+Alpine A110 1800	RWD	tarmac	tyres.FL.camber	0°
+Alpine A110 1800	RWD	tarmac	tyres.FL.toe	0°
+Alpine A110 1800	RWD	tarmac	tyres.FR.pressure	32 PSI
+Alpine A110 1800	RWD	tarmac	tyres.FR.camber	0°
+Alpine A110 1800	RWD	tarmac	tyres.FR.toe	0°
+Alpine A110 1800	RWD	tarmac	tyres.RL.pressure	32 PSI
+Alpine A110 1800	RWD	tarmac	tyres.RL.camber	-2.5°
+Alpine A110 1800	RWD	tarmac	tyres.RL.toe	0°
+Alpine A110 1800	RWD	tarmac	tyres.RR.pressure	32 PSI
+Alpine A110 1800	RWD	tarmac	tyres.RR.camber	-2.5°
+Alpine A110 1800	RWD	tarmac	tyres.RR.toe	0°
+Alpine A110 1800	RWD	tarmac	brakes.brakeBias	50% front
+Alpine A110 1800	RWD	tarmac	brakes.propValvePressure	2.4
+Alpine A110 1800	RWD	tarmac	brakes.handbrakeMultiplier	1
+Alpine A110 1800	RWD	gravel	drivetrain.gearsSet	AlpineA1101800Set2
+Alpine A110 1800	RWD	gravel	drivetrain.rearDiff.ratio	31//8
+Alpine A110 1800	RWD	gravel	drivetrain.rearDiff.lsdRampAngle	60_40
+Alpine A110 1800	RWD	gravel	drivetrain.rearDiff.lsdPlates	4
+Alpine A110 1800	RWD	gravel	drivetrain.rearDiff.lsdPreload	90 Nm
+Alpine A110 1800	RWD	gravel	suspension.frontARB	6750 N/m
+Alpine A110 1800	RWD	gravel	suspension.springs.FL	210000 N/m
+Alpine A110 1800	RWD	gravel	suspension.springs.FR	210000 N/m
+Alpine A110 1800	RWD	gravel	suspension.springs.RL	160000 N/m
+Alpine A110 1800	RWD	gravel	suspension.springs.RR	160000 N/m
+Alpine A110 1800	RWD	gravel	suspension.rideHeight.FL	15.0 mm
+Alpine A110 1800	RWD	gravel	suspension.rideHeight.FR	15.0 mm
+Alpine A110 1800	RWD	gravel	suspension.rideHeight.RL	13.0 mm
+Alpine A110 1800	RWD	gravel	suspension.rideHeight.RR	13.0 mm
+Alpine A110 1800	RWD	gravel	dampers.FL.slowBump	12000
+Alpine A110 1800	RWD	gravel	dampers.FL.slowRebound	30000
+Alpine A110 1800	RWD	gravel	dampers.FL.fastBump	9000
+Alpine A110 1800	RWD	gravel	dampers.FL.fastRebound	24000
+Alpine A110 1800	RWD	gravel	dampers.FR.slowBump	12000
+Alpine A110 1800	RWD	gravel	dampers.FR.slowRebound	30000
+Alpine A110 1800	RWD	gravel	dampers.FR.fastBump	9000
+Alpine A110 1800	RWD	gravel	dampers.FR.fastRebound	24000
+Alpine A110 1800	RWD	gravel	dampers.RL.slowBump	5000
+Alpine A110 1800	RWD	gravel	dampers.RL.slowRebound	20000
+Alpine A110 1800	RWD	gravel	dampers.RL.fastBump	3500
+Alpine A110 1800	RWD	gravel	dampers.RL.fastRebound	16000
+Alpine A110 1800	RWD	gravel	dampers.RR.slowBump	5000
+Alpine A110 1800	RWD	gravel	dampers.RR.slowRebound	20000
+Alpine A110 1800	RWD	gravel	dampers.RR.fastBump	3500
+Alpine A110 1800	RWD	gravel	dampers.RR.fastRebound	16000
+Alpine A110 1800	RWD	gravel	tyres.FL.pressure	32 PSI
+Alpine A110 1800	RWD	gravel	tyres.FL.camber	0°
+Alpine A110 1800	RWD	gravel	tyres.FL.toe	0°
+Alpine A110 1800	RWD	gravel	tyres.FR.pressure	32 PSI
+Alpine A110 1800	RWD	gravel	tyres.FR.camber	0°
+Alpine A110 1800	RWD	gravel	tyres.FR.toe	0°
+Alpine A110 1800	RWD	gravel	tyres.RL.pressure	32 PSI
+Alpine A110 1800	RWD	gravel	tyres.RL.camber	-2.5°
+Alpine A110 1800	RWD	gravel	tyres.RL.toe	0°
+Alpine A110 1800	RWD	gravel	tyres.RR.pressure	32 PSI
+Alpine A110 1800	RWD	gravel	tyres.RR.camber	-2.5°
+Alpine A110 1800	RWD	gravel	tyres.RR.toe	0°
+Alpine A110 1800	RWD	gravel	brakes.brakeBias	50% front
+Alpine A110 1800	RWD	gravel	brakes.propValvePressure	2.4
+Alpine A110 1800	RWD	gravel	brakes.handbrakeMultiplier	1
+Citroen Xsara WRC	AWD	tarmac	drivetrain.gearsSet	CitroenXsaraWRCSet0
+Citroen Xsara WRC	AWD	tarmac	drivetrain.frontBias	50%
+Citroen Xsara WRC	AWD	tarmac	drivetrain.frontDiff.ratio	25//25
+Citroen Xsara WRC	AWD	tarmac	drivetrain.frontDiff.lsdRampAngle	50_60
+Citroen Xsara WRC	AWD	tarmac	drivetrain.frontDiff.lsdPlates	6
+Citroen Xsara WRC	AWD	tarmac	drivetrain.frontDiff.lsdPreload	80 Nm
+Citroen Xsara WRC	AWD	tarmac	drivetrain.rearDiff.ratio	27//9
+Citroen Xsara WRC	AWD	tarmac	drivetrain.rearDiff.lsdRampAngle	45_55
+Citroen Xsara WRC	AWD	tarmac	drivetrain.rearDiff.lsdPlates	6
+Citroen Xsara WRC	AWD	tarmac	drivetrain.rearDiff.lsdPreload	110 Nm
+Citroen Xsara WRC	AWD	tarmac	drivetrain.centreDiffRatio	37//26
+Citroen Xsara WRC	AWD	tarmac	suspension.frontARB	12500 N/m
+Citroen Xsara WRC	AWD	tarmac	suspension.rearARB	7500 N/m
+Citroen Xsara WRC	AWD	tarmac	suspension.springs.FL	47500 N/m
+Citroen Xsara WRC	AWD	tarmac	suspension.springs.FR	47500 N/m
+Citroen Xsara WRC	AWD	tarmac	suspension.springs.RL	50000 N/m
+Citroen Xsara WRC	AWD	tarmac	suspension.springs.RR	50000 N/m
+Citroen Xsara WRC	AWD	tarmac	suspension.rideHeight.FL	76.0 mm
+Citroen Xsara WRC	AWD	tarmac	suspension.rideHeight.FR	76.0 mm
+Citroen Xsara WRC	AWD	tarmac	suspension.rideHeight.RL	57.0 mm
+Citroen Xsara WRC	AWD	tarmac	suspension.rideHeight.RR	57.0 mm
+Citroen Xsara WRC	AWD	tarmac	dampers.FL.slowBump	4250
+Citroen Xsara WRC	AWD	tarmac	dampers.FL.slowRebound	5250
+Citroen Xsara WRC	AWD	tarmac	dampers.FL.fastBump	3500
+Citroen Xsara WRC	AWD	tarmac	dampers.FL.fastRebound	4750
+Citroen Xsara WRC	AWD	tarmac	dampers.FR.slowBump	4250
+Citroen Xsara WRC	AWD	tarmac	dampers.FR.slowRebound	5250
+Citroen Xsara WRC	AWD	tarmac	dampers.FR.fastBump	3500
+Citroen Xsara WRC	AWD	tarmac	dampers.FR.fastRebound	4750
+Citroen Xsara WRC	AWD	tarmac	dampers.RL.slowBump	3750
+Citroen Xsara WRC	AWD	tarmac	dampers.RL.slowRebound	4750
+Citroen Xsara WRC	AWD	tarmac	dampers.RL.fastBump	3250
+Citroen Xsara WRC	AWD	tarmac	dampers.RL.fastRebound	4250
+Citroen Xsara WRC	AWD	tarmac	dampers.RR.slowBump	3750
+Citroen Xsara WRC	AWD	tarmac	dampers.RR.slowRebound	4750
+Citroen Xsara WRC	AWD	tarmac	dampers.RR.fastBump	3250
+Citroen Xsara WRC	AWD	tarmac	dampers.RR.fastRebound	4250
+Citroen Xsara WRC	AWD	tarmac	tyres.FL.pressure	32 PSI
+Citroen Xsara WRC	AWD	tarmac	tyres.FL.camber	-1.7°
+Citroen Xsara WRC	AWD	tarmac	tyres.FL.toe	0°
+Citroen Xsara WRC	AWD	tarmac	tyres.FR.pressure	32 PSI
+Citroen Xsara WRC	AWD	tarmac	tyres.FR.camber	-1.7°
+Citroen Xsara WRC	AWD	tarmac	tyres.FR.toe	0°
+Citroen Xsara WRC	AWD	tarmac	tyres.RL.pressure	32 PSI
+Citroen Xsara WRC	AWD	tarmac	tyres.RL.camber	-2.3°
+Citroen Xsara WRC	AWD	tarmac	tyres.RL.toe	0°
+Citroen Xsara WRC	AWD	tarmac	tyres.RR.pressure	32 PSI
+Citroen Xsara WRC	AWD	tarmac	tyres.RR.camber	-2.3°
+Citroen Xsara WRC	AWD	tarmac	tyres.RR.toe	0°
+Citroen Xsara WRC	AWD	tarmac	brakes.brakeBias	60% front
+Citroen Xsara WRC	AWD	tarmac	brakes.propValvePressure	2.75
+Citroen Xsara WRC	AWD	tarmac	brakes.handbrakeMultiplier	1
+Citroen Xsara WRC	AWD	gravel	drivetrain.gearsSet	CitroenXsaraWRCSet4
+Citroen Xsara WRC	AWD	gravel	drivetrain.frontBias	50%
+Citroen Xsara WRC	AWD	gravel	drivetrain.frontDiff.ratio	25//25
+Citroen Xsara WRC	AWD	gravel	drivetrain.frontDiff.lsdRampAngle	50_60
+Citroen Xsara WRC	AWD	gravel	drivetrain.frontDiff.lsdPlates	6
+Citroen Xsara WRC	AWD	gravel	drivetrain.frontDiff.lsdPreload	80 Nm
+Citroen Xsara WRC	AWD	gravel	drivetrain.rearDiff.ratio	27//9
+Citroen Xsara WRC	AWD	gravel	drivetrain.rearDiff.lsdRampAngle	45_55
+Citroen Xsara WRC	AWD	gravel	drivetrain.rearDiff.lsdPlates	6
+Citroen Xsara WRC	AWD	gravel	drivetrain.rearDiff.lsdPreload	110 Nm
+Citroen Xsara WRC	AWD	gravel	drivetrain.centreDiffRatio	39//24
+Citroen Xsara WRC	AWD	gravel	suspension.frontARB	9500 N/m
+Citroen Xsara WRC	AWD	gravel	suspension.rearARB	12500 N/m
+Citroen Xsara WRC	AWD	gravel	suspension.springs.FL	37500 N/m
+Citroen Xsara WRC	AWD	gravel	suspension.springs.FR	37500 N/m
+Citroen Xsara WRC	AWD	gravel	suspension.springs.RL	40000 N/m
+Citroen Xsara WRC	AWD	gravel	suspension.springs.RR	40000 N/m
+Citroen Xsara WRC	AWD	gravel	suspension.rideHeight.FL	136.0 mm
+Citroen Xsara WRC	AWD	gravel	suspension.rideHeight.FR	136.0 mm
+Citroen Xsara WRC	AWD	gravel	suspension.rideHeight.RL	111.0 mm
+Citroen Xsara WRC	AWD	gravel	suspension.rideHeight.RR	111.0 mm
+Citroen Xsara WRC	AWD	gravel	dampers.FL.slowBump	4250
+Citroen Xsara WRC	AWD	gravel	dampers.FL.slowRebound	5250
+Citroen Xsara WRC	AWD	gravel	dampers.FL.fastBump	3500
+Citroen Xsara WRC	AWD	gravel	dampers.FL.fastRebound	4750
+Citroen Xsara WRC	AWD	gravel	dampers.FR.slowBump	4250
+Citroen Xsara WRC	AWD	gravel	dampers.FR.slowRebound	5250
+Citroen Xsara WRC	AWD	gravel	dampers.FR.fastBump	3500
+Citroen Xsara WRC	AWD	gravel	dampers.FR.fastRebound	4750
+Citroen Xsara WRC	AWD	gravel	dampers.RL.slowBump	3750
+Citroen Xsara WRC	AWD	gravel	dampers.RL.slowRebound	4750
+Citroen Xsara WRC	AWD	gravel	dampers.RL.fastBump	3250
+Citroen Xsara WRC	AWD	gravel	dampers.RL.fastRebound	4250
+Citroen Xsara WRC	AWD	gravel	dampers.RR.slowBump	3750
+Citroen Xsara WRC	AWD	gravel	dampers.RR.slowRebound	4750
+Citroen Xsara WRC	AWD	gravel	dampers.RR.fastBump	3250
+Citroen Xsara WRC	AWD	gravel	dampers.RR.fastRebound	4250
+Citroen Xsara WRC	AWD	gravel	tyres.FL.pressure	32 PSI
+Citroen Xsara WRC	AWD	gravel	tyres.FL.camber	-2.2°
+Citroen Xsara WRC	AWD	gravel	tyres.FL.toe	0°
+Citroen Xsara WRC	AWD	gravel	tyres.FR.pressure	32 PSI
+Citroen Xsara WRC	AWD	gravel	tyres.FR.camber	-2.2°
+Citroen Xsara WRC	AWD	gravel	tyres.FR.toe	0°
+Citroen Xsara WRC	AWD	gravel	tyres.RL.pressure	32 PSI
+Citroen Xsara WRC	AWD	gravel	tyres.RL.camber	-2.7°
+Citroen Xsara WRC	AWD	gravel	tyres.RL.toe	0°
+Citroen Xsara WRC	AWD	gravel	tyres.RR.pressure	32 PSI
+Citroen Xsara WRC	AWD	gravel	tyres.RR.camber	-2.7°
+Citroen Xsara WRC	AWD	gravel	tyres.RR.toe	0°
+Citroen Xsara WRC	AWD	gravel	brakes.brakeBias	60% front
+Citroen Xsara WRC	AWD	gravel	brakes.propValvePressure	2.75
+Citroen Xsara WRC	AWD	gravel	brakes.handbrakeMultiplier	1
+Fiat 124 Abarth	RWD	tarmac	drivetrain.gearsSet	Fiat124AbarthSet0
+Fiat 124 Abarth	RWD	tarmac	drivetrain.rearDiff.ratio	43//10
+Fiat 124 Abarth	RWD	tarmac	drivetrain.rearDiff.lsdRampAngle	45_45
+Fiat 124 Abarth	RWD	tarmac	drivetrain.rearDiff.lsdPlates	3
+Fiat 124 Abarth	RWD	tarmac	drivetrain.rearDiff.lsdPreload	30 Nm
+Fiat 124 Abarth	RWD	tarmac	suspension.frontARB	2500 N/m
+Fiat 124 Abarth	RWD	tarmac	suspension.rearARB	1500 N/m
+Fiat 124 Abarth	RWD	tarmac	suspension.springs.FL	185000 N/m
+Fiat 124 Abarth	RWD	tarmac	suspension.springs.FR	185000 N/m
+Fiat 124 Abarth	RWD	tarmac	suspension.springs.RL	45000 N/m
+Fiat 124 Abarth	RWD	tarmac	suspension.springs.RR	45000 N/m
+Fiat 124 Abarth	RWD	tarmac	suspension.rideHeight.FL	27.0 mm
+Fiat 124 Abarth	RWD	tarmac	suspension.rideHeight.FR	27.0 mm
+Fiat 124 Abarth	RWD	tarmac	suspension.rideHeight.RL	55.0 mm
+Fiat 124 Abarth	RWD	tarmac	suspension.rideHeight.RR	55.0 mm
+Fiat 124 Abarth	RWD	tarmac	dampers.FL.slowBump	6000
+Fiat 124 Abarth	RWD	tarmac	dampers.FL.slowRebound	20000
+Fiat 124 Abarth	RWD	tarmac	dampers.FL.fastBump	5750
+Fiat 124 Abarth	RWD	tarmac	dampers.FL.fastRebound	17000
+Fiat 124 Abarth	RWD	tarmac	dampers.FR.slowBump	6000
+Fiat 124 Abarth	RWD	tarmac	dampers.FR.slowRebound	20000
+Fiat 124 Abarth	RWD	tarmac	dampers.FR.fastBump	5750
+Fiat 124 Abarth	RWD	tarmac	dampers.FR.fastRebound	17000
+Fiat 124 Abarth	RWD	tarmac	dampers.RL.slowBump	2500
+Fiat 124 Abarth	RWD	tarmac	dampers.RL.slowRebound	5250
+Fiat 124 Abarth	RWD	tarmac	dampers.RL.fastBump	2250
+Fiat 124 Abarth	RWD	tarmac	dampers.RL.fastRebound	4750
+Fiat 124 Abarth	RWD	tarmac	dampers.RR.slowBump	2500
+Fiat 124 Abarth	RWD	tarmac	dampers.RR.slowRebound	5250
+Fiat 124 Abarth	RWD	tarmac	dampers.RR.fastBump	2250
+Fiat 124 Abarth	RWD	tarmac	dampers.RR.fastRebound	4750
+Fiat 124 Abarth	RWD	tarmac	tyres.FL.pressure	32 PSI
+Fiat 124 Abarth	RWD	tarmac	tyres.FL.camber	-0.5°
+Fiat 124 Abarth	RWD	tarmac	tyres.FL.toe	0°
+Fiat 124 Abarth	RWD	tarmac	tyres.FR.pressure	32 PSI
+Fiat 124 Abarth	RWD	tarmac	tyres.FR.camber	-0.5°
+Fiat 124 Abarth	RWD	tarmac	tyres.FR.toe	0°
+Fiat 124 Abarth	RWD	tarmac	tyres.RL.pressure	32 PSI
+Fiat 124 Abarth	RWD	tarmac	tyres.RL.camber	-1.5°
+Fiat 124 Abarth	RWD	tarmac	tyres.RL.toe	0°
+Fiat 124 Abarth	RWD	tarmac	tyres.RR.pressure	32 PSI
+Fiat 124 Abarth	RWD	tarmac	tyres.RR.camber	-1.5°
+Fiat 124 Abarth	RWD	tarmac	tyres.RR.toe	0°
+Fiat 124 Abarth	RWD	tarmac	brakes.brakeBias	50% front
+Fiat 124 Abarth	RWD	tarmac	brakes.propValvePressure	1.05
+Fiat 124 Abarth	RWD	tarmac	brakes.handbrakeMultiplier	1
+Fiat 124 Abarth	RWD	gravel	drivetrain.gearsSet	Fiat124AbarthSet1
+Fiat 124 Abarth	RWD	gravel	drivetrain.rearDiff.ratio	43//8
+Fiat 124 Abarth	RWD	gravel	drivetrain.rearDiff.lsdRampAngle	45_45
+Fiat 124 Abarth	RWD	gravel	drivetrain.rearDiff.lsdPlates	2
+Fiat 124 Abarth	RWD	gravel	drivetrain.rearDiff.lsdPreload	30 Nm
+Fiat 124 Abarth	RWD	gravel	suspension.frontARB	2500 N/m
+Fiat 124 Abarth	RWD	gravel	suspension.rearARB	1500 N/m
+Fiat 124 Abarth	RWD	gravel	suspension.springs.FL	185000 N/m
+Fiat 124 Abarth	RWD	gravel	suspension.springs.FR	185000 N/m
+Fiat 124 Abarth	RWD	gravel	suspension.springs.RL	45000 N/m
+Fiat 124 Abarth	RWD	gravel	suspension.springs.RR	45000 N/m
+Fiat 124 Abarth	RWD	gravel	suspension.rideHeight.FL	27.0 mm
+Fiat 124 Abarth	RWD	gravel	suspension.rideHeight.FR	27.0 mm
+Fiat 124 Abarth	RWD	gravel	suspension.rideHeight.RL	55.0 mm
+Fiat 124 Abarth	RWD	gravel	suspension.rideHeight.RR	55.0 mm
+Fiat 124 Abarth	RWD	gravel	dampers.FL.slowBump	6000
+Fiat 124 Abarth	RWD	gravel	dampers.FL.slowRebound	20000
+Fiat 124 Abarth	RWD	gravel	dampers.FL.fastBump	5750
+Fiat 124 Abarth	RWD	gravel	dampers.FL.fastRebound	17000
+Fiat 124 Abarth	RWD	gravel	dampers.FR.slowBump	6000
+Fiat 124 Abarth	RWD	gravel	dampers.FR.slowRebound	20000
+Fiat 124 Abarth	RWD	gravel	dampers.FR.fastBump	5750
+Fiat 124 Abarth	RWD	gravel	dampers.FR.fastRebound	17000
+Fiat 124 Abarth	RWD	gravel	dampers.RL.slowBump	2500
+Fiat 124 Abarth	RWD	gravel	dampers.RL.slowRebound	5250
+Fiat 124 Abarth	RWD	gravel	dampers.RL.fastBump	2250
+Fiat 124 Abarth	RWD	gravel	dampers.RL.fastRebound	4750
+Fiat 124 Abarth	RWD	gravel	dampers.RR.slowBump	2500
+Fiat 124 Abarth	RWD	gravel	dampers.RR.slowRebound	5250
+Fiat 124 Abarth	RWD	gravel	dampers.RR.fastBump	2250
+Fiat 124 Abarth	RWD	gravel	dampers.RR.fastRebound	4750
+Fiat 124 Abarth	RWD	gravel	tyres.FL.pressure	32 PSI
+Fiat 124 Abarth	RWD	gravel	tyres.FL.camber	-0.5°
+Fiat 124 Abarth	RWD	gravel	tyres.FL.toe	0°
+Fiat 124 Abarth	RWD	gravel	tyres.FR.pressure	32 PSI
+Fiat 124 Abarth	RWD	gravel	tyres.FR.camber	-0.5°
+Fiat 124 Abarth	RWD	gravel	tyres.FR.toe	0°
+Fiat 124 Abarth	RWD	gravel	tyres.RL.pressure	32 PSI
+Fiat 124 Abarth	RWD	gravel	tyres.RL.camber	-1.5°
+Fiat 124 Abarth	RWD	gravel	tyres.RL.toe	0°
+Fiat 124 Abarth	RWD	gravel	tyres.RR.pressure	32 PSI
+Fiat 124 Abarth	RWD	gravel	tyres.RR.camber	-1.5°
+Fiat 124 Abarth	RWD	gravel	tyres.RR.toe	0°
+Fiat 124 Abarth	RWD	gravel	brakes.brakeBias	50% front
+Fiat 124 Abarth	RWD	gravel	brakes.propValvePressure	1.05
+Fiat 124 Abarth	RWD	gravel	brakes.handbrakeMultiplier	1
+Fiat 131 Abarth	RWD	tarmac	drivetrain.gearsSet	Fiat131AbarthSet0
+Fiat 131 Abarth	RWD	tarmac	drivetrain.rearDiff.ratio	43//8
+Fiat 131 Abarth	RWD	tarmac	drivetrain.rearDiff.lsdRampAngle	60_60
+Fiat 131 Abarth	RWD	tarmac	drivetrain.rearDiff.lsdPlates	4
+Fiat 131 Abarth	RWD	tarmac	drivetrain.rearDiff.lsdPreload	180 Nm
+Fiat 131 Abarth	RWD	tarmac	suspension.frontARB	3000 N/m
+Fiat 131 Abarth	RWD	tarmac	suspension.rearARB	1000 N/m
+Fiat 131 Abarth	RWD	tarmac	suspension.springs.FL	36200 N/m
+Fiat 131 Abarth	RWD	tarmac	suspension.springs.FR	36200 N/m
+Fiat 131 Abarth	RWD	tarmac	suspension.springs.RL	32678 N/m
+Fiat 131 Abarth	RWD	tarmac	suspension.springs.RR	32678 N/m
+Fiat 131 Abarth	RWD	tarmac	suspension.rideHeight.FL	74.0 mm
+Fiat 131 Abarth	RWD	tarmac	suspension.rideHeight.FR	74.0 mm
+Fiat 131 Abarth	RWD	tarmac	suspension.rideHeight.RL	87.0 mm
+Fiat 131 Abarth	RWD	tarmac	suspension.rideHeight.RR	87.0 mm
+Fiat 131 Abarth	RWD	tarmac	dampers.FL.slowBump	3500
+Fiat 131 Abarth	RWD	tarmac	dampers.FL.slowRebound	6000
+Fiat 131 Abarth	RWD	tarmac	dampers.FL.fastBump	2000
+Fiat 131 Abarth	RWD	tarmac	dampers.FL.fastRebound	4500
+Fiat 131 Abarth	RWD	tarmac	dampers.FR.slowBump	3500
+Fiat 131 Abarth	RWD	tarmac	dampers.FR.slowRebound	6000
+Fiat 131 Abarth	RWD	tarmac	dampers.FR.fastBump	2000
+Fiat 131 Abarth	RWD	tarmac	dampers.FR.fastRebound	4500
+Fiat 131 Abarth	RWD	tarmac	dampers.RL.slowBump	2500
+Fiat 131 Abarth	RWD	tarmac	dampers.RL.slowRebound	5250
+Fiat 131 Abarth	RWD	tarmac	dampers.RL.fastBump	1750
+Fiat 131 Abarth	RWD	tarmac	dampers.RL.fastRebound	3500
+Fiat 131 Abarth	RWD	tarmac	dampers.RR.slowBump	2500
+Fiat 131 Abarth	RWD	tarmac	dampers.RR.slowRebound	5250
+Fiat 131 Abarth	RWD	tarmac	dampers.RR.fastBump	1750
+Fiat 131 Abarth	RWD	tarmac	dampers.RR.fastRebound	3500
+Fiat 131 Abarth	RWD	tarmac	tyres.FL.pressure	32 PSI
+Fiat 131 Abarth	RWD	tarmac	tyres.FL.camber	-0.8°
+Fiat 131 Abarth	RWD	tarmac	tyres.FL.toe	0°
+Fiat 131 Abarth	RWD	tarmac	tyres.FR.pressure	32 PSI
+Fiat 131 Abarth	RWD	tarmac	tyres.FR.camber	-0.8°
+Fiat 131 Abarth	RWD	tarmac	tyres.FR.toe	0°
+Fiat 131 Abarth	RWD	tarmac	tyres.RL.pressure	32 PSI
+Fiat 131 Abarth	RWD	tarmac	tyres.RL.camber	-1.8°
+Fiat 131 Abarth	RWD	tarmac	tyres.RL.toe	0°
+Fiat 131 Abarth	RWD	tarmac	tyres.RR.pressure	32 PSI
+Fiat 131 Abarth	RWD	tarmac	tyres.RR.camber	-1.8°
+Fiat 131 Abarth	RWD	tarmac	tyres.RR.toe	0°
+Fiat 131 Abarth	RWD	tarmac	brakes.brakeBias	60% front
+Fiat 131 Abarth	RWD	tarmac	brakes.propValvePressure	3
+Fiat 131 Abarth	RWD	tarmac	brakes.handbrakeMultiplier	1
+Fiat 131 Abarth	RWD	gravel	drivetrain.gearsSet	Fiat131AbarthSet2
+Fiat 131 Abarth	RWD	gravel	drivetrain.rearDiff.ratio	43//7
+Fiat 131 Abarth	RWD	gravel	drivetrain.rearDiff.lsdRampAngle	60_60
+Fiat 131 Abarth	RWD	gravel	drivetrain.rearDiff.lsdPlates	3
+Fiat 131 Abarth	RWD	gravel	drivetrain.rearDiff.lsdPreload	70 Nm
+Fiat 131 Abarth	RWD	gravel	suspension.frontARB	3500 N/m
+Fiat 131 Abarth	RWD	gravel	suspension.rearARB	1000 N/m
+Fiat 131 Abarth	RWD	gravel	suspension.springs.FL	28200 N/m
+Fiat 131 Abarth	RWD	gravel	suspension.springs.FR	28200 N/m
+Fiat 131 Abarth	RWD	gravel	suspension.springs.RL	26678 N/m
+Fiat 131 Abarth	RWD	gravel	suspension.springs.RR	26678 N/m
+Fiat 131 Abarth	RWD	gravel	suspension.rideHeight.FL	95.0 mm
+Fiat 131 Abarth	RWD	gravel	suspension.rideHeight.FR	95.0 mm
+Fiat 131 Abarth	RWD	gravel	suspension.rideHeight.RL	107.0 mm
+Fiat 131 Abarth	RWD	gravel	suspension.rideHeight.RR	107.0 mm
+Fiat 131 Abarth	RWD	gravel	dampers.FL.slowBump	3500
+Fiat 131 Abarth	RWD	gravel	dampers.FL.slowRebound	6000
+Fiat 131 Abarth	RWD	gravel	dampers.FL.fastBump	2000
+Fiat 131 Abarth	RWD	gravel	dampers.FL.fastRebound	4500
+Fiat 131 Abarth	RWD	gravel	dampers.FR.slowBump	3500
+Fiat 131 Abarth	RWD	gravel	dampers.FR.slowRebound	6000
+Fiat 131 Abarth	RWD	gravel	dampers.FR.fastBump	2000
+Fiat 131 Abarth	RWD	gravel	dampers.FR.fastRebound	4500
+Fiat 131 Abarth	RWD	gravel	dampers.RL.slowBump	2500
+Fiat 131 Abarth	RWD	gravel	dampers.RL.slowRebound	5250
+Fiat 131 Abarth	RWD	gravel	dampers.RL.fastBump	1750
+Fiat 131 Abarth	RWD	gravel	dampers.RL.fastRebound	3500
+Fiat 131 Abarth	RWD	gravel	dampers.RR.slowBump	2500
+Fiat 131 Abarth	RWD	gravel	dampers.RR.slowRebound	5250
+Fiat 131 Abarth	RWD	gravel	dampers.RR.fastBump	1750
+Fiat 131 Abarth	RWD	gravel	dampers.RR.fastRebound	3500
+Fiat 131 Abarth	RWD	gravel	tyres.FL.pressure	32 PSI
+Fiat 131 Abarth	RWD	gravel	tyres.FL.camber	-2.1°
+Fiat 131 Abarth	RWD	gravel	tyres.FL.toe	0°
+Fiat 131 Abarth	RWD	gravel	tyres.FR.pressure	32 PSI
+Fiat 131 Abarth	RWD	gravel	tyres.FR.camber	-2.1°
+Fiat 131 Abarth	RWD	gravel	tyres.FR.toe	0°
+Fiat 131 Abarth	RWD	gravel	tyres.RL.pressure	32 PSI
+Fiat 131 Abarth	RWD	gravel	tyres.RL.camber	-1.9°
+Fiat 131 Abarth	RWD	gravel	tyres.RL.toe	0°
+Fiat 131 Abarth	RWD	gravel	tyres.RR.pressure	32 PSI
+Fiat 131 Abarth	RWD	gravel	tyres.RR.camber	-1.9°
+Fiat 131 Abarth	RWD	gravel	tyres.RR.toe	0°
+Fiat 131 Abarth	RWD	gravel	brakes.brakeBias	59% front
+Fiat 131 Abarth	RWD	gravel	brakes.propValvePressure	3
+Fiat 131 Abarth	RWD	gravel	brakes.handbrakeMultiplier	1
+Hyundai i20 N Rally 2	AWD	tarmac	drivetrain.gearsSet	Hyundaii20Rally2Set0
+Hyundai i20 N Rally 2	AWD	tarmac	drivetrain.frontBias	50%
+Hyundai i20 N Rally 2	AWD	tarmac	drivetrain.frontDiff.ratio	25//25
+Hyundai i20 N Rally 2	AWD	tarmac	drivetrain.frontDiff.lsdRampAngle	60_70
+Hyundai i20 N Rally 2	AWD	tarmac	drivetrain.frontDiff.lsdPlates	6
+Hyundai i20 N Rally 2	AWD	tarmac	drivetrain.frontDiff.lsdPreload	90 Nm
+Hyundai i20 N Rally 2	AWD	tarmac	drivetrain.rearDiff.ratio	25//25
+Hyundai i20 N Rally 2	AWD	tarmac	drivetrain.rearDiff.lsdRampAngle	55_75
+Hyundai i20 N Rally 2	AWD	tarmac	drivetrain.rearDiff.lsdPlates	6
+Hyundai i20 N Rally 2	AWD	tarmac	drivetrain.rearDiff.lsdPreload	120 Nm
+Hyundai i20 N Rally 2	AWD	tarmac	drivetrain.centreDiffRatio	55//14
+Hyundai i20 N Rally 2	AWD	tarmac	suspension.frontARB	6000 N/m
+Hyundai i20 N Rally 2	AWD	tarmac	suspension.rearARB	8000 N/m
+Hyundai i20 N Rally 2	AWD	tarmac	suspension.springs.FL	56000 N/m
+Hyundai i20 N Rally 2	AWD	tarmac	suspension.springs.FR	56000 N/m
+Hyundai i20 N Rally 2	AWD	tarmac	suspension.springs.RL	44000 N/m
+Hyundai i20 N Rally 2	AWD	tarmac	suspension.springs.RR	44000 N/m
+Hyundai i20 N Rally 2	AWD	tarmac	suspension.rideHeight.FL	64.0 mm
+Hyundai i20 N Rally 2	AWD	tarmac	suspension.rideHeight.FR	64.0 mm
+Hyundai i20 N Rally 2	AWD	tarmac	suspension.rideHeight.RL	67.0 mm
+Hyundai i20 N Rally 2	AWD	tarmac	suspension.rideHeight.RR	67.0 mm
+Hyundai i20 N Rally 2	AWD	tarmac	dampers.FL.slowBump	5826
+Hyundai i20 N Rally 2	AWD	tarmac	dampers.FL.slowRebound	3871
+Hyundai i20 N Rally 2	AWD	tarmac	dampers.FL.fastBump	5826
+Hyundai i20 N Rally 2	AWD	tarmac	dampers.FL.fastRebound	3871
+Hyundai i20 N Rally 2	AWD	tarmac	dampers.FR.slowBump	5826
+Hyundai i20 N Rally 2	AWD	tarmac	dampers.FR.slowRebound	3871
+Hyundai i20 N Rally 2	AWD	tarmac	dampers.FR.fastBump	5826
+Hyundai i20 N Rally 2	AWD	tarmac	dampers.FR.fastRebound	3871
+Hyundai i20 N Rally 2	AWD	tarmac	dampers.RL.slowBump	5720
+Hyundai i20 N Rally 2	AWD	tarmac	dampers.RL.slowRebound	3713
+Hyundai i20 N Rally 2	AWD	tarmac	dampers.RL.fastBump	5720
+Hyundai i20 N Rally 2	AWD	tarmac	dampers.RL.fastRebound	3713
+Hyundai i20 N Rally 2	AWD	tarmac	dampers.RR.slowBump	5720
+Hyundai i20 N Rally 2	AWD	tarmac	dampers.RR.slowRebound	3713
+Hyundai i20 N Rally 2	AWD	tarmac	dampers.RR.fastBump	5720
+Hyundai i20 N Rally 2	AWD	tarmac	dampers.RR.fastRebound	3713
+Hyundai i20 N Rally 2	AWD	tarmac	tyres.FL.pressure	32 PSI
+Hyundai i20 N Rally 2	AWD	tarmac	tyres.FL.camber	-2.2°
+Hyundai i20 N Rally 2	AWD	tarmac	tyres.FL.toe	0.006°
+Hyundai i20 N Rally 2	AWD	tarmac	tyres.FR.pressure	32 PSI
+Hyundai i20 N Rally 2	AWD	tarmac	tyres.FR.camber	-2.2°
+Hyundai i20 N Rally 2	AWD	tarmac	tyres.FR.toe	0.006°
+Hyundai i20 N Rally 2	AWD	tarmac	tyres.RL.pressure	32 PSI
+Hyundai i20 N Rally 2	AWD	tarmac	tyres.RL.camber	-2.7°
+Hyundai i20 N Rally 2	AWD	tarmac	tyres.RL.toe	-0.003°
+Hyundai i20 N Rally 2	AWD	tarmac	tyres.RR.pressure	32 PSI
+Hyundai i20 N Rally 2	AWD	tarmac	tyres.RR.camber	-2.7°
+Hyundai i20 N Rally 2	AWD	tarmac	tyres.RR.toe	-0.003°
+Hyundai i20 N Rally 2	AWD	tarmac	brakes.brakeBias	50% front
+Hyundai i20 N Rally 2	AWD	tarmac	brakes.propValvePressure	3
+Hyundai i20 N Rally 2	AWD	tarmac	brakes.handbrakeMultiplier	1
+Hyundai i20 N Rally 2	AWD	gravel	drivetrain.gearsSet	Hyundaii20Rally2Set1
+Hyundai i20 N Rally 2	AWD	gravel	drivetrain.frontBias	50%
+Hyundai i20 N Rally 2	AWD	gravel	drivetrain.frontDiff.ratio	25//25
+Hyundai i20 N Rally 2	AWD	gravel	drivetrain.frontDiff.lsdRampAngle	60_70
+Hyundai i20 N Rally 2	AWD	gravel	drivetrain.frontDiff.lsdPlates	6
+Hyundai i20 N Rally 2	AWD	gravel	drivetrain.frontDiff.lsdPreload	90 Nm
+Hyundai i20 N Rally 2	AWD	gravel	drivetrain.rearDiff.ratio	25//25
+Hyundai i20 N Rally 2	AWD	gravel	drivetrain.rearDiff.lsdRampAngle	55_75
+Hyundai i20 N Rally 2	AWD	gravel	drivetrain.rearDiff.lsdPlates	6
+Hyundai i20 N Rally 2	AWD	gravel	drivetrain.rearDiff.lsdPreload	120 Nm
+Hyundai i20 N Rally 2	AWD	gravel	drivetrain.centreDiffRatio	55//14
+Hyundai i20 N Rally 2	AWD	gravel	suspension.frontARB	4500 N/m
+Hyundai i20 N Rally 2	AWD	gravel	suspension.rearARB	9000 N/m
+Hyundai i20 N Rally 2	AWD	gravel	suspension.springs.FL	41000 N/m
+Hyundai i20 N Rally 2	AWD	gravel	suspension.springs.FR	41000 N/m
+Hyundai i20 N Rally 2	AWD	gravel	suspension.springs.RL	38000 N/m
+Hyundai i20 N Rally 2	AWD	gravel	suspension.springs.RR	38000 N/m
+Hyundai i20 N Rally 2	AWD	gravel	suspension.rideHeight.FL	127.0 mm
+Hyundai i20 N Rally 2	AWD	gravel	suspension.rideHeight.FR	127.0 mm
+Hyundai i20 N Rally 2	AWD	gravel	suspension.rideHeight.RL	117.0 mm
+Hyundai i20 N Rally 2	AWD	gravel	suspension.rideHeight.RR	117.0 mm
+Hyundai i20 N Rally 2	AWD	gravel	dampers.FL.slowBump	5826
+Hyundai i20 N Rally 2	AWD	gravel	dampers.FL.slowRebound	3871
+Hyundai i20 N Rally 2	AWD	gravel	dampers.FL.fastBump	5826
+Hyundai i20 N Rally 2	AWD	gravel	dampers.FL.fastRebound	3871
+Hyundai i20 N Rally 2	AWD	gravel	dampers.FR.slowBump	5826
+Hyundai i20 N Rally 2	AWD	gravel	dampers.FR.slowRebound	3871
+Hyundai i20 N Rally 2	AWD	gravel	dampers.FR.fastBump	5826
+Hyundai i20 N Rally 2	AWD	gravel	dampers.FR.fastRebound	3871
+Hyundai i20 N Rally 2	AWD	gravel	dampers.RL.slowBump	5720
+Hyundai i20 N Rally 2	AWD	gravel	dampers.RL.slowRebound	3713
+Hyundai i20 N Rally 2	AWD	gravel	dampers.RL.fastBump	5720
+Hyundai i20 N Rally 2	AWD	gravel	dampers.RL.fastRebound	3713
+Hyundai i20 N Rally 2	AWD	gravel	dampers.RR.slowBump	5720
+Hyundai i20 N Rally 2	AWD	gravel	dampers.RR.slowRebound	3713
+Hyundai i20 N Rally 2	AWD	gravel	dampers.RR.fastBump	5720
+Hyundai i20 N Rally 2	AWD	gravel	dampers.RR.fastRebound	3713
+Hyundai i20 N Rally 2	AWD	gravel	tyres.FL.pressure	32 PSI
+Hyundai i20 N Rally 2	AWD	gravel	tyres.FL.camber	-2.9°
+Hyundai i20 N Rally 2	AWD	gravel	tyres.FL.toe	0.006°
+Hyundai i20 N Rally 2	AWD	gravel	tyres.FR.pressure	32 PSI
+Hyundai i20 N Rally 2	AWD	gravel	tyres.FR.camber	-2.9°
+Hyundai i20 N Rally 2	AWD	gravel	tyres.FR.toe	0.006°
+Hyundai i20 N Rally 2	AWD	gravel	tyres.RL.pressure	32 PSI
+Hyundai i20 N Rally 2	AWD	gravel	tyres.RL.camber	-3.1°
+Hyundai i20 N Rally 2	AWD	gravel	tyres.RL.toe	-0.003°
+Hyundai i20 N Rally 2	AWD	gravel	tyres.RR.pressure	32 PSI
+Hyundai i20 N Rally 2	AWD	gravel	tyres.RR.camber	-3.1°
+Hyundai i20 N Rally 2	AWD	gravel	tyres.RR.toe	-0.003°
+Hyundai i20 N Rally 2	AWD	gravel	brakes.brakeBias	50% front
+Hyundai i20 N Rally 2	AWD	gravel	brakes.propValvePressure	3
+Hyundai i20 N Rally 2	AWD	gravel	brakes.handbrakeMultiplier	1
+Lancia Delta HF Integrale Evo	AWD	tarmac	drivetrain.gearsSet	LanciaDeltaHFIntegraleEvoSet1
+Lancia Delta HF Integrale Evo	AWD	tarmac	drivetrain.frontBias	47%
+Lancia Delta HF Integrale Evo	AWD	tarmac	drivetrain.frontDiff.ratio	25//25
+Lancia Delta HF Integrale Evo	AWD	tarmac	drivetrain.frontDiff.lsdRampAngle	60_75
+Lancia Delta HF Integrale Evo	AWD	tarmac	drivetrain.frontDiff.lsdPlates	6
+Lancia Delta HF Integrale Evo	AWD	tarmac	drivetrain.frontDiff.lsdPreload	60 Nm
+Lancia Delta HF Integrale Evo	AWD	tarmac	drivetrain.rearDiff.ratio	34//13
+Lancia Delta HF Integrale Evo	AWD	tarmac	drivetrain.rearDiff.lsdRampAngle	45_70
+Lancia Delta HF Integrale Evo	AWD	tarmac	drivetrain.rearDiff.lsdPlates	6
+Lancia Delta HF Integrale Evo	AWD	tarmac	drivetrain.rearDiff.lsdPreload	90 Nm
+Lancia Delta HF Integrale Evo	AWD	tarmac	drivetrain.centreDiffRatio	53//13
+Lancia Delta HF Integrale Evo	AWD	tarmac	suspension.frontARB	18500 N/m
+Lancia Delta HF Integrale Evo	AWD	tarmac	suspension.rearARB	16500 N/m
+Lancia Delta HF Integrale Evo	AWD	tarmac	suspension.springs.FL	70000 N/m
+Lancia Delta HF Integrale Evo	AWD	tarmac	suspension.springs.FR	70000 N/m
+Lancia Delta HF Integrale Evo	AWD	tarmac	suspension.springs.RL	50000 N/m
+Lancia Delta HF Integrale Evo	AWD	tarmac	suspension.springs.RR	50000 N/m
+Lancia Delta HF Integrale Evo	AWD	tarmac	suspension.rideHeight.FL	51.0 mm
+Lancia Delta HF Integrale Evo	AWD	tarmac	suspension.rideHeight.FR	51.0 mm
+Lancia Delta HF Integrale Evo	AWD	tarmac	suspension.rideHeight.RL	48.0 mm
+Lancia Delta HF Integrale Evo	AWD	tarmac	suspension.rideHeight.RR	48.0 mm
+Lancia Delta HF Integrale Evo	AWD	tarmac	dampers.FL.slowBump	5000
+Lancia Delta HF Integrale Evo	AWD	tarmac	dampers.FL.slowRebound	8000
+Lancia Delta HF Integrale Evo	AWD	tarmac	dampers.FL.fastBump	3500
+Lancia Delta HF Integrale Evo	AWD	tarmac	dampers.FL.fastRebound	5250
+Lancia Delta HF Integrale Evo	AWD	tarmac	dampers.FR.slowBump	5000
+Lancia Delta HF Integrale Evo	AWD	tarmac	dampers.FR.slowRebound	8000
+Lancia Delta HF Integrale Evo	AWD	tarmac	dampers.FR.fastBump	3500
+Lancia Delta HF Integrale Evo	AWD	tarmac	dampers.FR.fastRebound	5250
+Lancia Delta HF Integrale Evo	AWD	tarmac	dampers.RL.slowBump	4000
+Lancia Delta HF Integrale Evo	AWD	tarmac	dampers.RL.slowRebound	6250
+Lancia Delta HF Integrale Evo	AWD	tarmac	dampers.RL.fastBump	2500
+Lancia Delta HF Integrale Evo	AWD	tarmac	dampers.RL.fastRebound	4500
+Lancia Delta HF Integrale Evo	AWD	tarmac	dampers.RR.slowBump	4000
+Lancia Delta HF Integrale Evo	AWD	tarmac	dampers.RR.slowRebound	6250
+Lancia Delta HF Integrale Evo	AWD	tarmac	dampers.RR.fastBump	2500
+Lancia Delta HF Integrale Evo	AWD	tarmac	dampers.RR.fastRebound	4500
+Lancia Delta HF Integrale Evo	AWD	tarmac	tyres.FL.pressure	32 PSI
+Lancia Delta HF Integrale Evo	AWD	tarmac	tyres.FL.camber	-1.7°
+Lancia Delta HF Integrale Evo	AWD	tarmac	tyres.FL.toe	0.006°
+Lancia Delta HF Integrale Evo	AWD	tarmac	tyres.FR.pressure	32 PSI
+Lancia Delta HF Integrale Evo	AWD	tarmac	tyres.FR.camber	-1.7°
+Lancia Delta HF Integrale Evo	AWD	tarmac	tyres.FR.toe	0.006°
+Lancia Delta HF Integrale Evo	AWD	tarmac	tyres.RL.pressure	32 PSI
+Lancia Delta HF Integrale Evo	AWD	tarmac	tyres.RL.camber	-2.3°
+Lancia Delta HF Integrale Evo	AWD	tarmac	tyres.RL.toe	0°
+Lancia Delta HF Integrale Evo	AWD	tarmac	tyres.RR.pressure	32 PSI
+Lancia Delta HF Integrale Evo	AWD	tarmac	tyres.RR.camber	-2.3°
+Lancia Delta HF Integrale Evo	AWD	tarmac	tyres.RR.toe	0°
+Lancia Delta HF Integrale Evo	AWD	tarmac	brakes.brakeBias	65% front
+Lancia Delta HF Integrale Evo	AWD	tarmac	brakes.propValvePressure	3
+Lancia Delta HF Integrale Evo	AWD	tarmac	brakes.handbrakeMultiplier	1
+Lancia Delta HF Integrale Evo	AWD	gravel	drivetrain.gearsSet	LanciaDeltaHFIntegraleEvoSet2
+Lancia Delta HF Integrale Evo	AWD	gravel	drivetrain.frontBias	47%
+Lancia Delta HF Integrale Evo	AWD	gravel	drivetrain.frontDiff.ratio	25//25
+Lancia Delta HF Integrale Evo	AWD	gravel	drivetrain.frontDiff.lsdRampAngle	60_75
+Lancia Delta HF Integrale Evo	AWD	gravel	drivetrain.frontDiff.lsdPlates	6
+Lancia Delta HF Integrale Evo	AWD	gravel	drivetrain.frontDiff.lsdPreload	60 Nm
+Lancia Delta HF Integrale Evo	AWD	gravel	drivetrain.rearDiff.ratio	34//13
+Lancia Delta HF Integrale Evo	AWD	gravel	drivetrain.rearDiff.lsdRampAngle	45_70
+Lancia Delta HF Integrale Evo	AWD	gravel	drivetrain.rearDiff.lsdPlates	6
+Lancia Delta HF Integrale Evo	AWD	gravel	drivetrain.rearDiff.lsdPreload	90 Nm
+Lancia Delta HF Integrale Evo	AWD	gravel	drivetrain.centreDiffRatio	50//12
+Lancia Delta HF Integrale Evo	AWD	gravel	suspension.frontARB	11500 N/m
+Lancia Delta HF Integrale Evo	AWD	gravel	suspension.rearARB	13500 N/m
+Lancia Delta HF Integrale Evo	AWD	gravel	suspension.springs.FL	40000 N/m
+Lancia Delta HF Integrale Evo	AWD	gravel	suspension.springs.FR	40000 N/m
+Lancia Delta HF Integrale Evo	AWD	gravel	suspension.springs.RL	40000 N/m
+Lancia Delta HF Integrale Evo	AWD	gravel	suspension.springs.RR	40000 N/m
+Lancia Delta HF Integrale Evo	AWD	gravel	suspension.rideHeight.FL	130.0 mm
+Lancia Delta HF Integrale Evo	AWD	gravel	suspension.rideHeight.FR	130.0 mm
+Lancia Delta HF Integrale Evo	AWD	gravel	suspension.rideHeight.RL	100.0 mm
+Lancia Delta HF Integrale Evo	AWD	gravel	suspension.rideHeight.RR	100.0 mm
+Lancia Delta HF Integrale Evo	AWD	gravel	dampers.FL.slowBump	4250
+Lancia Delta HF Integrale Evo	AWD	gravel	dampers.FL.slowRebound	9000
+Lancia Delta HF Integrale Evo	AWD	gravel	dampers.FL.fastBump	2500
+Lancia Delta HF Integrale Evo	AWD	gravel	dampers.FL.fastRebound	5000
+Lancia Delta HF Integrale Evo	AWD	gravel	dampers.FR.slowBump	4250
+Lancia Delta HF Integrale Evo	AWD	gravel	dampers.FR.slowRebound	9000
+Lancia Delta HF Integrale Evo	AWD	gravel	dampers.FR.fastBump	2500
+Lancia Delta HF Integrale Evo	AWD	gravel	dampers.FR.fastRebound	5000
+Lancia Delta HF Integrale Evo	AWD	gravel	dampers.RL.slowBump	3750
+Lancia Delta HF Integrale Evo	AWD	gravel	dampers.RL.slowRebound	6750
+Lancia Delta HF Integrale Evo	AWD	gravel	dampers.RL.fastBump	2500
+Lancia Delta HF Integrale Evo	AWD	gravel	dampers.RL.fastRebound	4500
+Lancia Delta HF Integrale Evo	AWD	gravel	dampers.RR.slowBump	3750
+Lancia Delta HF Integrale Evo	AWD	gravel	dampers.RR.slowRebound	6750
+Lancia Delta HF Integrale Evo	AWD	gravel	dampers.RR.fastBump	2500
+Lancia Delta HF Integrale Evo	AWD	gravel	dampers.RR.fastRebound	4500
+Lancia Delta HF Integrale Evo	AWD	gravel	tyres.FL.pressure	32 PSI
+Lancia Delta HF Integrale Evo	AWD	gravel	tyres.FL.camber	-2.4°
+Lancia Delta HF Integrale Evo	AWD	gravel	tyres.FL.toe	0.006°
+Lancia Delta HF Integrale Evo	AWD	gravel	tyres.FR.pressure	32 PSI
+Lancia Delta HF Integrale Evo	AWD	gravel	tyres.FR.camber	-2.4°
+Lancia Delta HF Integrale Evo	AWD	gravel	tyres.FR.toe	0.006°
+Lancia Delta HF Integrale Evo	AWD	gravel	tyres.RL.pressure	32 PSI
+Lancia Delta HF Integrale Evo	AWD	gravel	tyres.RL.camber	-2.6°
+Lancia Delta HF Integrale Evo	AWD	gravel	tyres.RL.toe	0°
+Lancia Delta HF Integrale Evo	AWD	gravel	tyres.RR.pressure	32 PSI
+Lancia Delta HF Integrale Evo	AWD	gravel	tyres.RR.camber	-2.6°
+Lancia Delta HF Integrale Evo	AWD	gravel	tyres.RR.toe	0°
+Lancia Delta HF Integrale Evo	AWD	gravel	brakes.brakeBias	67% front
+Lancia Delta HF Integrale Evo	AWD	gravel	brakes.propValvePressure	3
+Lancia Delta HF Integrale Evo	AWD	gravel	brakes.handbrakeMultiplier	1
+Lancia Rally 037 Evo 2	RWD	tarmac	drivetrain.gearsSet	LanciaRally037Evo2Set0
+Lancia Rally 037 Evo 2	RWD	tarmac	drivetrain.rearDiff.ratio	44//9
+Lancia Rally 037 Evo 2	RWD	tarmac	drivetrain.rearDiff.lsdRampAngle	50_65
+Lancia Rally 037 Evo 2	RWD	tarmac	drivetrain.rearDiff.lsdPlates	4
+Lancia Rally 037 Evo 2	RWD	tarmac	drivetrain.rearDiff.lsdPreload	90 Nm
+Lancia Rally 037 Evo 2	RWD	tarmac	suspension.frontARB	4000 N/m
+Lancia Rally 037 Evo 2	RWD	tarmac	suspension.springs.FL	65000 N/m
+Lancia Rally 037 Evo 2	RWD	tarmac	suspension.springs.FR	65000 N/m
+Lancia Rally 037 Evo 2	RWD	tarmac	suspension.springs.RL	45000 N/m
+Lancia Rally 037 Evo 2	RWD	tarmac	suspension.springs.RR	45000 N/m
+Lancia Rally 037 Evo 2	RWD	tarmac	suspension.rideHeight.FL	49.0 mm
+Lancia Rally 037 Evo 2	RWD	tarmac	suspension.rideHeight.FR	49.0 mm
+Lancia Rally 037 Evo 2	RWD	tarmac	suspension.rideHeight.RL	67.0 mm
+Lancia Rally 037 Evo 2	RWD	tarmac	suspension.rideHeight.RR	67.0 mm
+Lancia Rally 037 Evo 2	RWD	tarmac	dampers.FL.slowBump	6000
+Lancia Rally 037 Evo 2	RWD	tarmac	dampers.FL.slowRebound	9000
+Lancia Rally 037 Evo 2	RWD	tarmac	dampers.FL.fastBump	4500
+Lancia Rally 037 Evo 2	RWD	tarmac	dampers.FL.fastRebound	6500
+Lancia Rally 037 Evo 2	RWD	tarmac	dampers.FR.slowBump	6000
+Lancia Rally 037 Evo 2	RWD	tarmac	dampers.FR.slowRebound	9000
+Lancia Rally 037 Evo 2	RWD	tarmac	dampers.FR.fastBump	4500
+Lancia Rally 037 Evo 2	RWD	tarmac	dampers.FR.fastRebound	6500
+Lancia Rally 037 Evo 2	RWD	tarmac	dampers.RL.slowBump	5000
+Lancia Rally 037 Evo 2	RWD	tarmac	dampers.RL.slowRebound	8000
+Lancia Rally 037 Evo 2	RWD	tarmac	dampers.RL.fastBump	3500
+Lancia Rally 037 Evo 2	RWD	tarmac	dampers.RL.fastRebound	5500
+Lancia Rally 037 Evo 2	RWD	tarmac	dampers.RR.slowBump	5000
+Lancia Rally 037 Evo 2	RWD	tarmac	dampers.RR.slowRebound	8000
+Lancia Rally 037 Evo 2	RWD	tarmac	dampers.RR.fastBump	3500
+Lancia Rally 037 Evo 2	RWD	tarmac	dampers.RR.fastRebound	5500
+Lancia Rally 037 Evo 2	RWD	tarmac	tyres.FL.pressure	32 PSI
+Lancia Rally 037 Evo 2	RWD	tarmac	tyres.FL.camber	-1.1°
+Lancia Rally 037 Evo 2	RWD	tarmac	tyres.FL.toe	0°
+Lancia Rally 037 Evo 2	RWD	tarmac	tyres.FR.pressure	32 PSI
+Lancia Rally 037 Evo 2	RWD	tarmac	tyres.FR.camber	-1.1°
+Lancia Rally 037 Evo 2	RWD	tarmac	tyres.FR.toe	0°
+Lancia Rally 037 Evo 2	RWD	tarmac	tyres.RL.pressure	32 PSI
+Lancia Rally 037 Evo 2	RWD	tarmac	tyres.RL.camber	-2.3°
+Lancia Rally 037 Evo 2	RWD	tarmac	tyres.RL.toe	0°
+Lancia Rally 037 Evo 2	RWD	tarmac	tyres.RR.pressure	32 PSI
+Lancia Rally 037 Evo 2	RWD	tarmac	tyres.RR.camber	-2.3°
+Lancia Rally 037 Evo 2	RWD	tarmac	tyres.RR.toe	0°
+Lancia Rally 037 Evo 2	RWD	tarmac	brakes.brakeBias	58% front
+Lancia Rally 037 Evo 2	RWD	tarmac	brakes.propValvePressure	3
+Lancia Rally 037 Evo 2	RWD	tarmac	brakes.handbrakeMultiplier	1
+Lancia Rally 037 Evo 2	RWD	gravel	drivetrain.gearsSet	LanciaRally037Evo2Set1
+Lancia Rally 037 Evo 2	RWD	gravel	drivetrain.rearDiff.ratio	42//8
+Lancia Rally 037 Evo 2	RWD	gravel	drivetrain.rearDiff.lsdRampAngle	60_70
+Lancia Rally 037 Evo 2	RWD	gravel	drivetrain.rearDiff.lsdPlates	2
+Lancia Rally 037 Evo 2	RWD	gravel	drivetrain.rearDiff.lsdPreload	60 Nm
+Lancia Rally 037 Evo 2	RWD	gravel	suspension.frontARB	3500 N/m
+Lancia Rally 037 Evo 2	RWD	gravel	suspension.springs.FL	55000 N/m
+Lancia Rally 037 Evo 2	RWD	gravel	suspension.springs.FR	55000 N/m
+Lancia Rally 037 Evo 2	RWD	gravel	suspension.springs.RL	35000 N/m
+Lancia Rally 037 Evo 2	RWD	gravel	suspension.springs.RR	35000 N/m
+Lancia Rally 037 Evo 2	RWD	gravel	suspension.rideHeight.FL	80.0 mm
+Lancia Rally 037 Evo 2	RWD	gravel	suspension.rideHeight.FR	80.0 mm
+Lancia Rally 037 Evo 2	RWD	gravel	suspension.rideHeight.RL	116.0 mm
+Lancia Rally 037 Evo 2	RWD	gravel	suspension.rideHeight.RR	116.0 mm
+Lancia Rally 037 Evo 2	RWD	gravel	dampers.FL.slowBump	6000
+Lancia Rally 037 Evo 2	RWD	gravel	dampers.FL.slowRebound	9000
+Lancia Rally 037 Evo 2	RWD	gravel	dampers.FL.fastBump	4500
+Lancia Rally 037 Evo 2	RWD	gravel	dampers.FL.fastRebound	6500
+Lancia Rally 037 Evo 2	RWD	gravel	dampers.FR.slowBump	6000
+Lancia Rally 037 Evo 2	RWD	gravel	dampers.FR.slowRebound	9000
+Lancia Rally 037 Evo 2	RWD	gravel	dampers.FR.fastBump	4500
+Lancia Rally 037 Evo 2	RWD	gravel	dampers.FR.fastRebound	6500
+Lancia Rally 037 Evo 2	RWD	gravel	dampers.RL.slowBump	5000
+Lancia Rally 037 Evo 2	RWD	gravel	dampers.RL.slowRebound	8000
+Lancia Rally 037 Evo 2	RWD	gravel	dampers.RL.fastBump	3500
+Lancia Rally 037 Evo 2	RWD	gravel	dampers.RL.fastRebound	5500
+Lancia Rally 037 Evo 2	RWD	gravel	dampers.RR.slowBump	5000
+Lancia Rally 037 Evo 2	RWD	gravel	dampers.RR.slowRebound	8000
+Lancia Rally 037 Evo 2	RWD	gravel	dampers.RR.fastBump	3500
+Lancia Rally 037 Evo 2	RWD	gravel	dampers.RR.fastRebound	5500
+Lancia Rally 037 Evo 2	RWD	gravel	tyres.FL.pressure	32 PSI
+Lancia Rally 037 Evo 2	RWD	gravel	tyres.FL.camber	-0.6°
+Lancia Rally 037 Evo 2	RWD	gravel	tyres.FL.toe	0°
+Lancia Rally 037 Evo 2	RWD	gravel	tyres.FR.pressure	32 PSI
+Lancia Rally 037 Evo 2	RWD	gravel	tyres.FR.camber	-0.6°
+Lancia Rally 037 Evo 2	RWD	gravel	tyres.FR.toe	0°
+Lancia Rally 037 Evo 2	RWD	gravel	tyres.RL.pressure	32 PSI
+Lancia Rally 037 Evo 2	RWD	gravel	tyres.RL.camber	-2.1°
+Lancia Rally 037 Evo 2	RWD	gravel	tyres.RL.toe	0°
+Lancia Rally 037 Evo 2	RWD	gravel	tyres.RR.pressure	32 PSI
+Lancia Rally 037 Evo 2	RWD	gravel	tyres.RR.camber	-2.1°
+Lancia Rally 037 Evo 2	RWD	gravel	tyres.RR.toe	0°
+Lancia Rally 037 Evo 2	RWD	gravel	brakes.brakeBias	55% front
+Lancia Rally 037 Evo 2	RWD	gravel	brakes.propValvePressure	3
+Lancia Rally 037 Evo 2	RWD	gravel	brakes.handbrakeMultiplier	1
+Lancia Stratos	RWD	tarmac	drivetrain.gearsSet	LanciaStratosSet0
+Lancia Stratos	RWD	tarmac	drivetrain.rearDiff.ratio	65//19
+Lancia Stratos	RWD	tarmac	drivetrain.rearDiff.lsdRampAngle	50_65
+Lancia Stratos	RWD	tarmac	drivetrain.rearDiff.lsdPlates	4
+Lancia Stratos	RWD	tarmac	drivetrain.rearDiff.lsdPreload	70 Nm
+Lancia Stratos	RWD	tarmac	suspension.frontARB	2750 N/m
+Lancia Stratos	RWD	tarmac	suspension.rearARB	2500 N/m
+Lancia Stratos	RWD	tarmac	suspension.springs.FL	57700 N/m
+Lancia Stratos	RWD	tarmac	suspension.springs.FR	57700 N/m
+Lancia Stratos	RWD	tarmac	suspension.springs.RL	32660 N/m
+Lancia Stratos	RWD	tarmac	suspension.springs.RR	32660 N/m
+Lancia Stratos	RWD	tarmac	suspension.rideHeight.FL	56.0 mm
+Lancia Stratos	RWD	tarmac	suspension.rideHeight.FR	56.0 mm
+Lancia Stratos	RWD	tarmac	suspension.rideHeight.RL	86.0 mm
+Lancia Stratos	RWD	tarmac	suspension.rideHeight.RR	86.0 mm
+Lancia Stratos	RWD	tarmac	dampers.FL.slowBump	3415
+Lancia Stratos	RWD	tarmac	dampers.FL.slowRebound	8225
+Lancia Stratos	RWD	tarmac	dampers.FL.fastBump	2315
+Lancia Stratos	RWD	tarmac	dampers.FL.fastRebound	6380
+Lancia Stratos	RWD	tarmac	dampers.FR.slowBump	3415
+Lancia Stratos	RWD	tarmac	dampers.FR.slowRebound	8225
+Lancia Stratos	RWD	tarmac	dampers.FR.fastBump	2315
+Lancia Stratos	RWD	tarmac	dampers.FR.fastRebound	6380
+Lancia Stratos	RWD	tarmac	dampers.RL.slowBump	4375
+Lancia Stratos	RWD	tarmac	dampers.RL.slowRebound	8185
+Lancia Stratos	RWD	tarmac	dampers.RL.fastBump	3145
+Lancia Stratos	RWD	tarmac	dampers.RL.fastRebound	6755
+Lancia Stratos	RWD	tarmac	dampers.RR.slowBump	4375
+Lancia Stratos	RWD	tarmac	dampers.RR.slowRebound	8185
+Lancia Stratos	RWD	tarmac	dampers.RR.fastBump	3145
+Lancia Stratos	RWD	tarmac	dampers.RR.fastRebound	6755
+Lancia Stratos	RWD	tarmac	tyres.FL.pressure	32 PSI
+Lancia Stratos	RWD	tarmac	tyres.FL.camber	-0.5°
+Lancia Stratos	RWD	tarmac	tyres.FL.toe	0°
+Lancia Stratos	RWD	tarmac	tyres.FR.pressure	32 PSI
+Lancia Stratos	RWD	tarmac	tyres.FR.camber	-0.5°
+Lancia Stratos	RWD	tarmac	tyres.FR.toe	0°
+Lancia Stratos	RWD	tarmac	tyres.RL.pressure	32 PSI
+Lancia Stratos	RWD	tarmac	tyres.RL.camber	-2.5°
+Lancia Stratos	RWD	tarmac	tyres.RL.toe	0°
+Lancia Stratos	RWD	tarmac	tyres.RR.pressure	32 PSI
+Lancia Stratos	RWD	tarmac	tyres.RR.camber	-2.5°
+Lancia Stratos	RWD	tarmac	tyres.RR.toe	0°
+Lancia Stratos	RWD	tarmac	brakes.brakeBias	55% front
+Lancia Stratos	RWD	tarmac	brakes.propValvePressure	2.75
+Lancia Stratos	RWD	tarmac	brakes.handbrakeMultiplier	1
+Lancia Stratos	RWD	gravel	drivetrain.gearsSet	LanciaStratosSet1
+Lancia Stratos	RWD	gravel	drivetrain.rearDiff.ratio	65//19
+Lancia Stratos	RWD	gravel	drivetrain.rearDiff.lsdRampAngle	50_65
+Lancia Stratos	RWD	gravel	drivetrain.rearDiff.lsdPlates	4
+Lancia Stratos	RWD	gravel	drivetrain.rearDiff.lsdPreload	70 Nm
+Lancia Stratos	RWD	gravel	suspension.frontARB	2750 N/m
+Lancia Stratos	RWD	gravel	suspension.rearARB	2500 N/m
+Lancia Stratos	RWD	gravel	suspension.springs.FL	57700 N/m
+Lancia Stratos	RWD	gravel	suspension.springs.FR	57700 N/m
+Lancia Stratos	RWD	gravel	suspension.springs.RL	22825 N/m
+Lancia Stratos	RWD	gravel	suspension.springs.RR	22825 N/m
+Lancia Stratos	RWD	gravel	suspension.rideHeight.FL	73.0 mm
+Lancia Stratos	RWD	gravel	suspension.rideHeight.FR	73.0 mm
+Lancia Stratos	RWD	gravel	suspension.rideHeight.RL	155.0 mm
+Lancia Stratos	RWD	gravel	suspension.rideHeight.RR	155.0 mm
+Lancia Stratos	RWD	gravel	dampers.FL.slowBump	3415
+Lancia Stratos	RWD	gravel	dampers.FL.slowRebound	8225
+Lancia Stratos	RWD	gravel	dampers.FL.fastBump	2315
+Lancia Stratos	RWD	gravel	dampers.FL.fastRebound	6380
+Lancia Stratos	RWD	gravel	dampers.FR.slowBump	3415
+Lancia Stratos	RWD	gravel	dampers.FR.slowRebound	8225
+Lancia Stratos	RWD	gravel	dampers.FR.fastBump	2315
+Lancia Stratos	RWD	gravel	dampers.FR.fastRebound	6380
+Lancia Stratos	RWD	gravel	dampers.RL.slowBump	4375
+Lancia Stratos	RWD	gravel	dampers.RL.slowRebound	8185
+Lancia Stratos	RWD	gravel	dampers.RL.fastBump	3145
+Lancia Stratos	RWD	gravel	dampers.RL.fastRebound	6755
+Lancia Stratos	RWD	gravel	dampers.RR.slowBump	4375
+Lancia Stratos	RWD	gravel	dampers.RR.slowRebound	8185
+Lancia Stratos	RWD	gravel	dampers.RR.fastBump	3145
+Lancia Stratos	RWD	gravel	dampers.RR.fastRebound	6755
+Lancia Stratos	RWD	gravel	tyres.FL.pressure	32 PSI
+Lancia Stratos	RWD	gravel	tyres.FL.camber	-0.5°
+Lancia Stratos	RWD	gravel	tyres.FL.toe	0°
+Lancia Stratos	RWD	gravel	tyres.FR.pressure	32 PSI
+Lancia Stratos	RWD	gravel	tyres.FR.camber	-0.5°
+Lancia Stratos	RWD	gravel	tyres.FR.toe	0°
+Lancia Stratos	RWD	gravel	tyres.RL.pressure	32 PSI
+Lancia Stratos	RWD	gravel	tyres.RL.camber	-2.5°
+Lancia Stratos	RWD	gravel	tyres.RL.toe	0°
+Lancia Stratos	RWD	gravel	tyres.RR.pressure	32 PSI
+Lancia Stratos	RWD	gravel	tyres.RR.camber	-2.5°
+Lancia Stratos	RWD	gravel	tyres.RR.toe	0°
+Lancia Stratos	RWD	gravel	brakes.brakeBias	55% front
+Lancia Stratos	RWD	gravel	brakes.propValvePressure	2.75
+Lancia Stratos	RWD	gravel	brakes.handbrakeMultiplier	1
+Mini Cooper S 1275	FWD	tarmac	drivetrain.gearsSet	MiniCooperS1275Set0
+Mini Cooper S 1275	FWD	tarmac	drivetrain.frontDiff.ratio	63//16
+Mini Cooper S 1275	FWD	tarmac	drivetrain.frontDiff.lsdRampAngle	45_65
+Mini Cooper S 1275	FWD	tarmac	drivetrain.frontDiff.lsdPlates	4
+Mini Cooper S 1275	FWD	tarmac	drivetrain.frontDiff.lsdPreload	30 Nm
+Mini Cooper S 1275	FWD	tarmac	suspension.frontARB	1500 N/m
+Mini Cooper S 1275	FWD	tarmac	suspension.springs.FL	550000 N/m
+Mini Cooper S 1275	FWD	tarmac	suspension.springs.FR	550000 N/m
+Mini Cooper S 1275	FWD	tarmac	suspension.springs.RL	550000 N/m
+Mini Cooper S 1275	FWD	tarmac	suspension.springs.RR	550000 N/m
+Mini Cooper S 1275	FWD	tarmac	suspension.rideHeight.FL	15.2 mm
+Mini Cooper S 1275	FWD	tarmac	suspension.rideHeight.FR	15.2 mm
+Mini Cooper S 1275	FWD	tarmac	suspension.rideHeight.RL	10.7 mm
+Mini Cooper S 1275	FWD	tarmac	suspension.rideHeight.RR	10.7 mm
+Mini Cooper S 1275	FWD	tarmac	dampers.FL.slowBump	4500
+Mini Cooper S 1275	FWD	tarmac	dampers.FL.slowRebound	8000
+Mini Cooper S 1275	FWD	tarmac	dampers.FL.fastBump	2500
+Mini Cooper S 1275	FWD	tarmac	dampers.FL.fastRebound	3500
+Mini Cooper S 1275	FWD	tarmac	dampers.FR.slowBump	4500
+Mini Cooper S 1275	FWD	tarmac	dampers.FR.slowRebound	8000
+Mini Cooper S 1275	FWD	tarmac	dampers.FR.fastBump	2500
+Mini Cooper S 1275	FWD	tarmac	dampers.FR.fastRebound	3500
+Mini Cooper S 1275	FWD	tarmac	dampers.RL.slowBump	3500
+Mini Cooper S 1275	FWD	tarmac	dampers.RL.slowRebound	5000
+Mini Cooper S 1275	FWD	tarmac	dampers.RL.fastBump	2000
+Mini Cooper S 1275	FWD	tarmac	dampers.RL.fastRebound	3000
+Mini Cooper S 1275	FWD	tarmac	dampers.RR.slowBump	3500
+Mini Cooper S 1275	FWD	tarmac	dampers.RR.slowRebound	5000
+Mini Cooper S 1275	FWD	tarmac	dampers.RR.fastBump	2000
+Mini Cooper S 1275	FWD	tarmac	dampers.RR.fastRebound	3000
+Mini Cooper S 1275	FWD	tarmac	tyres.FL.pressure	32 PSI
+Mini Cooper S 1275	FWD	tarmac	tyres.FL.camber	-1.5°
+Mini Cooper S 1275	FWD	tarmac	tyres.FL.toe	0°
+Mini Cooper S 1275	FWD	tarmac	tyres.FR.pressure	32 PSI
+Mini Cooper S 1275	FWD	tarmac	tyres.FR.camber	-1.5°
+Mini Cooper S 1275	FWD	tarmac	tyres.FR.toe	0°
+Mini Cooper S 1275	FWD	tarmac	tyres.RL.pressure	32 PSI
+Mini Cooper S 1275	FWD	tarmac	tyres.RL.camber	-0.5°
+Mini Cooper S 1275	FWD	tarmac	tyres.RL.toe	-0.017°
+Mini Cooper S 1275	FWD	tarmac	tyres.RR.pressure	32 PSI
+Mini Cooper S 1275	FWD	tarmac	tyres.RR.camber	-0.5°
+Mini Cooper S 1275	FWD	tarmac	tyres.RR.toe	-0.017°
+Mini Cooper S 1275	FWD	tarmac	brakes.brakeBias	50% front
+Mini Cooper S 1275	FWD	tarmac	brakes.propValvePressure	2.25
+Mini Cooper S 1275	FWD	tarmac	brakes.handbrakeMultiplier	1
+Mini Cooper S 1275	FWD	gravel	drivetrain.gearsSet	MiniCooperS1275Set3
+Mini Cooper S 1275	FWD	gravel	drivetrain.frontDiff.ratio	63//16
+Mini Cooper S 1275	FWD	gravel	drivetrain.frontDiff.lsdRampAngle	45_65
+Mini Cooper S 1275	FWD	gravel	drivetrain.frontDiff.lsdPlates	4
+Mini Cooper S 1275	FWD	gravel	drivetrain.frontDiff.lsdPreload	30 Nm
+Mini Cooper S 1275	FWD	gravel	suspension.frontARB	1500 N/m
+Mini Cooper S 1275	FWD	gravel	suspension.springs.FL	550000 N/m
+Mini Cooper S 1275	FWD	gravel	suspension.springs.FR	550000 N/m
+Mini Cooper S 1275	FWD	gravel	suspension.springs.RL	550000 N/m
+Mini Cooper S 1275	FWD	gravel	suspension.springs.RR	550000 N/m
+Mini Cooper S 1275	FWD	gravel	suspension.rideHeight.FL	15.2 mm
+Mini Cooper S 1275	FWD	gravel	suspension.rideHeight.FR	15.2 mm
+Mini Cooper S 1275	FWD	gravel	suspension.rideHeight.RL	10.7 mm
+Mini Cooper S 1275	FWD	gravel	suspension.rideHeight.RR	10.7 mm
+Mini Cooper S 1275	FWD	gravel	dampers.FL.slowBump	4500
+Mini Cooper S 1275	FWD	gravel	dampers.FL.slowRebound	8000
+Mini Cooper S 1275	FWD	gravel	dampers.FL.fastBump	2500
+Mini Cooper S 1275	FWD	gravel	dampers.FL.fastRebound	3500
+Mini Cooper S 1275	FWD	gravel	dampers.FR.slowBump	4500
+Mini Cooper S 1275	FWD	gravel	dampers.FR.slowRebound	8000
+Mini Cooper S 1275	FWD	gravel	dampers.FR.fastBump	2500
+Mini Cooper S 1275	FWD	gravel	dampers.FR.fastRebound	3500
+Mini Cooper S 1275	FWD	gravel	dampers.RL.slowBump	3500
+Mini Cooper S 1275	FWD	gravel	dampers.RL.slowRebound	5000
+Mini Cooper S 1275	FWD	gravel	dampers.RL.fastBump	2000
+Mini Cooper S 1275	FWD	gravel	dampers.RL.fastRebound	3000
+Mini Cooper S 1275	FWD	gravel	dampers.RR.slowBump	3500
+Mini Cooper S 1275	FWD	gravel	dampers.RR.slowRebound	5000
+Mini Cooper S 1275	FWD	gravel	dampers.RR.fastBump	2000
+Mini Cooper S 1275	FWD	gravel	dampers.RR.fastRebound	3000
+Mini Cooper S 1275	FWD	gravel	tyres.FL.pressure	32 PSI
+Mini Cooper S 1275	FWD	gravel	tyres.FL.camber	-1.5°
+Mini Cooper S 1275	FWD	gravel	tyres.FL.toe	0°
+Mini Cooper S 1275	FWD	gravel	tyres.FR.pressure	32 PSI
+Mini Cooper S 1275	FWD	gravel	tyres.FR.camber	-1.5°
+Mini Cooper S 1275	FWD	gravel	tyres.FR.toe	0°
+Mini Cooper S 1275	FWD	gravel	tyres.RL.pressure	32 PSI
+Mini Cooper S 1275	FWD	gravel	tyres.RL.camber	-0.5°
+Mini Cooper S 1275	FWD	gravel	tyres.RL.toe	-0.017°
+Mini Cooper S 1275	FWD	gravel	tyres.RR.pressure	32 PSI
+Mini Cooper S 1275	FWD	gravel	tyres.RR.camber	-0.5°
+Mini Cooper S 1275	FWD	gravel	tyres.RR.toe	-0.017°
+Mini Cooper S 1275	FWD	gravel	brakes.brakeBias	50% front
+Mini Cooper S 1275	FWD	gravel	brakes.propValvePressure	2.25
+Mini Cooper S 1275	FWD	gravel	brakes.handbrakeMultiplier	1
+Peugeot 208 Rally 4	FWD	tarmac	drivetrain.gearsSet	Peugeot208Rally4Set0
+Peugeot 208 Rally 4	FWD	tarmac	drivetrain.frontDiff.ratio	56//12
+Peugeot 208 Rally 4	FWD	tarmac	drivetrain.frontDiff.lsdRampAngle	27_57
+Peugeot 208 Rally 4	FWD	tarmac	drivetrain.frontDiff.lsdPlates	6
+Peugeot 208 Rally 4	FWD	tarmac	drivetrain.frontDiff.lsdPreload	130 Nm
+Peugeot 208 Rally 4	FWD	tarmac	suspension.frontARB	11663 N/m
+Peugeot 208 Rally 4	FWD	tarmac	suspension.rearARB	15200 N/m
+Peugeot 208 Rally 4	FWD	tarmac	suspension.springs.FL	46300 N/m
+Peugeot 208 Rally 4	FWD	tarmac	suspension.springs.FR	46300 N/m
+Peugeot 208 Rally 4	FWD	tarmac	suspension.springs.RL	42400 N/m
+Peugeot 208 Rally 4	FWD	tarmac	suspension.springs.RR	42400 N/m
+Peugeot 208 Rally 4	FWD	tarmac	suspension.rideHeight.FL	66.0 mm
+Peugeot 208 Rally 4	FWD	tarmac	suspension.rideHeight.FR	66.0 mm
+Peugeot 208 Rally 4	FWD	tarmac	suspension.rideHeight.RL	62.0 mm
+Peugeot 208 Rally 4	FWD	tarmac	suspension.rideHeight.RR	62.0 mm
+Peugeot 208 Rally 4	FWD	tarmac	dampers.FL.slowBump	4290
+Peugeot 208 Rally 4	FWD	tarmac	dampers.FL.slowRebound	7452
+Peugeot 208 Rally 4	FWD	tarmac	dampers.FL.fastBump	2348
+Peugeot 208 Rally 4	FWD	tarmac	dampers.FL.fastRebound	7452
+Peugeot 208 Rally 4	FWD	tarmac	dampers.FR.slowBump	4290
+Peugeot 208 Rally 4	FWD	tarmac	dampers.FR.slowRebound	7452
+Peugeot 208 Rally 4	FWD	tarmac	dampers.FR.fastBump	2348
+Peugeot 208 Rally 4	FWD	tarmac	dampers.FR.fastRebound	7452
+Peugeot 208 Rally 4	FWD	tarmac	dampers.RL.slowBump	2765
+Peugeot 208 Rally 4	FWD	tarmac	dampers.RL.slowRebound	4050
+Peugeot 208 Rally 4	FWD	tarmac	dampers.RL.fastBump	2052
+Peugeot 208 Rally 4	FWD	tarmac	dampers.RL.fastRebound	4050
+Peugeot 208 Rally 4	FWD	tarmac	dampers.RR.slowBump	2765
+Peugeot 208 Rally 4	FWD	tarmac	dampers.RR.slowRebound	4050
+Peugeot 208 Rally 4	FWD	tarmac	dampers.RR.fastBump	2052
+Peugeot 208 Rally 4	FWD	tarmac	dampers.RR.fastRebound	4050
+Peugeot 208 Rally 4	FWD	tarmac	tyres.FL.pressure	32 PSI
+Peugeot 208 Rally 4	FWD	tarmac	tyres.FL.camber	-1.3°
+Peugeot 208 Rally 4	FWD	tarmac	tyres.FL.toe	0°
+Peugeot 208 Rally 4	FWD	tarmac	tyres.FR.pressure	32 PSI
+Peugeot 208 Rally 4	FWD	tarmac	tyres.FR.camber	-1.3°
+Peugeot 208 Rally 4	FWD	tarmac	tyres.FR.toe	0°
+Peugeot 208 Rally 4	FWD	tarmac	tyres.RL.pressure	32 PSI
+Peugeot 208 Rally 4	FWD	tarmac	tyres.RL.camber	-1.8°
+Peugeot 208 Rally 4	FWD	tarmac	tyres.RL.toe	0°
+Peugeot 208 Rally 4	FWD	tarmac	tyres.RR.pressure	32 PSI
+Peugeot 208 Rally 4	FWD	tarmac	tyres.RR.camber	-1.8°
+Peugeot 208 Rally 4	FWD	tarmac	tyres.RR.toe	0°
+Peugeot 208 Rally 4	FWD	tarmac	brakes.brakeBias	60% front
+Peugeot 208 Rally 4	FWD	tarmac	brakes.propValvePressure	4.5
+Peugeot 208 Rally 4	FWD	tarmac	brakes.handbrakeMultiplier	1
+Peugeot 208 Rally 4	FWD	gravel	drivetrain.gearsSet	Peugeot208Rally4Set0
+Peugeot 208 Rally 4	FWD	gravel	drivetrain.frontDiff.ratio	56//12
+Peugeot 208 Rally 4	FWD	gravel	drivetrain.frontDiff.lsdRampAngle	35_63
+Peugeot 208 Rally 4	FWD	gravel	drivetrain.frontDiff.lsdPlates	4
+Peugeot 208 Rally 4	FWD	gravel	drivetrain.frontDiff.lsdPreload	80 Nm
+Peugeot 208 Rally 4	FWD	gravel	suspension.frontARB	11663 N/m
+Peugeot 208 Rally 4	FWD	gravel	suspension.rearARB	15200 N/m
+Peugeot 208 Rally 4	FWD	gravel	suspension.springs.FL	36100 N/m
+Peugeot 208 Rally 4	FWD	gravel	suspension.springs.FR	36100 N/m
+Peugeot 208 Rally 4	FWD	gravel	suspension.springs.RL	32800 N/m
+Peugeot 208 Rally 4	FWD	gravel	suspension.springs.RR	32800 N/m
+Peugeot 208 Rally 4	FWD	gravel	suspension.rideHeight.FL	125.0 mm
+Peugeot 208 Rally 4	FWD	gravel	suspension.rideHeight.FR	125.0 mm
+Peugeot 208 Rally 4	FWD	gravel	suspension.rideHeight.RL	114.0 mm
+Peugeot 208 Rally 4	FWD	gravel	suspension.rideHeight.RR	114.0 mm
+Peugeot 208 Rally 4	FWD	gravel	dampers.FL.slowBump	3135
+Peugeot 208 Rally 4	FWD	gravel	dampers.FL.slowRebound	4777
+Peugeot 208 Rally 4	FWD	gravel	dampers.FL.fastBump	2030
+Peugeot 208 Rally 4	FWD	gravel	dampers.FL.fastRebound	4777
+Peugeot 208 Rally 4	FWD	gravel	dampers.FR.slowBump	3135
+Peugeot 208 Rally 4	FWD	gravel	dampers.FR.slowRebound	4777
+Peugeot 208 Rally 4	FWD	gravel	dampers.FR.fastBump	2030
+Peugeot 208 Rally 4	FWD	gravel	dampers.FR.fastRebound	4777
+Peugeot 208 Rally 4	FWD	gravel	dampers.RL.slowBump	2480
+Peugeot 208 Rally 4	FWD	gravel	dampers.RL.slowRebound	3765
+Peugeot 208 Rally 4	FWD	gravel	dampers.RL.fastBump	1535
+Peugeot 208 Rally 4	FWD	gravel	dampers.RL.fastRebound	3765
+Peugeot 208 Rally 4	FWD	gravel	dampers.RR.slowBump	2480
+Peugeot 208 Rally 4	FWD	gravel	dampers.RR.slowRebound	3765
+Peugeot 208 Rally 4	FWD	gravel	dampers.RR.fastBump	1535
+Peugeot 208 Rally 4	FWD	gravel	dampers.RR.fastRebound	3765
+Peugeot 208 Rally 4	FWD	gravel	tyres.FL.pressure	32 PSI
+Peugeot 208 Rally 4	FWD	gravel	tyres.FL.camber	-1.5°
+Peugeot 208 Rally 4	FWD	gravel	tyres.FL.toe	0°
+Peugeot 208 Rally 4	FWD	gravel	tyres.FR.pressure	32 PSI
+Peugeot 208 Rally 4	FWD	gravel	tyres.FR.camber	-1.5°
+Peugeot 208 Rally 4	FWD	gravel	tyres.FR.toe	0°
+Peugeot 208 Rally 4	FWD	gravel	tyres.RL.pressure	32 PSI
+Peugeot 208 Rally 4	FWD	gravel	tyres.RL.camber	-3.5°
+Peugeot 208 Rally 4	FWD	gravel	tyres.RL.toe	0°
+Peugeot 208 Rally 4	FWD	gravel	tyres.RR.pressure	32 PSI
+Peugeot 208 Rally 4	FWD	gravel	tyres.RR.camber	-3.5°
+Peugeot 208 Rally 4	FWD	gravel	tyres.RR.toe	0°
+Peugeot 208 Rally 4	FWD	gravel	brakes.brakeBias	60% front
+Peugeot 208 Rally 4	FWD	gravel	brakes.propValvePressure	4.5
+Peugeot 208 Rally 4	FWD	gravel	brakes.handbrakeMultiplier	1

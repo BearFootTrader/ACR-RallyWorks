@@ -1,0 +1,6 @@
+# Rally Car Setup Calculator
+# No external dependencies required - uses Python standard library only
+# tkinter is included with Python on Windows
+
+# Optional: For building standalone executable
+# pyinstaller>=6.0

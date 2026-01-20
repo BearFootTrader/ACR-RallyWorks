@@ -1,0 +1,1909 @@
+[
+  {
+    "Type": "CarSettingConstraintCarPartState",
+    "Name": "CarSettingConstraintCarPartState_0",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingConstraintCarPartState'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CarParts": [
+        {
+          "Key": "Bodywork",
+          "Value": {
+            "bEqual": false,
+            "State": "ECarDamageablePartStateType::Normal"
+          }
+        }
+      ],
+      "Conditions": [
+        {
+          "Value": true,
+          "RangeOverride": null,
+          "ValueOverride": null,
+          "LockOverride": {
+            "ObjectName": "CarSettingOverrideLockByCarPart'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintCarPartState_0.CarSettingOverrideLockByCarPart_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.19"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CarSettingConstraintElectronicMap",
+    "Name": "CarSettingConstraintElectronicMap_0",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingConstraintElectronicMap'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MapType": "EElectronicMapType::ABS"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintElectronicMap",
+    "Name": "CarSettingConstraintElectronicMap_1",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingConstraintElectronicMap'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MapType": "EElectronicMapType::TC1"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintExternalDiscs",
+    "Name": "CarSettingConstraintExternalDiscs_0",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingConstraintExternalDiscs'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintExternalDiscs_0.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.21"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingConstraintExternalDiscs",
+    "Name": "CarSettingConstraintExternalDiscs_1",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingConstraintExternalDiscs'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::FrontRight",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintExternalDiscs_1.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.22"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingConstraintExternalDiscs",
+    "Name": "CarSettingConstraintExternalDiscs_2",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingConstraintExternalDiscs'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::RearLeft",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintExternalDiscs_2.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.23"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingConstraintExternalDiscs",
+    "Name": "CarSettingConstraintExternalDiscs_3",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingConstraintExternalDiscs'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::RearRight",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintExternalDiscs_3.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.24"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingConstraintProportioningValve",
+    "Name": "CarSettingConstraintProportioningValve_1",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingConstraintProportioningValve'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingConstraintRaceStartsAtNight",
+    "Name": "CarSettingConstraintRaceStartsAtNight_0",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingConstraintRaceStartsAtNight'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Conditions": [
+        {
+          "Value": true,
+          "RangeOverride": null,
+          "ValueOverride": {
+            "ObjectName": "CarSettingOverrideBool'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintRaceStartsAtNight_0.CarSettingOverrideBool_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.17"
+          },
+          "LockOverride": null
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingCalipers",
+    "Name": "CarSettingConstraintSettingCalipers_0",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingConstraintSettingCalipers'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintSettingCalipers_0.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.25"
+      },
+      "Constrainer": "Brakes.FrontLeft.Disc"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingCalipers",
+    "Name": "CarSettingConstraintSettingCalipers_1",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingConstraintSettingCalipers'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::FrontRight",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintSettingCalipers_1.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.26"
+      },
+      "Constrainer": "Brakes.FrontRight.Disc"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingCalipers",
+    "Name": "CarSettingConstraintSettingCalipers_2",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingConstraintSettingCalipers'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::RearLeft",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintSettingCalipers_2.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.27"
+      },
+      "Constrainer": "Brakes.RearLeft.Disc"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingCalipers",
+    "Name": "CarSettingConstraintSettingCalipers_3",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingConstraintSettingCalipers'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::RearRight",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintSettingCalipers_3.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.28"
+      },
+      "Constrainer": "Brakes.RearRight.Disc"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingPads",
+    "Name": "CarSettingConstraintSettingPads_0",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingConstraintSettingPads'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintSettingPads_0.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.29"
+      },
+      "Constrainer": "Brakes.FrontLeft.Caliper"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingPads",
+    "Name": "CarSettingConstraintSettingPads_1",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingConstraintSettingPads'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::FrontRight",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintSettingPads_1.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.30"
+      },
+      "Constrainer": "Brakes.FrontRight.Caliper"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingPads",
+    "Name": "CarSettingConstraintSettingPads_2",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingConstraintSettingPads'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::RearLeft",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintSettingPads_2.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.31"
+      },
+      "Constrainer": "Brakes.RearLeft.Caliper"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingPads",
+    "Name": "CarSettingConstraintSettingPads_3",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingConstraintSettingPads'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::RearRight",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintSettingPads_3.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.32"
+      },
+      "Constrainer": "Brakes.RearRight.Caliper"
+    }
+  },
+  {
+    "Type": "CarSettingOverrideBool",
+    "Name": "CarSettingOverrideBool_0",
+    "Outer": "CarSettingConstraintRaceStartsAtNight_0",
+    "Class": "UScriptClass'CarSettingOverrideBool'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": true
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_0",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 150.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideLockByCarPart",
+    "Name": "CarSettingOverrideLockByCarPart_0",
+    "Outer": "CarSettingConstraintCarPartState_0",
+    "Class": "UScriptClass'CarSettingOverrideLockByCarPart'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CarPart": "Bodywork"
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeBool",
+    "Name": "CarSettingOverrideRangeBool_0",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeBool'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintExternalDiscs_0",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBDiscsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBDisc'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintExternalDiscs_1",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBDiscsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBDisc'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintExternalDiscs_2",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBDiscsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBDisc'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintExternalDiscs_3",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBDiscsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBDisc'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingCalipers_0",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBCalipersList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBCaliper'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingCalipers_1",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBCalipersList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBCaliper'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingCalipers_2",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBCalipersList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBCaliper'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingCalipers_3",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBCalipersList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBCaliper'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingPads_0",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBPadsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBPad'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingPads_1",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBPadsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBPad'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingPads_2",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBPadsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBPad'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingPads_3",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBPadsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBPad'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_1",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBGearsSetsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "List": {
+        "Table": "GearsSetsLists",
+        "Row": "AlfaRomeoGiuliaGTAJunior1300"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBGearsSet'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      },
+      "Values": [
+        {
+          "Table": "GearsSets",
+          "Row": "AlfaRomeoGiuliaGTAJunior1300Set0"
+        },
+        {
+          "Table": "GearsSets",
+          "Row": "AlfaRomeoGiuliaGTAJunior1300Set1"
+        },
+        {
+          "Table": "GearsSets",
+          "Row": "AlfaRomeoGiuliaGTAJunior1300Set2"
+        },
+        {
+          "Table": "GearsSets",
+          "Row": "AlfaRomeoGiuliaGTAJunior1300Set3"
+        },
+        {
+          "Table": "GearsSets",
+          "Row": "AlfaRomeoGiuliaGTAJunior1300Set4"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_10",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_11",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_12",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_13",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_14",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBMasterCylindersSetsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "List": {
+        "Table": "MasterCylindersSetsLists",
+        "Row": "AlfaRomeoGiuliaGTA1300Junior_Sets"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBMasterCylindersSet'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      },
+      "Values": [
+        {
+          "Table": "MasterCylindersSets",
+          "Row": "AlfaRomeoGiuliaGTA1300Junior_Set0"
+        },
+        {
+          "Table": "MasterCylindersSets",
+          "Row": "AlfaRomeoGiuliaGTA1300Junior_Set1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_15",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBLSDRampAnglesList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "List": {
+        "Table": "LSDRampAnglesLists",
+        "Row": "AlfaRomeoGiuliaGTA1300Junior_Rear"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBLSDRampAngle'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      },
+      "Values": [
+        {
+          "Table": "LSDRampAngles",
+          "Row": "90_90"
+        },
+        {
+          "Table": "LSDRampAngles",
+          "Row": "75_85"
+        },
+        {
+          "Table": "LSDRampAngles",
+          "Row": "60_70"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_16",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBGearsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "List": {
+        "Table": "RearGearsLists",
+        "Row": "AlfaRomeoGiuliaGTA1300Junior"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBGear'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      },
+      "Values": [
+        {
+          "Table": "Gears",
+          "Row": "41//6"
+        },
+        {
+          "Table": "Gears",
+          "Row": "43//7"
+        },
+        {
+          "Table": "Gears",
+          "Row": "41//7"
+        },
+        {
+          "Table": "Gears",
+          "Row": "43//8"
+        },
+        {
+          "Table": "Gears",
+          "Row": "41//8"
+        },
+        {
+          "Table": "Gears",
+          "Row": "43//9"
+        },
+        {
+          "Table": "Gears",
+          "Row": "41//9"
+        },
+        {
+          "Table": "Gears",
+          "Row": "41//10"
+        },
+        {
+          "Table": "Gears",
+          "Row": "43//11"
+        },
+        {
+          "Table": "Gears",
+          "Row": "41//11"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_2",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_3",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_4",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_5",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_6",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_7",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_8",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_9",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "RangeOverride",
+    "Outer": "CarSettingConstraintProportioningValve_1",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_0",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Max": 500.0,
+      "Step": 1.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_1",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 10.0,
+      "Max": 45.0,
+      "Step": 1.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_11",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Step": 0.01
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_12",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_2",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 10.0,
+      "Max": 45.0,
+      "Step": 1.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_3",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 10.0,
+      "Max": 45.0,
+      "Step": 1.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_4",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 10.0,
+      "Max": 45.0,
+      "Step": 1.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_5",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": -3.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_6",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": -3.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_7",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": -0.01,
+      "Max": 0.01,
+      "Step": 0.0001
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_8",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": -0.01,
+      "Max": 0.01,
+      "Step": 0.0001
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_9",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 0.5,
+      "Max": 1.5,
+      "Step": 0.01
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeInteger",
+    "Name": "RangeOverride",
+    "Outer": "CarSettingConstraintElectronicMap_0",
+    "Class": "UScriptClass'CarSettingOverrideRangeInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeInteger",
+    "Name": "RangeOverride",
+    "Outer": "CarSettingConstraintElectronicMap_1",
+    "Class": "UScriptClass'CarSettingOverrideRangeInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeInteger",
+    "Name": "CarSettingOverrideRangeInteger_0",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Max": 6
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeInteger",
+    "Name": "CarSettingOverrideRangeInteger_1",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeInteger",
+    "Name": "CarSettingOverrideRangeInteger_2",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_0",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Discs",
+        "Row": "AlfaRomeo_250mm_Type1_250x22_Planar_4x108_AlfaRomeoDisc00"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_1",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Discs",
+        "Row": "AlfaRomeo_250mm_Type1_250x22_Planar_4x108_AlfaRomeoDisc00"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_2",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Calipers",
+        "Row": "ATE_Porsche_911_S-Type_2x48_ATECaliper00"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_3",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Calipers",
+        "Row": "ATE_Porsche_911_S-Type_2x48_ATECaliper00"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_0",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Discs",
+        "Row": "Brembo_08.2567.30_267x11_Planar_4x108_BremboDisc02"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_1",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Discs",
+        "Row": "Brembo_08.2567.30_267x11_Planar_4x108_BremboDisc02"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_2",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Calipers",
+        "Row": "ATE_Alfa_1300/1600_M-Type_2x48"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_3",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Calipers",
+        "Row": "ATE_Alfa_1300/1600_M-Type_2x48"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_4",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Gears",
+        "Row": "43//7"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_6",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "GearsSets",
+        "Row": "AlfaRomeoGiuliaGTAJunior1300Set4"
+      }
+    }
+  },
+  {
+    "Type": "CarSetupPresets",
+    "Name": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSetupPresets'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CarSetupDefinition": {
+        "ObjectName": "CarSetupDefinition'DA_CarSetupDefinition'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_CarSetupDefinition.214"
+      },
+      "CarData": {
+        "ObjectName": "AcrCarData'DA_AlfaRomeoGiuliaGTAJunior1300'",
+        "ObjectPath": "/Game/Data/Vehicles/AlfaRomeoGiuliaGTA1300Junior/DA_AlfaRomeoGiuliaGTAJunior1300.0"
+      },
+      "PhysicsCarSetup": {
+        "ObjectName": "PhysicsCarSetup'DA_AlfaRomeoGiuliaGTAJunior1300Presets:PhysicsCarSetup'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.82"
+      },
+      "Ranges": [
+        {
+          "Key": "Differentials.Rear.DifferentialRatio",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeDBReferenceSetFromDB_16'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.40"
+          }
+        },
+        {
+          "Key": "Gearbox.GearboxMain.GearsSet",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeDBReferenceSetFromDB_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.33"
+          }
+        },
+        {
+          "Key": "Brakes.FrontLeft.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeDBReferenceSetFromDB_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.41"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeDBReferenceSetFromDB_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.42"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeDBReferenceSetFromDB_4'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.43"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeDBReferenceSetFromDB_5'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.44"
+          }
+        },
+        {
+          "Key": "Brakes.FrontLeft.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeDBReferenceSetFromDB_6'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.45"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeDBReferenceSetFromDB_7'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.46"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeDBReferenceSetFromDB_8'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.47"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeDBReferenceSetFromDB_9'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.48"
+          }
+        },
+        {
+          "Key": "Brakes.FrontLeft.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeDBReferenceSetFromDB_10'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.34"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeDBReferenceSetFromDB_11'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.35"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeDBReferenceSetFromDB_12'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.36"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeDBReferenceSetFromDB_13'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.37"
+          }
+        },
+        {
+          "Key": "Other.Lights.AdditionalLights",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeBool'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeBool_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.20"
+          }
+        },
+        {
+          "Key": "Brakes.BrakesMain.MasterCylinder",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeDBReferenceSetFromDB_14'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.38"
+          }
+        },
+        {
+          "Key": "Differentials.Rear.LSDRamps",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeDBReferenceSetFromDB_15'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.39"
+          }
+        },
+        {
+          "Key": "Differentials.Rear.LSDPreload",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeFloat_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.50"
+          }
+        },
+        {
+          "Key": "Differentials.Rear.LSDFrictionPlates",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeInteger'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeInteger_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.64"
+          }
+        },
+        {
+          "Key": "Wheels.FrontLeft.TyrePressure",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeFloat_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.51"
+          }
+        },
+        {
+          "Key": "Wheels.FrontRight.TyrePressure",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeFloat_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.54"
+          }
+        },
+        {
+          "Key": "Wheels.RearLeft.TyrePressure",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeFloat_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.55"
+          }
+        },
+        {
+          "Key": "Wheels.RearRight.TyrePressure",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeFloat_4'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.56"
+          }
+        },
+        {
+          "Key": "Wheels.FrontLeft.Camber",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeFloat_5'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.57"
+          }
+        },
+        {
+          "Key": "Wheels.FrontRight.Camber",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeFloat_6'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.58"
+          }
+        },
+        {
+          "Key": "Wheels.FrontLeft.Toe",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeFloat_7'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.59"
+          }
+        },
+        {
+          "Key": "Wheels.FrontRight.Toe",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeFloat_8'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.60"
+          }
+        },
+        {
+          "Key": "Brakes.BrakesMain.HandbrakeForce",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeFloat_9'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.61"
+          }
+        },
+        {
+          "Key": "Brakes.BrakesMain.ProportioningPreload",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeFloat_12'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.53"
+          }
+        },
+        {
+          "Key": "Brakes.BrakesMain.ProportioningRatio",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeFloat_11'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.52"
+          }
+        },
+        {
+          "Key": "Other.Electronic.ABS",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeInteger'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeInteger_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.65"
+          }
+        },
+        {
+          "Key": "Other.Electronic.TCS",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeInteger'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingOverrideRangeInteger_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.66"
+          }
+        }
+      ],
+      "Constraints": [
+        {
+          "Key": "Brakes.FrontLeft.Disc",
+          "Value": {
+            "ObjectName": "CarSettingConstraintExternalDiscs'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintExternalDiscs_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.3"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Disc",
+          "Value": {
+            "ObjectName": "CarSettingConstraintExternalDiscs'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintExternalDiscs_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.4"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.Disc",
+          "Value": {
+            "ObjectName": "CarSettingConstraintExternalDiscs'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintExternalDiscs_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.5"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.Disc",
+          "Value": {
+            "ObjectName": "CarSettingConstraintExternalDiscs'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintExternalDiscs_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.6"
+          }
+        },
+        {
+          "Key": "Brakes.FrontLeft.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingCalipers'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintSettingCalipers_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.9"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingCalipers'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintSettingCalipers_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.10"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingCalipers'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintSettingCalipers_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.11"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingCalipers'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintSettingCalipers_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.12"
+          }
+        },
+        {
+          "Key": "Brakes.FrontLeft.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingPads'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintSettingPads_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.13"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingPads'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintSettingPads_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.14"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingPads'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintSettingPads_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.15"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingPads'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintSettingPads_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.16"
+          }
+        },
+        {
+          "Key": "Other.Lights.AdditionalLights",
+          "Value": {
+            "ObjectName": "CarSettingConstraintRaceStartsAtNight'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintRaceStartsAtNight_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.8"
+          }
+        },
+        {
+          "Key": "Brakes.BrakesMain.ProportioningPreload",
+          "Value": {
+            "ObjectName": "CarSettingConstraintProportioningValve'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintProportioningValve_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.7"
+          }
+        },
+        {
+          "Key": "Other.Electronic.ABS",
+          "Value": {
+            "ObjectName": "CarSettingConstraintElectronicMap'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintElectronicMap_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.1"
+          }
+        },
+        {
+          "Key": "Other.Electronic.TCS",
+          "Value": {
+            "ObjectName": "CarSettingConstraintElectronicMap'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintElectronicMap_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.2"
+          }
+        },
+        {
+          "Key": "Other.Lights",
+          "Value": {
+            "ObjectName": "CarSettingConstraintCarPartState'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSettingConstraintCarPartState_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.0"
+          }
+        }
+      ],
+      "SurfacePresets": [
+        {
+          "Key": {
+            "Table": "SurfaceTypes",
+            "Row": "Tarmac"
+          },
+          "Value": {
+            "ObjectName": "CarSetupVariantsSurface'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSetupVariantsSurface_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.80"
+          }
+        },
+        {
+          "Key": {
+            "Table": "SurfaceTypes",
+            "Row": "Gravel"
+          },
+          "Value": {
+            "ObjectName": "CarSetupVariantsSurface'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSetupVariantsSurface_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.81"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CarSetupVariant",
+    "Name": "CarSetupVariant_0",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSetupVariant'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSetupVariant",
+    "Name": "CarSetupVariant_0",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSetupVariant'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSetupVariantsSurface",
+    "Name": "CarSetupVariantsSurface_0",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSetupVariantsSurface'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Default": "Balanced",
+      "ValuesOverrides": [
+        {
+          "Key": "Brakes.FrontLeft.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSetupVariantsSurface_0.CarSettingOverrideValueSetDBReference_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.67"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSetupVariantsSurface_0.CarSettingOverrideValueSetDBReference_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.68"
+          }
+        },
+        {
+          "Key": "Brakes.FrontLeft.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSetupVariantsSurface_0.CarSettingOverrideValueSetDBReference_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.69"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSetupVariantsSurface_0.CarSettingOverrideValueSetDBReference_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.70"
+          }
+        }
+      ],
+      "Variants": [
+        {
+          "Key": "Balanced",
+          "Value": {
+            "ObjectName": "CarSetupVariant'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSetupVariantsSurface_0.CarSetupVariant_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.78"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CarSetupVariantsSurface",
+    "Name": "CarSetupVariantsSurface_1",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'CarSetupVariantsSurface'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Default": "Balanced",
+      "ValuesOverrides": [
+        {
+          "Key": "Brakes.FrontLeft.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.71"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.72"
+          }
+        },
+        {
+          "Key": "Brakes.FrontLeft.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.73"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.74"
+          }
+        },
+        {
+          "Key": "Differentials.Rear.DifferentialRatio",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_4'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.75"
+          }
+        },
+        {
+          "Key": "Gearbox.GearboxMain.GearsSet",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_6'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.76"
+          }
+        },
+        {
+          "Key": "Differentials.Rear.LSDPreload",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.18"
+          }
+        }
+      ],
+      "Variants": [
+        {
+          "Key": "Balanced",
+          "Value": {
+            "ObjectName": "CarSetupVariant'DA_AlfaRomeoGiuliaGTAJunior1300Presets:CarSetupVariantsSurface_1.CarSetupVariant_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_AlfaRomeoGiuliaGTAJunior1300Presets.79"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PhysicsCarSetup",
+    "Name": "PhysicsCarSetup",
+    "Outer": "DA_AlfaRomeoGiuliaGTAJunior1300Presets",
+    "Class": "UScriptClass'PhysicsCarSetup'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DrivetrainSetupData": {
+        "RearDiff": {
+          "LSDRampAngle": {
+            "Table": "LSDRampAngles",
+            "Row": "90_90"
+          },
+          "LSDPreload": 350.0
+        },
+        "GearsSet": {
+          "Table": "GearsSets",
+          "Row": "AlfaRomeoGiuliaGTAJunior1300Set0"
+        },
+        "CentreDiffRatio": {
+          "Table": "Gears",
+          "Row": "25//25"
+        },
+        "CentreDiffToFrontRatio": {
+          "Table": "Gears",
+          "Row": "25//25"
+        },
+        "CentreDiffToRearRatio": {
+          "Table": "Gears",
+          "Row": "25//25"
+        },
+        "FrontDiffRatio": {
+          "Table": "Gears",
+          "Row": "25//25"
+        },
+        "RearDiffRatio": {
+          "Table": "Gears",
+          "Row": "43//9"
+        }
+      },
+      "MechanicalBalanceSetupData": {
+        "FrontARB": 2500.0,
+        "CFactor": 17.0,
+        "Suspensions": [
+          {
+            "BumpStopGapUp": 0.065,
+            "BumpStopGapDn": 0.025,
+            "WheelRate": 200000.0,
+            "RodLength": 0.0,
+            "AdjusterRing": 0.0233
+          },
+          {
+            "BumpStopGapUp": 0.065,
+            "BumpStopGapDn": 0.025,
+            "WheelRate": 200000.0,
+            "RodLength": 0.0,
+            "AdjusterRing": 0.0233
+          },
+          {
+            "BumpStopGapUp": 0.075,
+            "BumpStopGapDn": 0.05,
+            "WheelRate": 26000.0,
+            "RodLength": 0.0,
+            "AdjusterRing": 0.0711
+          },
+          {
+            "BumpStopGapUp": 0.075,
+            "BumpStopGapDn": 0.05,
+            "WheelRate": 26000.0,
+            "RodLength": 0.0,
+            "AdjusterRing": 0.0711
+          }
+        ]
+      },
+      "DampersSetupData": [
+        {
+          "Slow": {
+            "Bump": 3000.0,
+            "Rebound": 5500.0
+          },
+          "Fast": {
+            "Bump": 2000.0,
+            "Rebound": 4000.0
+          },
+          "FastThresholdBump": 0.2,
+          "FastThresholdRebound": 0.2,
+          "BumpMultiplier": 1.0,
+          "ReboundMultiplier": 1.0
+        },
+        {
+          "Slow": {
+            "Bump": 3000.0,
+            "Rebound": 5500.0
+          },
+          "Fast": {
+            "Bump": 2000.0,
+            "Rebound": 4000.0
+          },
+          "FastThresholdBump": 0.2,
+          "FastThresholdRebound": 0.2,
+          "BumpMultiplier": 1.0,
+          "ReboundMultiplier": 1.0
+        },
+        {
+          "Slow": {
+            "Bump": 750.0,
+            "Rebound": 2500.0
+          },
+          "Fast": {
+            "Bump": 500.0,
+            "Rebound": 1500.0
+          },
+          "FastThresholdBump": 0.3,
+          "FastThresholdRebound": 0.3,
+          "BumpMultiplier": 1.0,
+          "ReboundMultiplier": 1.0
+        },
+        {
+          "Slow": {
+            "Bump": 750.0,
+            "Rebound": 2500.0
+          },
+          "Fast": {
+            "Bump": 500.0,
+            "Rebound": 1500.0
+          },
+          "FastThresholdBump": 0.3,
+          "FastThresholdRebound": 0.3,
+          "BumpMultiplier": 1.0,
+          "ReboundMultiplier": 1.0
+        }
+      ],
+      "TyresSetupData": [
+        {
+          "Pressure": 32.0,
+          "Camber": -1.5,
+          "Toe": 0.0005,
+          "Caster": 0.0
+        },
+        {
+          "Pressure": 32.0,
+          "Camber": -1.5,
+          "Toe": 0.0005,
+          "Caster": 0.0
+        },
+        {
+          "Pressure": 32.0,
+          "Camber": 0.0,
+          "Toe": 0.0,
+          "Caster": 0.0
+        },
+        {
+          "Pressure": 32.0,
+          "Camber": 0.0,
+          "Toe": 0.0,
+          "Caster": 0.0
+        }
+      ],
+      "BrakesSetupData": {
+        "BrakeBias": 0.5,
+        "BrakePropValvePressure": 2.5,
+        "BrakePropValveRatio": 0.4,
+        "HandbrakeMult": 1.0,
+        "Discs": [
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          }
+        ],
+        "Calipers": [
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          }
+        ],
+        "Pads": [
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          }
+        ]
+      }
+    }
+  }
+]

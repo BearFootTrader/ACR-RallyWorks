@@ -1,0 +1,1171 @@
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║           ASSETTO CORSA RALLY - COMPLETE CAR SETUPS                           ║
+║                   TARMAC & GRAVEL CONFIGURATIONS                              ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ALFA ROMEO GIULIA GTA JUNIOR 1300
+  Drive Type: FWD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  TARMAC SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: AlfaRomeoGiuliaGTAJunior1300Set0                            │
+│    Front Diff:                                                               │
+│      Ratio: 25//25                                                        │
+│      LSD Ramp: N/A                                                        │
+│      LSD Plates: 0                                                        │
+│      LSD Preload: 0 Nm                                                    │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 2500 N/m                                                    │
+│    Springs:      FL              FR              RL              RR          │
+│                  200000 N/m      200000 N/m      26000 N/m       26000 N/m │
+│    Ride Height:  FL              FR              RL              RR          │
+│                  23.3 mm         23.3 mm         71.1 mm         71.1 mm   │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    3000       3000       750        750            │
+│    Slow Rebound: 5500       5500       2500       2500           │
+│    Fast Bump:    2000       2000       500        500            │
+│    Fast Rebound: 4000       4000       1500       1500           │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       -1.5°           -1.5°           0°              0°        │
+│    Toe:          0.029°          0.029°          0°              0°        │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 50% front                                                  │
+│    Prop Valve: 2.5                                                        │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: AlfaRomeoGiuliaGTAJunior1300Set4                            │
+│    Front Diff:                                                               │
+│      Ratio: 25//25                                                        │
+│      LSD Ramp: N/A                                                        │
+│      LSD Plates: 0                                                        │
+│      LSD Preload: 0 Nm                                                    │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 2500 N/m                                                    │
+│    Springs:      FL              FR              RL              RR          │
+│                  200000 N/m      200000 N/m      26000 N/m       26000 N/m │
+│    Ride Height:  FL              FR              RL              RR          │
+│                  23.3 mm         23.3 mm         71.1 mm         71.1 mm   │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    3000       3000       750        750            │
+│    Slow Rebound: 5500       5500       2500       2500           │
+│    Fast Bump:    2000       2000       500        500            │
+│    Fast Rebound: 4000       4000       1500       1500           │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       -1.5°           -1.5°           0°              0°        │
+│    Toe:          0.029°          0.029°          0°              0°        │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 50% front                                                  │
+│    Prop Valve: 2.5                                                        │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL CHANGES (from baseline/tarmac)                                       │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  Brakes.FrontLeft.Disc: Brembo_08.2567.30_267x11_Planar_4x108_BremboDisc02│
+│  Brakes.FrontRight.Disc: Brembo_08.2567.30_267x11_Planar_4x108_BremboDisc02│
+│  Brakes.FrontLeft.Caliper: ATE_Alfa_1300/1600_M-Type_2x48                    │
+│  Brakes.FrontRight.Caliper: ATE_Alfa_1300/1600_M-Type_2x48                    │
+│  Rear.DifferentialRatio: 43//7                                             │
+│  GearsSet: AlfaRomeoGiuliaGTAJunior1300Set4                  │
+│  Rear.LSDPreload: 150                                               │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ALPINE A110 1800
+  Drive Type: RWD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  TARMAC SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: AlpineA1101800Set1                                          │
+│    Rear Diff:                                                                │
+│      Ratio: 27//8                                                         │
+│      LSD Ramp: 60_40                                                      │
+│      LSD Plates: 4                                                        │
+│      LSD Preload: 90 Nm                                                   │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 6750 N/m                                                    │
+│    Springs:      FL              FR              RL              RR          │
+│                  210000 N/m      210000 N/m      160000 N/m      160000 N/m│
+│    Ride Height:  FL              FR              RL              RR          │
+│                  15.0 mm         15.0 mm         13.0 mm         13.0 mm   │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    12000      12000      5000       5000           │
+│    Slow Rebound: 30000      30000      20000      20000          │
+│    Fast Bump:    9000       9000       3500       3500           │
+│    Fast Rebound: 24000      24000      16000      16000          │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       0°              0°              -2.5°           -2.5°     │
+│    Toe:          0°              0°              0°              0°        │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 50% front                                                  │
+│    Prop Valve: 2.4                                                        │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: AlpineA1101800Set2                                          │
+│    Rear Diff:                                                                │
+│      Ratio: 31//8                                                         │
+│      LSD Ramp: 60_40                                                      │
+│      LSD Plates: 4                                                        │
+│      LSD Preload: 90 Nm                                                   │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 6750 N/m                                                    │
+│    Springs:      FL              FR              RL              RR          │
+│                  210000 N/m      210000 N/m      160000 N/m      160000 N/m│
+│    Ride Height:  FL              FR              RL              RR          │
+│                  15.0 mm         15.0 mm         13.0 mm         13.0 mm   │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    12000      12000      5000       5000           │
+│    Slow Rebound: 30000      30000      20000      20000          │
+│    Fast Bump:    9000       9000       3500       3500           │
+│    Fast Rebound: 24000      24000      16000      16000          │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       0°              0°              -2.5°           -2.5°     │
+│    Toe:          0°              0°              0°              0°        │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 50% front                                                  │
+│    Prop Valve: 2.4                                                        │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL CHANGES (from baseline/tarmac)                                       │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  Brakes.FrontLeft.Disc: Renault_260mm_Type1_260x8_Planar_3x150            │
+│  Brakes.FrontRight.Disc: Renault_260mm_Type1_260x8_Planar_3x150            │
+│  Brakes.RearLeft.Disc: Renault_260mm_Type1_260x8_Planar_3x150_AlpineA1101│
+│  Brakes.RearRight.Disc: Renault_260mm_Type1_260x8_Planar_3x150_AlpineA1101│
+│  Brakes.FrontLeft.Caliper: Brembo_F.68.006-7_1x38                            │
+│  Brakes.FrontRight.Caliper: Brembo_F.68.006-7_1x38                            │
+│  Brakes.RearLeft.Caliper: Brembo_F.68.008-9_1x32                            │
+│  Brakes.RearRight.Caliper: Brembo_F.68.008-9_1x32                            │
+│  GearsSet: AlpineA1101800Set2                                │
+│  Rear.DifferentialRatio: 31//8                                             │
+│  Brakes.FrontLeft.PadCompound: Type17_Soft                                       │
+│  Brakes.FrontRight.PadCompound: Type17_Soft                                       │
+│  Brakes.RearLeft.PadCompound: Type18_Soft                                       │
+│  Brakes.RearRight.PadCompound: Type18_Soft                                       │
+│  Brakes.BrakesMain.ProportioningPreload: 3.45                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CITROEN XSARA WRC
+  Drive Type: AWD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  TARMAC SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: CitroenXsaraWRCSet0                                         │
+│    Power Split: 50%                                                      │
+│    Front Diff:                                                               │
+│      Ratio: 25//25                                                        │
+│      LSD Ramp: 50_60                                                      │
+│      LSD Plates: 6                                                        │
+│      LSD Preload: 80 Nm                                                   │
+│    Rear Diff:                                                                │
+│      Ratio: 27//9                                                         │
+│      LSD Ramp: 45_55                                                      │
+│      LSD Plates: 6                                                        │
+│      LSD Preload: 110 Nm                                                  │
+│    Centre Diff Ratio: 37//26                                              │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 12500 N/m                                                   │
+│    Rear ARB: 7500 N/m                                                     │
+│    Springs:      FL              FR              RL              RR          │
+│                  47500 N/m       47500 N/m       50000 N/m       50000 N/m │
+│    Ride Height:  FL              FR              RL              RR          │
+│                  76.0 mm         76.0 mm         57.0 mm         57.0 mm   │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    4250       4250       3750       3750           │
+│    Slow Rebound: 5250       5250       4750       4750           │
+│    Fast Bump:    3500       3500       3250       3250           │
+│    Fast Rebound: 4750       4750       4250       4250           │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       -1.7°           -1.7°           -2.3°           -2.3°     │
+│    Toe:          0°              0°              0°              0°        │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 60% front                                                  │
+│    Prop Valve: 2.75                                                       │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: CitroenXsaraWRCSet4                                         │
+│    Power Split: 50%                                                      │
+│    Front Diff:                                                               │
+│      Ratio: 25//25                                                        │
+│      LSD Ramp: 50_60                                                      │
+│      LSD Plates: 6                                                        │
+│      LSD Preload: 80 Nm                                                   │
+│    Rear Diff:                                                                │
+│      Ratio: 27//9                                                         │
+│      LSD Ramp: 45_55                                                      │
+│      LSD Plates: 6                                                        │
+│      LSD Preload: 110 Nm                                                  │
+│    Centre Diff Ratio: 39//24                                              │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 9500 N/m                                                    │
+│    Rear ARB: 12500 N/m                                                    │
+│    Springs:      FL              FR              RL              RR          │
+│                  37500 N/m       37500 N/m       40000 N/m       40000 N/m │
+│    Ride Height:  FL              FR              RL              RR          │
+│                  136.0 mm        136.0 mm        111.0 mm        111.0 mm  │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    4250       4250       3750       3750           │
+│    Slow Rebound: 5250       5250       4750       4750           │
+│    Fast Bump:    3500       3500       3250       3250           │
+│    Fast Rebound: 4750       4750       4250       4250           │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       -2.2°           -2.2°           -2.7°           -2.7°     │
+│    Toe:          0°              0°              0°              0°        │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 60% front                                                  │
+│    Prop Valve: 2.75                                                       │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL CHANGES (from baseline/tarmac)                                       │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  FrontLeft.AdjusterRing: 0.136                                             │
+│  FrontRight.AdjusterRing: 0.136                                             │
+│  RearLeft.AdjusterRing: 0.111                                             │
+│  RearRight.AdjusterRing: 0.111                                             │
+│  FrontLeft.SpringStiffness: 37500                                             │
+│  FrontRight.SpringStiffness: 37500                                             │
+│  RearLeft.SpringStiffness: 40000                                             │
+│  RearRight.SpringStiffness: 40000                                             │
+│  Front.ARBStiffness: 9500                                              │
+│  Rear.ARBStiffness: 12500                                             │
+│  Centre.CentreDifferentialRatio: 39//24                                            │
+│  Brakes.FrontLeft.Disc: Alcon_DIV2136X384_310x30_Baffled_5x120_AlconDisc00│
+│  Brakes.FrontRight.Disc: Alcon_DIV2136X384_310x30_Baffled_5x120_AlconDisc00│
+│  Brakes.RearLeft.Disc: Alcon_DIV2136X_310-218/25_310x25_Baffled_5x120_Alc│
+│  Brakes.RearRight.Disc: Alcon_DIV2136X_310-218/25_310x25_Baffled_5x120_Alc│
+│  Brakes.FrontLeft.Caliper: Alcon_4Pot_Type5_K_4x41.3                         │
+│  Brakes.FrontRight.Caliper: Alcon_4Pot_Type5_K_4x41.3                         │
+│  Brakes.RearLeft.Caliper: Alcon_4Pot_Type3_B_4x31.8                         │
+│  Brakes.RearRight.Caliper: Alcon_4Pot_Type3_B_4x31.8                         │
+│  Other.Electronic.EngineMap: 1                                                 │
+│  GearsSet: CitroenXsaraWRCSet4                               │
+│  Brakes.BrakesMain.MasterCylinderFront: 20.64                                             │
+│  Brakes.BrakesMain.MasterCylinderRear: 20.64                                             │
+│  FrontLeft.Camber: -2.2                                              │
+│  FrontRight.Camber: -2.2                                              │
+│  RearLeft.Camber: -2.7                                              │
+│  RearRight.Camber: -2.7                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  FIAT 124 ABARTH
+  Drive Type: RWD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  TARMAC SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: Fiat124AbarthSet0                                           │
+│    Rear Diff:                                                                │
+│      Ratio: 43//10                                                        │
+│      LSD Ramp: 45_45                                                      │
+│      LSD Plates: 3                                                        │
+│      LSD Preload: 30 Nm                                                   │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 2500 N/m                                                    │
+│    Rear ARB: 1500 N/m                                                     │
+│    Springs:      FL              FR              RL              RR          │
+│                  185000 N/m      185000 N/m      45000 N/m       45000 N/m │
+│    Ride Height:  FL              FR              RL              RR          │
+│                  27.0 mm         27.0 mm         55.0 mm         55.0 mm   │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    6000       6000       2500       2500           │
+│    Slow Rebound: 20000      20000      5250       5250           │
+│    Fast Bump:    5750       5750       2250       2250           │
+│    Fast Rebound: 17000      17000      4750       4750           │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       -0.5°           -0.5°           -1.5°           -1.5°     │
+│    Toe:          0°              0°              0°              0°        │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 50% front                                                  │
+│    Prop Valve: 1.05                                                       │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: Fiat124AbarthSet1                                           │
+│    Rear Diff:                                                                │
+│      Ratio: 43//8                                                         │
+│      LSD Ramp: 45_45                                                      │
+│      LSD Plates: 2                                                        │
+│      LSD Preload: 30 Nm                                                   │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 2500 N/m                                                    │
+│    Rear ARB: 1500 N/m                                                     │
+│    Springs:      FL              FR              RL              RR          │
+│                  185000 N/m      185000 N/m      45000 N/m       45000 N/m │
+│    Ride Height:  FL              FR              RL              RR          │
+│                  27.0 mm         27.0 mm         55.0 mm         55.0 mm   │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    6000       6000       2500       2500           │
+│    Slow Rebound: 20000      20000      5250       5250           │
+│    Fast Bump:    5750       5750       2250       2250           │
+│    Fast Rebound: 17000      17000      4750       4750           │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       -0.5°           -0.5°           -1.5°           -1.5°     │
+│    Toe:          0°              0°              0°              0°        │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 50% front                                                  │
+│    Prop Valve: 1.05                                                       │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL CHANGES (from baseline/tarmac)                                       │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  Brakes.FrontLeft.Disc: Abarth_256mm_Type1_256x12.4_Planar_4x98           │
+│  Brakes.FrontRight.Disc: Abarth_256mm_Type1_256x12.4_Planar_4x98           │
+│  Brakes.RearLeft.Disc: Abarth_256mm_Type2_256x9.6_Planar_4x98_AbarthDisc0│
+│  Brakes.RearRight.Disc: Abarth_256mm_Type2_256x9.6_Planar_4x98_AbarthDisc0│
+│  Brakes.FrontLeft.Caliper: ATE_Alfa_1750/2000_2x48                           │
+│  Brakes.FrontRight.Caliper: ATE_Alfa_1750/2000_2x48                           │
+│  Brakes.RearLeft.Caliper: ATE_Alfa_1750/2000_M_Type_2x38_ATECaliper05       │
+│  Brakes.RearRight.Caliper: ATE_Alfa_1750/2000_M_Type_2x38_ATECaliper05       │
+│  GearsSet: Fiat124AbarthSet1                                 │
+│  Rear.DifferentialRatio: 43//8                                             │
+│  Rear.LSDFrictionPlates: 2                                                 │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  FIAT 131 ABARTH
+  Drive Type: RWD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  TARMAC SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: Fiat131AbarthSet0                                           │
+│    Rear Diff:                                                                │
+│      Ratio: 43//8                                                         │
+│      LSD Ramp: 60_60                                                      │
+│      LSD Plates: 4                                                        │
+│      LSD Preload: 180 Nm                                                  │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 3000 N/m                                                    │
+│    Rear ARB: 1000 N/m                                                     │
+│    Springs:      FL              FR              RL              RR          │
+│                  36200 N/m       36200 N/m       32678 N/m       32678 N/m │
+│    Ride Height:  FL              FR              RL              RR          │
+│                  74.0 mm         74.0 mm         87.0 mm         87.0 mm   │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    3500       3500       2500       2500           │
+│    Slow Rebound: 6000       6000       5250       5250           │
+│    Fast Bump:    2000       2000       1750       1750           │
+│    Fast Rebound: 4500       4500       3500       3500           │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       -0.8°           -0.8°           -1.8°           -1.8°     │
+│    Toe:          0°              0°              0°              0°        │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 60% front                                                  │
+│    Prop Valve: 3                                                          │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: Fiat131AbarthSet2                                           │
+│    Rear Diff:                                                                │
+│      Ratio: 43//7                                                         │
+│      LSD Ramp: 60_60                                                      │
+│      LSD Plates: 3                                                        │
+│      LSD Preload: 70 Nm                                                   │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 3500 N/m                                                    │
+│    Rear ARB: 1000 N/m                                                     │
+│    Springs:      FL              FR              RL              RR          │
+│                  28200 N/m       28200 N/m       26678 N/m       26678 N/m │
+│    Ride Height:  FL              FR              RL              RR          │
+│                  95.0 mm         95.0 mm         107.0 mm        107.0 mm  │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    3500       3500       2500       2500           │
+│    Slow Rebound: 6000       6000       5250       5250           │
+│    Fast Bump:    2000       2000       1750       1750           │
+│    Fast Rebound: 4500       4500       3500       3500           │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       -2.1°           -2.1°           -1.9°           -1.9°     │
+│    Toe:          0°              0°              0°              0°        │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 59% front                                                  │
+│    Prop Valve: 3                                                          │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL CHANGES (from baseline/tarmac)                                       │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  FrontLeft.AdjusterRing: 0.095                                             │
+│  FrontRight.AdjusterRing: 0.095                                             │
+│  RearLeft.AdjusterRing: 0.107                                             │
+│  RearRight.AdjusterRing: 0.107                                             │
+│  Rear.DifferentialRatio: 43//7                                             │
+│  Brakes.BrakesMain.FrontBias: 0.59                                              │
+│  Brakes.FrontLeft.Disc: Abarth_275mm_Type1_275x20_Planar_4x98_AbarthDisc00│
+│  Brakes.FrontRight.Disc: Abarth_275mm_Type1_275x20_Planar_4x98_AbarthDisc00│
+│  Brakes.RearLeft.Disc: Abarth_252mm_Type1_252x20_Planar_4x98_AbarthDisc02│
+│  Brakes.RearRight.Disc: Abarth_252mm_Type1_252x20_Planar_4x98_AbarthDisc02│
+│  Brakes.FrontLeft.Caliper: APLockheed_CP2361_4x38.1_APLockheedCaliper03      │
+│  Brakes.FrontRight.Caliper: APLockheed_CP2361_4x38.1_APLockheedCaliper03      │
+│  Brakes.RearLeft.Caliper: APLockheed_CP2361_4x38.1_APLockheedCaliper03      │
+│  Brakes.RearRight.Caliper: APLockheed_CP2361_4x38.1_APLockheedCaliper03      │
+│  GearsSet: Fiat131AbarthSet2                                 │
+│  Brakes.FrontLeft.PadCompound: Type02_Soft                                       │
+│  Brakes.FrontRight.PadCompound: Type02_Soft                                       │
+│  Brakes.RearLeft.PadCompound: Type02_Soft                                       │
+│  Brakes.RearRight.PadCompound: Type02_Soft                                       │
+│  FrontLeft.Camber: -2.1                                              │
+│  FrontRight.Camber: -2.1                                              │
+│  RearLeft.Camber: -1.9                                              │
+│  RearRight.Camber: -1.9                                              │
+│  Rear.LSDPreload: 70                                                │
+│  Rear.LSDFrictionPlates: 3                                                 │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  HYUNDAI I20 N RALLY 2
+  Drive Type: AWD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  TARMAC SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: Hyundaii20Rally2Set0                                        │
+│    Power Split: 50%                                                      │
+│    Front Diff:                                                               │
+│      Ratio: 25//25                                                        │
+│      LSD Ramp: 60_70                                                      │
+│      LSD Plates: 6                                                        │
+│      LSD Preload: 90 Nm                                                   │
+│    Rear Diff:                                                                │
+│      Ratio: 25//25                                                        │
+│      LSD Ramp: 55_75                                                      │
+│      LSD Plates: 6                                                        │
+│      LSD Preload: 120 Nm                                                  │
+│    Centre Diff Ratio: 55//14                                              │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 6000 N/m                                                    │
+│    Rear ARB: 8000 N/m                                                     │
+│    Springs:      FL              FR              RL              RR          │
+│                  56000 N/m       56000 N/m       44000 N/m       44000 N/m │
+│    Ride Height:  FL              FR              RL              RR          │
+│                  64.0 mm         64.0 mm         67.0 mm         67.0 mm   │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    5826       5826       5720       5720           │
+│    Slow Rebound: 3871       3871       3713       3713           │
+│    Fast Bump:    5826       5826       5720       5720           │
+│    Fast Rebound: 3871       3871       3713       3713           │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       -2.2°           -2.2°           -2.7°           -2.7°     │
+│    Toe:          0.006°          0.006°          -0.003°         -0.003°   │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 50% front                                                  │
+│    Prop Valve: 3                                                          │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: Hyundaii20Rally2Set1                                        │
+│    Power Split: 50%                                                      │
+│    Front Diff:                                                               │
+│      Ratio: 25//25                                                        │
+│      LSD Ramp: 60_70                                                      │
+│      LSD Plates: 6                                                        │
+│      LSD Preload: 90 Nm                                                   │
+│    Rear Diff:                                                                │
+│      Ratio: 25//25                                                        │
+│      LSD Ramp: 55_75                                                      │
+│      LSD Plates: 6                                                        │
+│      LSD Preload: 120 Nm                                                  │
+│    Centre Diff Ratio: 55//14                                              │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 4500 N/m                                                    │
+│    Rear ARB: 9000 N/m                                                     │
+│    Springs:      FL              FR              RL              RR          │
+│                  41000 N/m       41000 N/m       38000 N/m       38000 N/m │
+│    Ride Height:  FL              FR              RL              RR          │
+│                  127.0 mm        127.0 mm        117.0 mm        117.0 mm  │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    5826       5826       5720       5720           │
+│    Slow Rebound: 3871       3871       3713       3713           │
+│    Fast Bump:    5826       5826       5720       5720           │
+│    Fast Rebound: 3871       3871       3713       3713           │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       -2.9°           -2.9°           -3.1°           -3.1°     │
+│    Toe:          0.006°          0.006°          -0.003°         -0.003°   │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 50% front                                                  │
+│    Prop Valve: 3                                                          │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL CHANGES (from baseline/tarmac)                                       │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  Front.ARBStiffness: 4500                                              │
+│  Rear.ARBStiffness: 9000                                              │
+│  FrontLeft.SpringStiffness: 41000                                             │
+│  FrontRight.SpringStiffness: 41000                                             │
+│  RearLeft.SpringStiffness: 38000                                             │
+│  RearRight.SpringStiffness: 38000                                             │
+│  FrontLeft.AdjusterRing: 0.127                                             │
+│  FrontRight.AdjusterRing: 0.127                                             │
+│  RearLeft.AdjusterRing: 0.117                                             │
+│  RearRight.AdjusterRing: 0.117                                             │
+│  GearsSet: Hyundaii20Rally2Set1                              │
+│  Brakes.FrontLeft.Disc: Brembo_09.A003.71_300x32_Baffled_5x130_BremboDisc0│
+│  Brakes.FrontRight.Disc: Brembo_09.A003.71_300x32_Baffled_5x130_BremboDisc0│
+│  Brakes.RearLeft.Disc: Brembo_09.A003.71_300x32_Baffled_5x130_BremboDisc0│
+│  Brakes.RearRight.Disc: Brembo_09.A003.71_300x32_Baffled_5x130_BremboDisc0│
+│  FrontLeft.Camber: -2.9                                              │
+│  FrontRight.Camber: -2.9                                              │
+│  RearLeft.Camber: -3.1                                              │
+│  RearRight.Camber: -3.1                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  LANCIA DELTA HF INTEGRALE EVO
+  Drive Type: AWD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  TARMAC SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: LanciaDeltaHFIntegraleEvoSet1                               │
+│    Power Split: 47%                                                      │
+│    Front Diff:                                                               │
+│      Ratio: 25//25                                                        │
+│      LSD Ramp: 60_75                                                      │
+│      LSD Plates: 6                                                        │
+│      LSD Preload: 60 Nm                                                   │
+│    Rear Diff:                                                                │
+│      Ratio: 34//13                                                        │
+│      LSD Ramp: 45_70                                                      │
+│      LSD Plates: 6                                                        │
+│      LSD Preload: 90 Nm                                                   │
+│    Centre Diff Ratio: 53//13                                              │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 18500 N/m                                                   │
+│    Rear ARB: 16500 N/m                                                    │
+│    Springs:      FL              FR              RL              RR          │
+│                  70000 N/m       70000 N/m       50000 N/m       50000 N/m │
+│    Ride Height:  FL              FR              RL              RR          │
+│                  51.0 mm         51.0 mm         48.0 mm         48.0 mm   │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    5000       5000       4000       4000           │
+│    Slow Rebound: 8000       8000       6250       6250           │
+│    Fast Bump:    3500       3500       2500       2500           │
+│    Fast Rebound: 5250       5250       4500       4500           │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       -1.7°           -1.7°           -2.3°           -2.3°     │
+│    Toe:          0.006°          0.006°          0°              0°        │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 65% front                                                  │
+│    Prop Valve: 3                                                          │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: LanciaDeltaHFIntegraleEvoSet2                               │
+│    Power Split: 47%                                                      │
+│    Front Diff:                                                               │
+│      Ratio: 25//25                                                        │
+│      LSD Ramp: 60_75                                                      │
+│      LSD Plates: 6                                                        │
+│      LSD Preload: 60 Nm                                                   │
+│    Rear Diff:                                                                │
+│      Ratio: 34//13                                                        │
+│      LSD Ramp: 45_70                                                      │
+│      LSD Plates: 6                                                        │
+│      LSD Preload: 90 Nm                                                   │
+│    Centre Diff Ratio: 50//12                                              │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 11500 N/m                                                   │
+│    Rear ARB: 13500 N/m                                                    │
+│    Springs:      FL              FR              RL              RR          │
+│                  40000 N/m       40000 N/m       40000 N/m       40000 N/m │
+│    Ride Height:  FL              FR              RL              RR          │
+│                  130.0 mm        130.0 mm        100.0 mm        100.0 mm  │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    4250       4250       3750       3750           │
+│    Slow Rebound: 9000       9000       6750       6750           │
+│    Fast Bump:    2500       2500       2500       2500           │
+│    Fast Rebound: 5000       5000       4500       4500           │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       -2.4°           -2.4°           -2.6°           -2.6°     │
+│    Toe:          0.006°          0.006°          0°              0°        │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 67% front                                                  │
+│    Prop Valve: 3                                                          │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL CHANGES (from baseline/tarmac)                                       │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  FrontLeft.AdjusterRing: 0.13                                              │
+│  FrontRight.AdjusterRing: 0.13                                              │
+│  RearLeft.AdjusterRing: 0.1                                               │
+│  RearRight.AdjusterRing: 0.1                                               │
+│  FrontLeft.SpringStiffness: 40000                                             │
+│  FrontRight.SpringStiffness: 40000                                             │
+│  RearLeft.SpringStiffness: 40000                                             │
+│  RearRight.SpringStiffness: 40000                                             │
+│  Front.ARBStiffness: 11500                                             │
+│  Rear.ARBStiffness: 13500                                             │
+│  Brakes.FrontLeft.Disc: Brembo_313mm_Type1_313x25.4_Baffled&Drilled_4x98_B│
+│  Brakes.FrontRight.Disc: Brembo_313mm_Type1_313x25.4_Baffled&Drilled_4x98_B│
+│  Brakes.RearLeft.Disc: Brembo_256mm_Type1_256x25.4_Baffled&Drilled_4x98_B│
+│  Brakes.RearRight.Disc: Brembo_256mm_Type1_256x25.4_Baffled&Drilled_4x98_B│
+│  Brakes.FrontLeft.Caliper: Brembo_4Pot_Type3_4x36/44_BremboCaliper03         │
+│  Brakes.FrontRight.Caliper: Brembo_4Pot_Type3_4x36/44_BremboCaliper03         │
+│  Brakes.RearLeft.Caliper: Brembo_2Pot_Type4_2x42                            │
+│  Brakes.RearRight.Caliper: Brembo_2Pot_Type4_2x42                            │
+│  GearsSet: LanciaDeltaHFIntegraleEvoSet2                     │
+│  Centre.CentreDifferentialRatio: 50//12                                            │
+│  Dampers.FrontLeft.SlowBump: 4250                                              │
+│  Dampers.FrontRight.SlowBump: 4250                                              │
+│  Dampers.RearLeft.SlowBump: 3750                                              │
+│  Dampers.RearRight.SlowBump: 3750                                              │
+│  Dampers.FrontLeft.SlowRebound: 9000                                              │
+│  Dampers.FrontRight.SlowRebound: 9000                                              │
+│  Dampers.RearLeft.SlowRebound: 6750                                              │
+│  Dampers.RearRight.SlowRebound: 6750                                              │
+│  Dampers.FrontLeft.FastBump: 2500                                              │
+│  Dampers.FrontRight.FastBump: 2500                                              │
+│  Dampers.RearLeft.FastBump: 2500                                              │
+│  Dampers.RearRight.FastBump: 2500                                              │
+│  Dampers.FrontLeft.FastRebound: 5000                                              │
+│  Dampers.FrontRight.FastRebound: 5000                                              │
+│  Dampers.RearLeft.FastRebound: 4500                                              │
+│  Dampers.RearRight.FastRebound: 4500                                              │
+│  Brakes.BrakesMain.FrontBias: 0.67                                              │
+│  FrontLeft.Camber: -2.4                                              │
+│  FrontRight.Camber: -2.4                                              │
+│  RearLeft.Camber: -2.6                                              │
+│  RearRight.Camber: -2.6                                              │
+│  Brakes.BrakesMain.MasterCylinderFront: 17.78                                             │
+│  Brakes.BrakesMain.MasterCylinderRear: 17.78                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  LANCIA RALLY 037 EVO 2
+  Drive Type: RWD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  TARMAC SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: LanciaRally037Evo2Set0                                      │
+│    Rear Diff:                                                                │
+│      Ratio: 44//9                                                         │
+│      LSD Ramp: 50_65                                                      │
+│      LSD Plates: 4                                                        │
+│      LSD Preload: 90 Nm                                                   │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 4000 N/m                                                    │
+│    Springs:      FL              FR              RL              RR          │
+│                  65000 N/m       65000 N/m       45000 N/m       45000 N/m │
+│    Ride Height:  FL              FR              RL              RR          │
+│                  49.0 mm         49.0 mm         67.0 mm         67.0 mm   │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    6000       6000       5000       5000           │
+│    Slow Rebound: 9000       9000       8000       8000           │
+│    Fast Bump:    4500       4500       3500       3500           │
+│    Fast Rebound: 6500       6500       5500       5500           │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       -1.1°           -1.1°           -2.3°           -2.3°     │
+│    Toe:          0°              0°              0°              0°        │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 58% front                                                  │
+│    Prop Valve: 3                                                          │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: LanciaRally037Evo2Set1                                      │
+│    Rear Diff:                                                                │
+│      Ratio: 42//8                                                         │
+│      LSD Ramp: 60_70                                                      │
+│      LSD Plates: 2                                                        │
+│      LSD Preload: 60 Nm                                                   │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 3500 N/m                                                    │
+│    Springs:      FL              FR              RL              RR          │
+│                  55000 N/m       55000 N/m       35000 N/m       35000 N/m │
+│    Ride Height:  FL              FR              RL              RR          │
+│                  80.0 mm         80.0 mm         116.0 mm        116.0 mm  │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    6000       6000       5000       5000           │
+│    Slow Rebound: 9000       9000       8000       8000           │
+│    Fast Bump:    4500       4500       3500       3500           │
+│    Fast Rebound: 6500       6500       5500       5500           │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       -0.6°           -0.6°           -2.1°           -2.1°     │
+│    Toe:          0°              0°              0°              0°        │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 55% front                                                  │
+│    Prop Valve: 3                                                          │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL CHANGES (from baseline/tarmac)                                       │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  FrontLeft.AdjusterRing: 0.08                                              │
+│  FrontRight.AdjusterRing: 0.08                                              │
+│  RearLeft.AdjusterRing: 0.116                                             │
+│  RearRight.AdjusterRing: 0.116                                             │
+│  FrontLeft.SpringStiffness: 55000                                             │
+│  FrontRight.SpringStiffness: 55000                                             │
+│  RearLeft.SpringStiffness: 35000                                             │
+│  RearRight.SpringStiffness: 35000                                             │
+│  Front.ARBStiffness: 3500                                              │
+│  Brakes.BrakesMain.MasterCylinderFront: 19.05                                             │
+│  Brakes.BrakesMain.MasterCylinderRear: 19.05                                             │
+│  Brakes.FrontLeft.Disc: Abarth_300mm_Type6_Front_300x11_Planar_5x108_Abart│
+│  Brakes.FrontRight.Disc: Abarth_300mm_Type6_Front_300x11_Planar_5x108_Abart│
+│  Brakes.RearLeft.Disc: Abarth_300mm_Type6_Rear_300x11_Planar_5x108_Abarth│
+│  Brakes.RearRight.Disc: Abarth_300mm_Type6_Rear_300x11_Planar_5x108_Abarth│
+│  Brakes.FrontLeft.Caliper: Brembo_2Pot_Type4_2x48_BremboCaliper04            │
+│  Brakes.FrontRight.Caliper: Brembo_2Pot_Type4_2x48_BremboCaliper04            │
+│  Brakes.RearLeft.Caliper: ATE_Porsche_911_S-Type_2x48_ATECaliper00          │
+│  Brakes.RearRight.Caliper: ATE_Porsche_911_S-Type_2x48_ATECaliper00          │
+│  GearsSet: LanciaRally037Evo2Set1                            │
+│  Rear.DifferentialRatio: 42//8                                             │
+│  Rear.LSDRamps: 60_70                                             │
+│  FrontLeft.Camber: -0.6                                              │
+│  FrontRight.Camber: -0.6                                              │
+│  RearLeft.Camber: -2.1                                              │
+│  RearRight.Camber: -2.1                                              │
+│  Rear.LSDPreload: 60                                                │
+│  Rear.LSDFrictionPlates: 2                                                 │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  LANCIA STRATOS
+  Drive Type: RWD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  TARMAC SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: LanciaStratosSet0                                           │
+│    Rear Diff:                                                                │
+│      Ratio: 65//19                                                        │
+│      LSD Ramp: 50_65                                                      │
+│      LSD Plates: 4                                                        │
+│      LSD Preload: 70 Nm                                                   │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 2750 N/m                                                    │
+│    Rear ARB: 2500 N/m                                                     │
+│    Springs:      FL              FR              RL              RR          │
+│                  57700 N/m       57700 N/m       32660 N/m       32660 N/m │
+│    Ride Height:  FL              FR              RL              RR          │
+│                  56.0 mm         56.0 mm         86.0 mm         86.0 mm   │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    3415       3415       4375       4375           │
+│    Slow Rebound: 8225       8225       8185       8185           │
+│    Fast Bump:    2315       2315       3145       3145           │
+│    Fast Rebound: 6380       6380       6755       6755           │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       -0.5°           -0.5°           -2.5°           -2.5°     │
+│    Toe:          0°              0°              0°              0°        │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 55% front                                                  │
+│    Prop Valve: 2.75                                                       │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: LanciaStratosSet1                                           │
+│    Rear Diff:                                                                │
+│      Ratio: 65//19                                                        │
+│      LSD Ramp: 50_65                                                      │
+│      LSD Plates: 4                                                        │
+│      LSD Preload: 70 Nm                                                   │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 2750 N/m                                                    │
+│    Rear ARB: 2500 N/m                                                     │
+│    Springs:      FL              FR              RL              RR          │
+│                  57700 N/m       57700 N/m       22825 N/m       22825 N/m │
+│    Ride Height:  FL              FR              RL              RR          │
+│                  73.0 mm         73.0 mm         155.0 mm        155.0 mm  │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    3415       3415       4375       4375           │
+│    Slow Rebound: 8225       8225       8185       8185           │
+│    Fast Bump:    2315       2315       3145       3145           │
+│    Fast Rebound: 6380       6380       6755       6755           │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       -0.5°           -0.5°           -2.5°           -2.5°     │
+│    Toe:          0°              0°              0°              0°        │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 55% front                                                  │
+│    Prop Valve: 2.75                                                       │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL CHANGES (from baseline/tarmac)                                       │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  Brakes.FrontLeft.Disc: Girling_271mm_Type1_271x22_Planar_5x108_GirlingDis│
+│  Brakes.FrontRight.Disc: Girling_271mm_Type1_271x22_Planar_5x108_GirlingDis│
+│  Brakes.RearLeft.Disc: Girling_271mm_Type2_271x20_Planar_5x108_GirlingDis│
+│  Brakes.RearRight.Disc: Girling_271mm_Type2_271x20_Planar_5x108_GirlingDis│
+│  Brakes.FrontLeft.Caliper: ATE_Alfa_1750/2000_Wide_2x48_ATECaliper04         │
+│  Brakes.FrontRight.Caliper: ATE_Alfa_1750/2000_Wide_2x48_ATECaliper04         │
+│  Brakes.RearLeft.Caliper: ATE_Lancia_Stratos_Wide_2x38_ATECaliper02         │
+│  Brakes.RearRight.Caliper: ATE_Lancia_Stratos_Wide_2x38_ATECaliper02         │
+│  GearsSet: LanciaStratosSet1                                 │
+│  GearPrimary: 33//31*31//30                                     │
+│  Rear.DifferentialRatio: 65//19                                            │
+│  FrontLeft.AdjusterRing: 0.073                                             │
+│  FrontRight.AdjusterRing: 0.073                                             │
+│  RearLeft.AdjusterRing: 0.155                                             │
+│  RearRight.AdjusterRing: 0.155                                             │
+│  RearLeft.SpringStiffness: 22825                                             │
+│  RearRight.SpringStiffness: 22825                                             │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  MINI COOPER S 1275
+  Drive Type: FWD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  TARMAC SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: MiniCooperS1275Set0                                         │
+│    Front Diff:                                                               │
+│      Ratio: 63//16                                                        │
+│      LSD Ramp: 45_65                                                      │
+│      LSD Plates: 4                                                        │
+│      LSD Preload: 30 Nm                                                   │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 1500 N/m                                                    │
+│    Springs:      FL              FR              RL              RR          │
+│                  550000 N/m      550000 N/m      550000 N/m      550000 N/m│
+│    Ride Height:  FL              FR              RL              RR          │
+│                  15.2 mm         15.2 mm         10.7 mm         10.7 mm   │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    4500       4500       3500       3500           │
+│    Slow Rebound: 8000       8000       5000       5000           │
+│    Fast Bump:    2500       2500       2000       2000           │
+│    Fast Rebound: 3500       3500       3000       3000           │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       -1.5°           -1.5°           -0.5°           -0.5°     │
+│    Toe:          0°              0°              -0.017°         -0.017°   │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 50% front                                                  │
+│    Prop Valve: 2.25                                                       │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: MiniCooperS1275Set3                                         │
+│    Front Diff:                                                               │
+│      Ratio: 63//16                                                        │
+│      LSD Ramp: 45_65                                                      │
+│      LSD Plates: 4                                                        │
+│      LSD Preload: 30 Nm                                                   │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 1500 N/m                                                    │
+│    Springs:      FL              FR              RL              RR          │
+│                  550000 N/m      550000 N/m      550000 N/m      550000 N/m│
+│    Ride Height:  FL              FR              RL              RR          │
+│                  15.2 mm         15.2 mm         10.7 mm         10.7 mm   │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    4500       4500       3500       3500           │
+│    Slow Rebound: 8000       8000       5000       5000           │
+│    Fast Bump:    2500       2500       2000       2000           │
+│    Fast Rebound: 3500       3500       3000       3000           │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       -1.5°           -1.5°           -0.5°           -0.5°     │
+│    Toe:          0°              0°              -0.017°         -0.017°   │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 50% front                                                  │
+│    Prop Valve: 2.25                                                       │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL CHANGES (from baseline/tarmac)                                       │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  GearsSet: MiniCooperS1275Set3                               │
+│  Front.DifferentialRatio: 63//16                                            │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  PEUGEOT 208 RALLY 4
+  Drive Type: FWD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  TARMAC SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: Peugeot208Rally4Set0                                        │
+│    Front Diff:                                                               │
+│      Ratio: 56//12                                                        │
+│      LSD Ramp: 27_57                                                      │
+│      LSD Plates: 6                                                        │
+│      LSD Preload: 130 Nm                                                  │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 11663 N/m                                                   │
+│    Rear ARB: 15200 N/m                                                    │
+│    Springs:      FL              FR              RL              RR          │
+│                  46300 N/m       46300 N/m       42400 N/m       42400 N/m │
+│    Ride Height:  FL              FR              RL              RR          │
+│                  66.0 mm         66.0 mm         62.0 mm         62.0 mm   │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    4290       4290       2765       2765           │
+│    Slow Rebound: 7452       7452       4050       4050           │
+│    Fast Bump:    2348       2348       2052       2052           │
+│    Fast Rebound: 7452       7452       4050       4050           │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       -1.3°           -1.3°           -1.8°           -1.8°     │
+│    Toe:          0°              0°              0°              0°        │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 60% front                                                  │
+│    Prop Valve: 4.5                                                        │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL SETUP                                                                  │
+├────────────────────────────────────────────────────────────────────────────┤
+│  DRIVETRAIN                                                                  │
+│    Gear Set: Peugeot208Rally4Set0                                        │
+│    Front Diff:                                                               │
+│      Ratio: 56//12                                                        │
+│      LSD Ramp: 35_63                                                      │
+│      LSD Plates: 4                                                        │
+│      LSD Preload: 80 Nm                                                   │
+│                                                                              │
+│  SUSPENSION                                                                  │
+│    Front ARB: 11663 N/m                                                   │
+│    Rear ARB: 15200 N/m                                                    │
+│    Springs:      FL              FR              RL              RR          │
+│                  36100 N/m       36100 N/m       32800 N/m       32800 N/m │
+│    Ride Height:  FL              FR              RL              RR          │
+│                  125.0 mm        125.0 mm        114.0 mm        114.0 mm  │
+│                                                                              │
+│  DAMPERS         FL         FR         RL         RR                        │
+│    Slow Bump:    3135       3135       2480       2480           │
+│    Slow Rebound: 4777       4777       3765       3765           │
+│    Fast Bump:    2030       2030       1535       1535           │
+│    Fast Rebound: 4777       4777       3765       3765           │
+│                                                                              │
+│  TYRES           FL              FR              RL              RR          │
+│    Pressure:     32 PSI          32 PSI          32 PSI          32 PSI    │
+│    Camber:       -1.5°           -1.5°           -3.5°           -3.5°     │
+│    Toe:          0°              0°              0°              0°        │
+│                                                                              │
+│  BRAKES                                                                      │
+│    Brake Bias: 60% front                                                  │
+│    Prop Valve: 4.5                                                        │
+│    Handbrake Mult: 1                                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────┐
+│  GRAVEL CHANGES (from baseline/tarmac)                                       │
+├──────────────────────────────────────────────────────────────────────────────┤
+│  Brakes.FrontLeft.Disc: Peugeot_904207038B_285x26_Baffled_4x108_PeugeotDis│
+│  Brakes.FrontRight.Disc: Peugeot_904207038B_285x26_Baffled_4x108_PeugeotDis│
+│  Other.Electronic.EngineMap: 1                                                 │
+│  Other.Electronic.ThrottleMap: 1                                                 │
+│  Brakes.FrontLeft.PadCompound: Type20_Medium                                     │
+│  Brakes.FrontRight.PadCompound: Type20_Medium                                     │
+│  Brakes.RearLeft.PadCompound: Type21_Soft                                       │
+│  Brakes.RearRight.PadCompound: Type21_Soft                                       │
+│  Brakes.BrakesMain.ProportioningPreload: 5.5                                               │
+│  Front.LSDRamps: 35_63                                             │
+│  FrontLeft.SpringStiffness: 36100                                             │
+│  FrontRight.SpringStiffness: 36100                                             │
+│  RearLeft.SpringStiffness: 32800                                             │
+│  RearRight.SpringStiffness: 32800                                             │
+│  FrontLeft.AdjusterRing: 0.125                                             │
+│  FrontRight.AdjusterRing: 0.125                                             │
+│  RearLeft.AdjusterRing: 0.114                                             │
+│  RearRight.AdjusterRing: 0.114                                             │
+│  Dampers.FrontLeft.SlowBump: 3135                                              │
+│  Dampers.FrontRight.SlowBump: 3135                                              │
+│  Dampers.RearLeft.SlowBump: 2480                                              │
+│  Dampers.RearRight.SlowBump: 2480                                              │
+│  Dampers.FrontLeft.SlowRebound: 4777                                              │
+│  Dampers.FrontRight.SlowRebound: 4777                                              │
+│  Dampers.RearLeft.SlowRebound: 3765                                              │
+│  Dampers.RearRight.SlowRebound: 3765                                              │
+│  Dampers.FrontLeft.FastBump: 2030                                              │
+│  Dampers.FrontRight.FastBump: 2030                                              │
+│  Dampers.RearLeft.FastBump: 1535                                              │
+│  Dampers.RearRight.FastBump: 1535                                              │
+│  Dampers.FrontLeft.FastRebound: 4777                                              │
+│  Dampers.FrontRight.FastRebound: 4777                                              │
+│  Dampers.RearLeft.FastRebound: 3765                                              │
+│  Dampers.RearRight.FastRebound: 3765                                              │
+│  Front.LSDPreload: 80                                                │
+│  Front.LSDFrictionPlates: 4                                                 │
+└──────────────────────────────────────────────────────────────────────────────┘
+
+

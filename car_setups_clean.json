@@ -1,0 +1,987 @@
+{
+  "Alfa Romeo Giulia GTA Junior 1300": {
+    "driveType": "FWD",
+    "baseline": {
+      "drivetrain": {
+        "gearsSet": "AlfaRomeoGiuliaGTAJunior1300Set0",
+        "frontDiff": {
+          "ratio": "25//25",
+          "lsdRampAngle": "N/A",
+          "lsdPlates": 0,
+          "lsdPreload": "0 Nm"
+        }
+      },
+      "suspension": {
+        "frontARB": "2500 N/m",
+        "springs": {
+          "FL": "200000 N/m",
+          "FR": "200000 N/m",
+          "RL": "26000 N/m",
+          "RR": "26000 N/m"
+        },
+        "rideHeight": {
+          "FL": "23.3 mm",
+          "FR": "23.3 mm",
+          "RL": "71.1 mm",
+          "RR": "71.1 mm"
+        }
+      },
+      "dampers": {
+        "FL": {
+          "slowBump": 3000,
+          "slowRebound": 5500,
+          "fastBump": 2000,
+          "fastRebound": 4000
+        },
+        "FR": {
+          "slowBump": 3000,
+          "slowRebound": 5500,
+          "fastBump": 2000,
+          "fastRebound": 4000
+        },
+        "RL": {
+          "slowBump": 750,
+          "slowRebound": 2500,
+          "fastBump": 500,
+          "fastRebound": 1500
+        },
+        "RR": {
+          "slowBump": 750,
+          "slowRebound": 2500,
+          "fastBump": 500,
+          "fastRebound": 1500
+        }
+      },
+      "tyres": {
+        "FL": {
+          "pressure": "32 PSI",
+          "camber": "-1.5°",
+          "toe": "0.029°"
+        },
+        "FR": {
+          "pressure": "32 PSI",
+          "camber": "-1.5°",
+          "toe": "0.029°"
+        },
+        "RL": {
+          "pressure": "32 PSI",
+          "camber": "0°",
+          "toe": "0°"
+        },
+        "RR": {
+          "pressure": "32 PSI",
+          "camber": "0°",
+          "toe": "0°"
+        }
+      },
+      "brakes": {
+        "brakeBias": "50% front",
+        "propValvePressure": 2.5,
+        "handbrakeMultiplier": 1
+      }
+    },
+    "surfaceOverrides": {
+      "tarmac": {},
+      "gravel": {}
+    }
+  },
+  "Alpine A110 1800": {
+    "driveType": "RWD",
+    "baseline": {
+      "drivetrain": {
+        "gearsSet": "AlpineA1101800Set1",
+        "rearDiff": {
+          "ratio": "27//8",
+          "lsdRampAngle": "60_40",
+          "lsdPlates": 4,
+          "lsdPreload": "90 Nm"
+        }
+      },
+      "suspension": {
+        "frontARB": "6750 N/m",
+        "springs": {
+          "FL": "210000 N/m",
+          "FR": "210000 N/m",
+          "RL": "160000 N/m",
+          "RR": "160000 N/m"
+        },
+        "rideHeight": {
+          "FL": "15.0 mm",
+          "FR": "15.0 mm",
+          "RL": "13.0 mm",
+          "RR": "13.0 mm"
+        }
+      },
+      "dampers": {
+        "FL": {
+          "slowBump": 12000,
+          "slowRebound": 30000,
+          "fastBump": 9000,
+          "fastRebound": 24000
+        },
+        "FR": {
+          "slowBump": 12000,
+          "slowRebound": 30000,
+          "fastBump": 9000,
+          "fastRebound": 24000
+        },
+        "RL": {
+          "slowBump": 5000,
+          "slowRebound": 20000,
+          "fastBump": 3500,
+          "fastRebound": 16000
+        },
+        "RR": {
+          "slowBump": 5000,
+          "slowRebound": 20000,
+          "fastBump": 3500,
+          "fastRebound": 16000
+        }
+      },
+      "tyres": {
+        "FL": {
+          "pressure": "32 PSI",
+          "camber": "0°",
+          "toe": "0°"
+        },
+        "FR": {
+          "pressure": "32 PSI",
+          "camber": "0°",
+          "toe": "0°"
+        },
+        "RL": {
+          "pressure": "32 PSI",
+          "camber": "-2.5°",
+          "toe": "0°"
+        },
+        "RR": {
+          "pressure": "32 PSI",
+          "camber": "-2.5°",
+          "toe": "0°"
+        }
+      },
+      "brakes": {
+        "brakeBias": "50% front",
+        "propValvePressure": 2.4,
+        "handbrakeMultiplier": 1
+      }
+    },
+    "surfaceOverrides": {
+      "tarmac": {},
+      "gravel": {}
+    }
+  },
+  "Citroen Xsara WRC": {
+    "driveType": "AWD",
+    "baseline": {
+      "drivetrain": {
+        "gearsSet": "CitroenXsaraWRCSet0",
+        "frontBias": "50%",
+        "frontDiff": {
+          "ratio": "25//25",
+          "lsdRampAngle": "50_60",
+          "lsdPlates": 6,
+          "lsdPreload": "80 Nm"
+        },
+        "rearDiff": {
+          "ratio": "27//9",
+          "lsdRampAngle": "45_55",
+          "lsdPlates": 6,
+          "lsdPreload": "110 Nm"
+        },
+        "centreDiffRatio": "37//26"
+      },
+      "suspension": {
+        "frontARB": "12500 N/m",
+        "rearARB": "7500 N/m",
+        "springs": {
+          "FL": "47500 N/m",
+          "FR": "47500 N/m",
+          "RL": "50000 N/m",
+          "RR": "50000 N/m"
+        },
+        "rideHeight": {
+          "FL": "76.0 mm",
+          "FR": "76.0 mm",
+          "RL": "57.0 mm",
+          "RR": "57.0 mm"
+        }
+      },
+      "dampers": {
+        "FL": {
+          "slowBump": 4250,
+          "slowRebound": 5250,
+          "fastBump": 3500,
+          "fastRebound": 4750
+        },
+        "FR": {
+          "slowBump": 4250,
+          "slowRebound": 5250,
+          "fastBump": 3500,
+          "fastRebound": 4750
+        },
+        "RL": {
+          "slowBump": 3750,
+          "slowRebound": 4750,
+          "fastBump": 3250,
+          "fastRebound": 4250
+        },
+        "RR": {
+          "slowBump": 3750,
+          "slowRebound": 4750,
+          "fastBump": 3250,
+          "fastRebound": 4250
+        }
+      },
+      "tyres": {
+        "FL": {
+          "pressure": "32 PSI",
+          "camber": "-1.7°",
+          "toe": "0°"
+        },
+        "FR": {
+          "pressure": "32 PSI",
+          "camber": "-1.7°",
+          "toe": "0°"
+        },
+        "RL": {
+          "pressure": "32 PSI",
+          "camber": "-2.3°",
+          "toe": "0°"
+        },
+        "RR": {
+          "pressure": "32 PSI",
+          "camber": "-2.3°",
+          "toe": "0°"
+        }
+      },
+      "brakes": {
+        "brakeBias": "60% front",
+        "propValvePressure": 2.75,
+        "handbrakeMultiplier": 1
+      }
+    },
+    "surfaceOverrides": {
+      "tarmac": {},
+      "gravel": {}
+    }
+  },
+  "Fiat 124 Abarth": {
+    "driveType": "RWD",
+    "baseline": {
+      "drivetrain": {
+        "gearsSet": "Fiat124AbarthSet0",
+        "rearDiff": {
+          "ratio": "43//10",
+          "lsdRampAngle": "45_45",
+          "lsdPlates": 3,
+          "lsdPreload": "30 Nm"
+        }
+      },
+      "suspension": {
+        "frontARB": "2500 N/m",
+        "rearARB": "1500 N/m",
+        "springs": {
+          "FL": "185000 N/m",
+          "FR": "185000 N/m",
+          "RL": "45000 N/m",
+          "RR": "45000 N/m"
+        },
+        "rideHeight": {
+          "FL": "27.0 mm",
+          "FR": "27.0 mm",
+          "RL": "55.0 mm",
+          "RR": "55.0 mm"
+        }
+      },
+      "dampers": {
+        "FL": {
+          "slowBump": 6000,
+          "slowRebound": 20000,
+          "fastBump": 5750,
+          "fastRebound": 17000
+        },
+        "FR": {
+          "slowBump": 6000,
+          "slowRebound": 20000,
+          "fastBump": 5750,
+          "fastRebound": 17000
+        },
+        "RL": {
+          "slowBump": 2500,
+          "slowRebound": 5250,
+          "fastBump": 2250,
+          "fastRebound": 4750
+        },
+        "RR": {
+          "slowBump": 2500,
+          "slowRebound": 5250,
+          "fastBump": 2250,
+          "fastRebound": 4750
+        }
+      },
+      "tyres": {
+        "FL": {
+          "pressure": "32 PSI",
+          "camber": "-0.5°",
+          "toe": "0°"
+        },
+        "FR": {
+          "pressure": "32 PSI",
+          "camber": "-0.5°",
+          "toe": "0°"
+        },
+        "RL": {
+          "pressure": "32 PSI",
+          "camber": "-1.5°",
+          "toe": "0°"
+        },
+        "RR": {
+          "pressure": "32 PSI",
+          "camber": "-1.5°",
+          "toe": "0°"
+        }
+      },
+      "brakes": {
+        "brakeBias": "50% front",
+        "propValvePressure": 1.05,
+        "handbrakeMultiplier": 1
+      }
+    },
+    "surfaceOverrides": {
+      "tarmac": {},
+      "gravel": {}
+    }
+  },
+  "Fiat 131 Abarth": {
+    "driveType": "RWD",
+    "baseline": {
+      "drivetrain": {
+        "gearsSet": "Fiat131AbarthSet2",
+        "rearDiff": {
+          "ratio": "43//7",
+          "lsdRampAngle": "60_60",
+          "lsdPlates": 4,
+          "lsdPreload": "180 Nm"
+        }
+      },
+      "suspension": {
+        "frontARB": "3500 N/m",
+        "rearARB": "1000 N/m",
+        "springs": {
+          "FL": "28200 N/m",
+          "FR": "28200 N/m",
+          "RL": "26678 N/m",
+          "RR": "26678 N/m"
+        },
+        "rideHeight": {
+          "FL": "95.0 mm",
+          "FR": "95.0 mm",
+          "RL": "107.0 mm",
+          "RR": "107.0 mm"
+        }
+      },
+      "dampers": {
+        "FL": {
+          "slowBump": 3500,
+          "slowRebound": 6000,
+          "fastBump": 2000,
+          "fastRebound": 4500
+        },
+        "FR": {
+          "slowBump": 3500,
+          "slowRebound": 6000,
+          "fastBump": 2000,
+          "fastRebound": 4500
+        },
+        "RL": {
+          "slowBump": 2500,
+          "slowRebound": 5250,
+          "fastBump": 1750,
+          "fastRebound": 3500
+        },
+        "RR": {
+          "slowBump": 2500,
+          "slowRebound": 5250,
+          "fastBump": 1750,
+          "fastRebound": 3500
+        }
+      },
+      "tyres": {
+        "FL": {
+          "pressure": "32 PSI",
+          "camber": "-0.8°",
+          "toe": "0°"
+        },
+        "FR": {
+          "pressure": "32 PSI",
+          "camber": "-0.8°",
+          "toe": "0°"
+        },
+        "RL": {
+          "pressure": "32 PSI",
+          "camber": "-1.8°",
+          "toe": "0°"
+        },
+        "RR": {
+          "pressure": "32 PSI",
+          "camber": "-1.8°",
+          "toe": "0°"
+        }
+      },
+      "brakes": {
+        "brakeBias": "60% front",
+        "propValvePressure": 3,
+        "handbrakeMultiplier": 1
+      }
+    },
+    "surfaceOverrides": {
+      "tarmac": {},
+      "gravel": {}
+    }
+  },
+  "Hyundai i20 N Rally 2": {
+    "driveType": "AWD",
+    "baseline": {
+      "drivetrain": {
+        "gearsSet": "Hyundaii20Rally2Set0",
+        "frontBias": "50%",
+        "frontDiff": {
+          "ratio": "25//25",
+          "lsdRampAngle": "60_70",
+          "lsdPlates": 6,
+          "lsdPreload": "90 Nm"
+        },
+        "rearDiff": {
+          "ratio": "25//25",
+          "lsdRampAngle": "55_75",
+          "lsdPlates": 6,
+          "lsdPreload": "120 Nm"
+        },
+        "centreDiffRatio": "55//14"
+      },
+      "suspension": {
+        "frontARB": "6000 N/m",
+        "rearARB": "8000 N/m",
+        "springs": {
+          "FL": "56000 N/m",
+          "FR": "56000 N/m",
+          "RL": "44000 N/m",
+          "RR": "44000 N/m"
+        },
+        "rideHeight": {
+          "FL": "64.0 mm",
+          "FR": "64.0 mm",
+          "RL": "67.0 mm",
+          "RR": "67.0 mm"
+        }
+      },
+      "dampers": {
+        "FL": {
+          "slowBump": 5826,
+          "slowRebound": 3871,
+          "fastBump": 5826,
+          "fastRebound": 3871
+        },
+        "FR": {
+          "slowBump": 5826,
+          "slowRebound": 3871,
+          "fastBump": 5826,
+          "fastRebound": 3871
+        },
+        "RL": {
+          "slowBump": 5720,
+          "slowRebound": 3713,
+          "fastBump": 5720,
+          "fastRebound": 3713
+        },
+        "RR": {
+          "slowBump": 5720,
+          "slowRebound": 3713,
+          "fastBump": 5720,
+          "fastRebound": 3713
+        }
+      },
+      "tyres": {
+        "FL": {
+          "pressure": "32 PSI",
+          "camber": "-2.2°",
+          "toe": "0.006°"
+        },
+        "FR": {
+          "pressure": "32 PSI",
+          "camber": "-2.2°",
+          "toe": "0.006°"
+        },
+        "RL": {
+          "pressure": "32 PSI",
+          "camber": "-2.7°",
+          "toe": "-0.003°"
+        },
+        "RR": {
+          "pressure": "32 PSI",
+          "camber": "-2.7°",
+          "toe": "-0.003°"
+        }
+      },
+      "brakes": {
+        "brakeBias": "50% front",
+        "propValvePressure": 3,
+        "handbrakeMultiplier": 1
+      }
+    },
+    "surfaceOverrides": {
+      "tarmac": {},
+      "gravel": {}
+    }
+  },
+  "Lancia Delta HF Integrale Evo": {
+    "driveType": "AWD",
+    "baseline": {
+      "drivetrain": {
+        "gearsSet": "LanciaDeltaHFIntegraleEvoSet1",
+        "frontBias": "47%",
+        "frontDiff": {
+          "ratio": "25//25",
+          "lsdRampAngle": "60_75",
+          "lsdPlates": 6,
+          "lsdPreload": "60 Nm"
+        },
+        "rearDiff": {
+          "ratio": "34//13",
+          "lsdRampAngle": "45_70",
+          "lsdPlates": 6,
+          "lsdPreload": "90 Nm"
+        },
+        "centreDiffRatio": "53//13"
+      },
+      "suspension": {
+        "frontARB": "18500 N/m",
+        "rearARB": "16500 N/m",
+        "springs": {
+          "FL": "70000 N/m",
+          "FR": "70000 N/m",
+          "RL": "50000 N/m",
+          "RR": "50000 N/m"
+        },
+        "rideHeight": {
+          "FL": "51.0 mm",
+          "FR": "51.0 mm",
+          "RL": "48.0 mm",
+          "RR": "48.0 mm"
+        }
+      },
+      "dampers": {
+        "FL": {
+          "slowBump": 5000,
+          "slowRebound": 8000,
+          "fastBump": 3500,
+          "fastRebound": 5250
+        },
+        "FR": {
+          "slowBump": 5000,
+          "slowRebound": 8000,
+          "fastBump": 3500,
+          "fastRebound": 5250
+        },
+        "RL": {
+          "slowBump": 4000,
+          "slowRebound": 6250,
+          "fastBump": 2500,
+          "fastRebound": 4500
+        },
+        "RR": {
+          "slowBump": 4000,
+          "slowRebound": 6250,
+          "fastBump": 2500,
+          "fastRebound": 4500
+        }
+      },
+      "tyres": {
+        "FL": {
+          "pressure": "32 PSI",
+          "camber": "-1.7°",
+          "toe": "0.006°"
+        },
+        "FR": {
+          "pressure": "32 PSI",
+          "camber": "-1.7°",
+          "toe": "0.006°"
+        },
+        "RL": {
+          "pressure": "32 PSI",
+          "camber": "-2.3°",
+          "toe": "0°"
+        },
+        "RR": {
+          "pressure": "32 PSI",
+          "camber": "-2.3°",
+          "toe": "0°"
+        }
+      },
+      "brakes": {
+        "brakeBias": "65% front",
+        "propValvePressure": 3,
+        "handbrakeMultiplier": 1
+      }
+    },
+    "surfaceOverrides": {
+      "tarmac": {},
+      "gravel": {}
+    }
+  },
+  "Lancia Rally 037 Evo 2": {
+    "driveType": "RWD",
+    "baseline": {
+      "drivetrain": {
+        "gearsSet": "LanciaRally037Evo2Set0",
+        "rearDiff": {
+          "ratio": "44//9",
+          "lsdRampAngle": "50_65",
+          "lsdPlates": 4,
+          "lsdPreload": "90 Nm"
+        }
+      },
+      "suspension": {
+        "frontARB": "4000 N/m",
+        "springs": {
+          "FL": "65000 N/m",
+          "FR": "65000 N/m",
+          "RL": "45000 N/m",
+          "RR": "45000 N/m"
+        },
+        "rideHeight": {
+          "FL": "49.0 mm",
+          "FR": "49.0 mm",
+          "RL": "67.0 mm",
+          "RR": "67.0 mm"
+        }
+      },
+      "dampers": {
+        "FL": {
+          "slowBump": 6000,
+          "slowRebound": 9000,
+          "fastBump": 4500,
+          "fastRebound": 6500
+        },
+        "FR": {
+          "slowBump": 6000,
+          "slowRebound": 9000,
+          "fastBump": 4500,
+          "fastRebound": 6500
+        },
+        "RL": {
+          "slowBump": 5000,
+          "slowRebound": 8000,
+          "fastBump": 3500,
+          "fastRebound": 5500
+        },
+        "RR": {
+          "slowBump": 5000,
+          "slowRebound": 8000,
+          "fastBump": 3500,
+          "fastRebound": 5500
+        }
+      },
+      "tyres": {
+        "FL": {
+          "pressure": "32 PSI",
+          "camber": "-1.1°",
+          "toe": "0°"
+        },
+        "FR": {
+          "pressure": "32 PSI",
+          "camber": "-1.1°",
+          "toe": "0°"
+        },
+        "RL": {
+          "pressure": "32 PSI",
+          "camber": "-2.3°",
+          "toe": "0°"
+        },
+        "RR": {
+          "pressure": "32 PSI",
+          "camber": "-2.3°",
+          "toe": "0°"
+        }
+      },
+      "brakes": {
+        "brakeBias": "55% front",
+        "propValvePressure": 3,
+        "handbrakeMultiplier": 1
+      }
+    },
+    "surfaceOverrides": {
+      "tarmac": {},
+      "gravel": {}
+    }
+  },
+  "Lancia Stratos": {
+    "driveType": "RWD",
+    "baseline": {
+      "drivetrain": {
+        "gearsSet": "LanciaStratosSet0",
+        "rearDiff": {
+          "ratio": "65//19",
+          "lsdRampAngle": "50_65",
+          "lsdPlates": 4,
+          "lsdPreload": "70 Nm"
+        }
+      },
+      "suspension": {
+        "frontARB": "2750 N/m",
+        "rearARB": "2500 N/m",
+        "springs": {
+          "FL": "57700 N/m",
+          "FR": "57700 N/m",
+          "RL": "32660 N/m",
+          "RR": "32660 N/m"
+        },
+        "rideHeight": {
+          "FL": "56.0 mm",
+          "FR": "56.0 mm",
+          "RL": "86.0 mm",
+          "RR": "86.0 mm"
+        }
+      },
+      "dampers": {
+        "FL": {
+          "slowBump": 3415,
+          "slowRebound": 8225,
+          "fastBump": 2315,
+          "fastRebound": 6380
+        },
+        "FR": {
+          "slowBump": 3415,
+          "slowRebound": 8225,
+          "fastBump": 2315,
+          "fastRebound": 6380
+        },
+        "RL": {
+          "slowBump": 4375,
+          "slowRebound": 8185,
+          "fastBump": 3145,
+          "fastRebound": 6755
+        },
+        "RR": {
+          "slowBump": 4375,
+          "slowRebound": 8185,
+          "fastBump": 3145,
+          "fastRebound": 6755
+        }
+      },
+      "tyres": {
+        "FL": {
+          "pressure": "32 PSI",
+          "camber": "-0.5°",
+          "toe": "0°"
+        },
+        "FR": {
+          "pressure": "32 PSI",
+          "camber": "-0.5°",
+          "toe": "0°"
+        },
+        "RL": {
+          "pressure": "32 PSI",
+          "camber": "-2.5°",
+          "toe": "0°"
+        },
+        "RR": {
+          "pressure": "32 PSI",
+          "camber": "-2.5°",
+          "toe": "0°"
+        }
+      },
+      "brakes": {
+        "brakeBias": "55% front",
+        "propValvePressure": 2.75,
+        "handbrakeMultiplier": 1
+      }
+    },
+    "surfaceOverrides": {
+      "tarmac": {},
+      "gravel": {}
+    }
+  },
+  "Mini Cooper S 1275": {
+    "driveType": "FWD",
+    "baseline": {
+      "drivetrain": {
+        "gearsSet": "MiniCooperS1275Set0",
+        "frontDiff": {
+          "ratio": "63//16",
+          "lsdRampAngle": "45_65",
+          "lsdPlates": 4,
+          "lsdPreload": "30 Nm"
+        }
+      },
+      "suspension": {
+        "frontARB": "1500 N/m",
+        "springs": {
+          "FL": "550000 N/m",
+          "FR": "550000 N/m",
+          "RL": "550000 N/m",
+          "RR": "550000 N/m"
+        },
+        "rideHeight": {
+          "FL": "15.2 mm",
+          "FR": "15.2 mm",
+          "RL": "10.7 mm",
+          "RR": "10.7 mm"
+        }
+      },
+      "dampers": {
+        "FL": {
+          "slowBump": 4500,
+          "slowRebound": 8000,
+          "fastBump": 2500,
+          "fastRebound": 3500
+        },
+        "FR": {
+          "slowBump": 4500,
+          "slowRebound": 8000,
+          "fastBump": 2500,
+          "fastRebound": 3500
+        },
+        "RL": {
+          "slowBump": 3500,
+          "slowRebound": 5000,
+          "fastBump": 2000,
+          "fastRebound": 3000
+        },
+        "RR": {
+          "slowBump": 3500,
+          "slowRebound": 5000,
+          "fastBump": 2000,
+          "fastRebound": 3000
+        }
+      },
+      "tyres": {
+        "FL": {
+          "pressure": "32 PSI",
+          "camber": "-1.5°",
+          "toe": "0°"
+        },
+        "FR": {
+          "pressure": "32 PSI",
+          "camber": "-1.5°",
+          "toe": "0°"
+        },
+        "RL": {
+          "pressure": "32 PSI",
+          "camber": "-0.5°",
+          "toe": "-0.017°"
+        },
+        "RR": {
+          "pressure": "32 PSI",
+          "camber": "-0.5°",
+          "toe": "-0.017°"
+        }
+      },
+      "brakes": {
+        "brakeBias": "50% front",
+        "propValvePressure": 2.25,
+        "handbrakeMultiplier": 1
+      }
+    },
+    "surfaceOverrides": {
+      "tarmac": {
+        "gearing": {},
+        "suspension": {},
+        "dampers": {},
+        "brakes": {},
+        "wheels": {},
+        "differential": {},
+        "other": {}
+      },
+      "gravel": {}
+    }
+  },
+  "Peugeot 208 Rally 4": {
+    "driveType": "FWD",
+    "baseline": {
+      "drivetrain": {
+        "gearsSet": "Peugeot208Rally4Set0",
+        "frontDiff": {
+          "ratio": "56//12",
+          "lsdRampAngle": "27_57",
+          "lsdPlates": 6,
+          "lsdPreload": "130 Nm"
+        }
+      },
+      "suspension": {
+        "frontARB": "11663 N/m",
+        "rearARB": "15200 N/m",
+        "springs": {
+          "FL": "46300 N/m",
+          "FR": "46300 N/m",
+          "RL": "42400 N/m",
+          "RR": "42400 N/m"
+        },
+        "rideHeight": {
+          "FL": "66.0 mm",
+          "FR": "66.0 mm",
+          "RL": "62.0 mm",
+          "RR": "62.0 mm"
+        }
+      },
+      "dampers": {
+        "FL": {
+          "slowBump": 4290,
+          "slowRebound": 7452,
+          "fastBump": 2348,
+          "fastRebound": 7452
+        },
+        "FR": {
+          "slowBump": 4290,
+          "slowRebound": 7452,
+          "fastBump": 2348,
+          "fastRebound": 7452
+        },
+        "RL": {
+          "slowBump": 2765,
+          "slowRebound": 4050,
+          "fastBump": 2052,
+          "fastRebound": 4050
+        },
+        "RR": {
+          "slowBump": 2765,
+          "slowRebound": 4050,
+          "fastBump": 2052,
+          "fastRebound": 4050
+        }
+      },
+      "tyres": {
+        "FL": {
+          "pressure": "32 PSI",
+          "camber": "-1.5°",
+          "toe": "0°"
+        },
+        "FR": {
+          "pressure": "32 PSI",
+          "camber": "-1.5°",
+          "toe": "0°"
+        },
+        "RL": {
+          "pressure": "32 PSI",
+          "camber": "-3.5°",
+          "toe": "0°"
+        },
+        "RR": {
+          "pressure": "32 PSI",
+          "camber": "-3.5°",
+          "toe": "0°"
+        }
+      },
+      "brakes": {
+        "brakeBias": "60% front",
+        "propValvePressure": 4.5,
+        "handbrakeMultiplier": 1
+      }
+    },
+    "surfaceOverrides": {
+      "tarmac": {},
+      "gravel": {}
+    }
+  }
+}

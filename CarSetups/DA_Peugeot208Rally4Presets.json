@@ -1,0 +1,3229 @@
+[
+  {
+    "Type": "CarSettingConstraintCarPartState",
+    "Name": "CarSettingConstraintCarPartState_0",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingConstraintCarPartState'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CarParts": [
+        {
+          "Key": "Bodywork",
+          "Value": {
+            "bEqual": false,
+            "State": "ECarDamageablePartStateType::Normal"
+          }
+        }
+      ],
+      "Conditions": [
+        {
+          "Value": true,
+          "RangeOverride": null,
+          "ValueOverride": null,
+          "LockOverride": {
+            "ObjectName": "CarSettingOverrideLockByCarPart'DA_Peugeot208Rally4Presets:CarSettingConstraintCarPartState_0.CarSettingOverrideLockByCarPart_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.71"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CarSettingConstraintElectronicMap",
+    "Name": "CarSettingConstraintElectronicMap_0",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingConstraintElectronicMap'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MapType": "EElectronicMapType::ABS"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintElectronicMap",
+    "Name": "CarSettingConstraintElectronicMap_1",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingConstraintElectronicMap'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MapType": "EElectronicMapType::TC1"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintElectronicMap",
+    "Name": "CarSettingConstraintElectronicMap_2",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingConstraintElectronicMap'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MapType": "EElectronicMapType::Throttle"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintElectronicMap",
+    "Name": "CarSettingConstraintElectronicMap_3",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingConstraintElectronicMap'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingConstraintExternalDiscs",
+    "Name": "CarSettingConstraintExternalDiscs_0",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingConstraintExternalDiscs'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingConstraintExternalDiscs_0.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.73"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingConstraintExternalDiscs",
+    "Name": "CarSettingConstraintExternalDiscs_1",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingConstraintExternalDiscs'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::FrontRight",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingConstraintExternalDiscs_1.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.74"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingConstraintExternalDiscs",
+    "Name": "CarSettingConstraintExternalDiscs_2",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingConstraintExternalDiscs'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::RearLeft",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingConstraintExternalDiscs_2.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.75"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingConstraintExternalDiscs",
+    "Name": "CarSettingConstraintExternalDiscs_3",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingConstraintExternalDiscs'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::RearRight",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingConstraintExternalDiscs_3.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.76"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingConstraintProportioningValve",
+    "Name": "CarSettingConstraintProportioningValve_0",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingConstraintProportioningValve'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingConstraintRaceStartsAtNight",
+    "Name": "CarSettingConstraintRaceStartsAtNight_0",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingConstraintRaceStartsAtNight'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Conditions": [
+        {
+          "Value": true,
+          "RangeOverride": null,
+          "ValueOverride": {
+            "ObjectName": "CarSettingOverrideBool'DA_Peugeot208Rally4Presets:CarSettingConstraintRaceStartsAtNight_0.CarSettingOverrideBool_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.19"
+          },
+          "LockOverride": null
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingCalipers",
+    "Name": "CarSettingConstraintSettingCalipers_0",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingConstraintSettingCalipers'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingConstraintSettingCalipers_0.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.77"
+      },
+      "Constrainer": "Brakes.FrontLeft.Disc"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingCalipers",
+    "Name": "CarSettingConstraintSettingCalipers_1",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingConstraintSettingCalipers'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::FrontRight",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingConstraintSettingCalipers_1.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.78"
+      },
+      "Constrainer": "Brakes.FrontRight.Disc"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingCalipers",
+    "Name": "CarSettingConstraintSettingCalipers_2",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingConstraintSettingCalipers'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::RearLeft",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingConstraintSettingCalipers_2.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.79"
+      },
+      "Constrainer": "Brakes.RearLeft.Disc"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingCalipers",
+    "Name": "CarSettingConstraintSettingCalipers_3",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingConstraintSettingCalipers'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::RearRight",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingConstraintSettingCalipers_3.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.80"
+      },
+      "Constrainer": "Brakes.RearRight.Disc"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingPads",
+    "Name": "CarSettingConstraintSettingPads_0",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingConstraintSettingPads'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingConstraintSettingPads_0.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.81"
+      },
+      "Constrainer": "Brakes.FrontLeft.Caliper"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingPads",
+    "Name": "CarSettingConstraintSettingPads_1",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingConstraintSettingPads'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::FrontRight",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingConstraintSettingPads_1.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.82"
+      },
+      "Constrainer": "Brakes.FrontRight.Caliper"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingPads",
+    "Name": "CarSettingConstraintSettingPads_2",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingConstraintSettingPads'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::RearLeft",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingConstraintSettingPads_2.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.83"
+      },
+      "Constrainer": "Brakes.RearLeft.Caliper"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingPads",
+    "Name": "CarSettingConstraintSettingPads_3",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingConstraintSettingPads'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::RearRight",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingConstraintSettingPads_3.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.84"
+      },
+      "Constrainer": "Brakes.RearRight.Caliper"
+    }
+  },
+  {
+    "Type": "CarSettingOverrideBool",
+    "Name": "CarSettingOverrideBool_0",
+    "Outer": "CarSettingConstraintRaceStartsAtNight_0",
+    "Class": "UScriptClass'CarSettingOverrideBool'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": true
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_10",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 2765.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_11",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 2765.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_12",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 7452.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_13",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 7452.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_14",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 4050.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_15",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 4050.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_16",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 2348.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_17",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 2348.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_18",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 2052.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_19",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 2052.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_20",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 7452.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_21",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 7452.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_22",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 4050.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_23",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 4050.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_24",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": -1.3
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_25",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": -1.3
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_26",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 11663.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_27",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 4.5
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_28",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": -1.8
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_29",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": -1.8
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_8",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 4290.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_9",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 4290.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_0",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 5.5
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_1",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 36100.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_10",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 3135.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_11",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 2480.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_12",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 2480.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_13",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 4777.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_14",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 4777.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_15",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 3765.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_16",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 3765.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_17",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 2030.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_18",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 2030.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_19",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 1535.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_2",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 36100.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_20",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 1535.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_21",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 4777.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_22",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 4777.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_23",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 3765.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_24",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 3765.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_25",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 80.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_3",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 32800.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_4",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 32800.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_5",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 0.125
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_6",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 0.125
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_7",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 0.114
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_8",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 0.114
+    }
+  },
+  {
+    "Type": "CarSettingOverrideFloat",
+    "Name": "CarSettingOverrideFloat_9",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 3135.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideInteger",
+    "Name": "CarSettingOverrideInteger_0",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 1
+    }
+  },
+  {
+    "Type": "CarSettingOverrideInteger",
+    "Name": "CarSettingOverrideInteger_1",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 1
+    }
+  },
+  {
+    "Type": "CarSettingOverrideInteger",
+    "Name": "CarSettingOverrideInteger_2",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 4
+    }
+  },
+  {
+    "Type": "CarSettingOverrideLockByCarPart",
+    "Name": "CarSettingOverrideLockByCarPart_0",
+    "Outer": "CarSettingConstraintCarPartState_0",
+    "Class": "UScriptClass'CarSettingOverrideLockByCarPart'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CarPart": "Bodywork"
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeBool",
+    "Name": "CarSettingOverrideRangeBool_0",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeBool'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintExternalDiscs_0",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBDiscsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBDisc'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintExternalDiscs_1",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBDiscsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBDisc'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintExternalDiscs_2",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBDiscsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBDisc'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintExternalDiscs_3",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBDiscsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBDisc'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingCalipers_0",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBCalipersList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBCaliper'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingCalipers_1",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBCalipersList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBCaliper'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingCalipers_2",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBCalipersList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBCaliper'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingCalipers_3",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBCalipersList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBCaliper'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingPads_0",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBPadsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBPad'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingPads_1",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBPadsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBPad'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingPads_2",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBPadsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBPad'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingPads_3",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBPadsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBPad'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_0",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBLSDRampAnglesList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "List": {
+        "Table": "LSDRampAnglesLists",
+        "Row": "Peugeot208Rally4_Front"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBLSDRampAngle'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      },
+      "Values": [
+        {
+          "Table": "LSDRampAngles",
+          "Row": "27_57"
+        },
+        {
+          "Table": "LSDRampAngles",
+          "Row": "35_63"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_1",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_10",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_11",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_12",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_2",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_3",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_4",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_5",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_6",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_7",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_8",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_9",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "RangeOverride",
+    "Outer": "CarSettingConstraintProportioningValve_0",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_0",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 40.0,
+      "Max": 200.0,
+      "Step": 1.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_1",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 10.0,
+      "Max": 45.0,
+      "Step": 1.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_11",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Max": 0.15,
+      "Step": 0.0005
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_12",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Max": 0.15,
+      "Step": 0.0005
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_13",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Max": 0.15,
+      "Step": 0.0005
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_14",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Max": 0.15,
+      "Step": 0.0005
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_15",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 31000.0,
+      "Max": 56500.0,
+      "Step": 5100.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_16",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 31000.0,
+      "Max": 56500.0,
+      "Step": 5100.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_17",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 28000.0,
+      "Max": 52000.0,
+      "Step": 4800.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_18",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 28000.0,
+      "Max": 52000.0,
+      "Step": 4800.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_19",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 3470.0,
+      "Max": 17125.0,
+      "Step": 2731.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_2",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 10.0,
+      "Max": 45.0,
+      "Step": 1.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_20",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 12050.0,
+      "Max": 21500.0,
+      "Step": 3150.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_21",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 2400.0,
+      "Max": 6495.0,
+      "Step": 105.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_22",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 2400.0,
+      "Max": 6495.0,
+      "Step": 105.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_23",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 2100.0,
+      "Max": 5805.0,
+      "Step": 95.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_24",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 2100.0,
+      "Max": 5805.0,
+      "Step": 95.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_25",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 3600.0,
+      "Max": 9913.0,
+      "Step": 107.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_26",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 3600.0,
+      "Max": 9913.0,
+      "Step": 107.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_27",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 3100.0,
+      "Max": 8705.0,
+      "Step": 95.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_28",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 3100.0,
+      "Max": 8705.0,
+      "Step": 95.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_29",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 1500.0,
+      "Max": 4097.0,
+      "Step": 53.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_3",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 10.0,
+      "Max": 45.0,
+      "Step": 1.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_30",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 1500.0,
+      "Max": 4097.0,
+      "Step": 53.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_31",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 1300.0,
+      "Max": 3603.0,
+      "Step": 47.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_32",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 1300.0,
+      "Max": 3603.0,
+      "Step": 47.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_33",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 3600.0,
+      "Max": 9913.0,
+      "Step": 107.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_34",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 3600.0,
+      "Max": 9913.0,
+      "Step": 107.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_35",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 3100.0,
+      "Max": 8705.0,
+      "Step": 95.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_36",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 3100.0,
+      "Max": 8705.0,
+      "Step": 95.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_37",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": -6.5,
+      "Max": 0.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_38",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": -6.5,
+      "Max": 0.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_39",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_4",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 10.0,
+      "Max": 45.0,
+      "Step": 1.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_5",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": -6.5,
+      "Max": 0.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_6",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": -6.5,
+      "Max": 0.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_7",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": -0.001,
+      "Max": 0.001,
+      "Step": 0.0001
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_8",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": -0.001,
+      "Max": 0.001,
+      "Step": 0.0001
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_9",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 0.5,
+      "Max": 1.5,
+      "Step": 0.01
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeInteger",
+    "Name": "RangeOverride",
+    "Outer": "CarSettingConstraintElectronicMap_0",
+    "Class": "UScriptClass'CarSettingOverrideRangeInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeInteger",
+    "Name": "RangeOverride",
+    "Outer": "CarSettingConstraintElectronicMap_1",
+    "Class": "UScriptClass'CarSettingOverrideRangeInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeInteger",
+    "Name": "RangeOverride",
+    "Outer": "CarSettingConstraintElectronicMap_2",
+    "Class": "UScriptClass'CarSettingOverrideRangeInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeInteger",
+    "Name": "RangeOverride",
+    "Outer": "CarSettingConstraintElectronicMap_3",
+    "Class": "UScriptClass'CarSettingOverrideRangeInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeInteger",
+    "Name": "CarSettingOverrideRangeInteger_0",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 2,
+      "Max": 6
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeInteger",
+    "Name": "CarSettingOverrideRangeInteger_1",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeInteger",
+    "Name": "CarSettingOverrideRangeInteger_2",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeInteger",
+    "Name": "CarSettingOverrideRangeInteger_3",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeInteger",
+    "Name": "CarSettingOverrideRangeInteger_4",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSettingOverrideRangeInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_0",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Discs",
+        "Row": "Peugeot_904921028B_330x30_Baffled_4x108_PeugeotDisc00"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_1",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Discs",
+        "Row": "Peugeot_904921028B_330x30_Baffled_4x108_PeugeotDisc00"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_2",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Pads",
+        "Row": "Type20_Hard"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_3",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Pads",
+        "Row": "Type21_Medium"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_4",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Pads",
+        "Row": "Type20_Hard"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_5",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Pads",
+        "Row": "Type21_Medium"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_0",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Discs",
+        "Row": "Peugeot_904207038B_285x26_Baffled_4x108_PeugeotDisc01"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_1",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Discs",
+        "Row": "Peugeot_904207038B_285x26_Baffled_4x108_PeugeotDisc01"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_2",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Pads",
+        "Row": "Type20_Medium"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_3",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Pads",
+        "Row": "Type20_Medium"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_4",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Pads",
+        "Row": "Type21_Soft"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_5",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Pads",
+        "Row": "Type21_Soft"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_6",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "LSDRampAngles",
+        "Row": "35_63"
+      }
+    }
+  },
+  {
+    "Type": "CarSetupPresets",
+    "Name": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSetupPresets'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CarSetupDefinition": {
+        "ObjectName": "CarSetupDefinition'DA_CarSetupDefinition'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_CarSetupDefinition.214"
+      },
+      "CarData": {
+        "ObjectName": "AcrCarData'DA_Peugeot208Rally4'",
+        "ObjectPath": "/Game/Data/Vehicles/Peugeot208Rally4/DA_Peugeot208Rally4.0"
+      },
+      "PhysicsCarSetup": {
+        "ObjectName": "PhysicsCarSetup'DA_Peugeot208Rally4Presets:PhysicsCarSetup'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.165"
+      },
+      "Ranges": [
+        {
+          "Key": "Brakes.FrontLeft.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeDBReferenceSetFromDB_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.86"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeDBReferenceSetFromDB_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.90"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeDBReferenceSetFromDB_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.91"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeDBReferenceSetFromDB_4'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.92"
+          }
+        },
+        {
+          "Key": "Brakes.FrontLeft.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeDBReferenceSetFromDB_5'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.93"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeDBReferenceSetFromDB_6'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.94"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeDBReferenceSetFromDB_7'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.95"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeDBReferenceSetFromDB_8'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.96"
+          }
+        },
+        {
+          "Key": "Brakes.FrontLeft.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeDBReferenceSetFromDB_9'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.97"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeDBReferenceSetFromDB_10'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.87"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeDBReferenceSetFromDB_11'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.88"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeDBReferenceSetFromDB_12'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.89"
+          }
+        },
+        {
+          "Key": "Differentials.Front.LSDRamps",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeDBReferenceSetFromDB_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.85"
+          }
+        },
+        {
+          "Key": "Differentials.Front.LSDPreload",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.99"
+          }
+        },
+        {
+          "Key": "Differentials.Front.LSDFrictionPlates",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeInteger'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeInteger_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.142"
+          }
+        },
+        {
+          "Key": "Wheels.FrontLeft.TyrePressure",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.100"
+          }
+        },
+        {
+          "Key": "Wheels.FrontRight.TyrePressure",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.110"
+          }
+        },
+        {
+          "Key": "Wheels.RearLeft.TyrePressure",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.121"
+          }
+        },
+        {
+          "Key": "Wheels.RearRight.TyrePressure",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_4'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.132"
+          }
+        },
+        {
+          "Key": "Wheels.FrontLeft.Camber",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_5'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.133"
+          }
+        },
+        {
+          "Key": "Wheels.FrontRight.Camber",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_6'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.134"
+          }
+        },
+        {
+          "Key": "Wheels.FrontLeft.Toe",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_7'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.135"
+          }
+        },
+        {
+          "Key": "Wheels.FrontRight.Toe",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_8'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.136"
+          }
+        },
+        {
+          "Key": "Brakes.BrakesMain.HandbrakeForce",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_9'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.137"
+          }
+        },
+        {
+          "Key": "Brakes.BrakesMain.ProportioningPreload",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_39'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.131"
+          }
+        },
+        {
+          "Key": "Other.Lights.AdditionalLights",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeBool'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeBool_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.72"
+          }
+        },
+        {
+          "Key": "Suspensions.FrontLeft.AdjusterRing",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_11'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.101"
+          }
+        },
+        {
+          "Key": "Suspensions.FrontRight.AdjusterRing",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_12'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.102"
+          }
+        },
+        {
+          "Key": "Suspensions.RearLeft.AdjusterRing",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_13'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.103"
+          }
+        },
+        {
+          "Key": "Suspensions.RearRight.AdjusterRing",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_14'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.104"
+          }
+        },
+        {
+          "Key": "Suspensions.FrontLeft.SpringStiffness",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_15'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.105"
+          }
+        },
+        {
+          "Key": "Suspensions.FrontRight.SpringStiffness",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_16'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.106"
+          }
+        },
+        {
+          "Key": "Suspensions.RearLeft.SpringStiffness",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_17'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.107"
+          }
+        },
+        {
+          "Key": "Suspensions.RearRight.SpringStiffness",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_18'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.108"
+          }
+        },
+        {
+          "Key": "Axles.Front.ARBStiffness",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_19'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.109"
+          }
+        },
+        {
+          "Key": "Axles.Rear.ARBStiffness",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_20'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.111"
+          }
+        },
+        {
+          "Key": "Dampers.FrontLeft.SlowBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_21'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.112"
+          }
+        },
+        {
+          "Key": "Dampers.FrontRight.SlowBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_22'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.113"
+          }
+        },
+        {
+          "Key": "Dampers.RearLeft.SlowBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_23'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.114"
+          }
+        },
+        {
+          "Key": "Dampers.RearRight.SlowBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_24'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.115"
+          }
+        },
+        {
+          "Key": "Dampers.FrontLeft.SlowRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_25'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.116"
+          }
+        },
+        {
+          "Key": "Dampers.FrontRight.SlowRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_26'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.117"
+          }
+        },
+        {
+          "Key": "Dampers.RearLeft.SlowRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_27'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.118"
+          }
+        },
+        {
+          "Key": "Dampers.RearRight.SlowRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_28'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.119"
+          }
+        },
+        {
+          "Key": "Dampers.FrontLeft.FastBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_29'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.120"
+          }
+        },
+        {
+          "Key": "Dampers.FrontRight.FastBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_30'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.122"
+          }
+        },
+        {
+          "Key": "Dampers.RearLeft.FastBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_31'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.123"
+          }
+        },
+        {
+          "Key": "Dampers.RearRight.FastBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_32'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.124"
+          }
+        },
+        {
+          "Key": "Dampers.FrontLeft.FastRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_33'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.125"
+          }
+        },
+        {
+          "Key": "Dampers.FrontRight.FastRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_34'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.126"
+          }
+        },
+        {
+          "Key": "Dampers.RearLeft.FastRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_35'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.127"
+          }
+        },
+        {
+          "Key": "Dampers.RearRight.FastRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_36'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.128"
+          }
+        },
+        {
+          "Key": "Other.Electronic.ABS",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeInteger'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeInteger_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.143"
+          }
+        },
+        {
+          "Key": "Other.Electronic.TCS",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeInteger'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeInteger_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.144"
+          }
+        },
+        {
+          "Key": "Other.Electronic.ThrottleMap",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeInteger'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeInteger_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.145"
+          }
+        },
+        {
+          "Key": "Other.Electronic.EngineMap",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeInteger'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeInteger_4'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.146"
+          }
+        },
+        {
+          "Key": "Wheels.RearLeft.Camber",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_37'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.129"
+          }
+        },
+        {
+          "Key": "Wheels.RearRight.Camber",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Peugeot208Rally4Presets:CarSettingOverrideRangeFloat_38'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.130"
+          }
+        }
+      ],
+      "Constraints": [
+        {
+          "Key": "Brakes.FrontLeft.Disc",
+          "Value": {
+            "ObjectName": "CarSettingConstraintExternalDiscs'DA_Peugeot208Rally4Presets:CarSettingConstraintExternalDiscs_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.5"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Disc",
+          "Value": {
+            "ObjectName": "CarSettingConstraintExternalDiscs'DA_Peugeot208Rally4Presets:CarSettingConstraintExternalDiscs_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.6"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.Disc",
+          "Value": {
+            "ObjectName": "CarSettingConstraintExternalDiscs'DA_Peugeot208Rally4Presets:CarSettingConstraintExternalDiscs_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.7"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.Disc",
+          "Value": {
+            "ObjectName": "CarSettingConstraintExternalDiscs'DA_Peugeot208Rally4Presets:CarSettingConstraintExternalDiscs_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.8"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingPads'DA_Peugeot208Rally4Presets:CarSettingConstraintSettingPads_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.18"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingPads'DA_Peugeot208Rally4Presets:CarSettingConstraintSettingPads_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.17"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingPads'DA_Peugeot208Rally4Presets:CarSettingConstraintSettingPads_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.16"
+          }
+        },
+        {
+          "Key": "Brakes.FrontLeft.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingPads'DA_Peugeot208Rally4Presets:CarSettingConstraintSettingPads_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.15"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingCalipers'DA_Peugeot208Rally4Presets:CarSettingConstraintSettingCalipers_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.14"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingCalipers'DA_Peugeot208Rally4Presets:CarSettingConstraintSettingCalipers_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.13"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingCalipers'DA_Peugeot208Rally4Presets:CarSettingConstraintSettingCalipers_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.12"
+          }
+        },
+        {
+          "Key": "Brakes.FrontLeft.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingCalipers'DA_Peugeot208Rally4Presets:CarSettingConstraintSettingCalipers_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.11"
+          }
+        },
+        {
+          "Key": "Brakes.BrakesMain.ProportioningPreload",
+          "Value": {
+            "ObjectName": "CarSettingConstraintProportioningValve'DA_Peugeot208Rally4Presets:CarSettingConstraintProportioningValve_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.9"
+          }
+        },
+        {
+          "Key": "Other.Lights.AdditionalLights",
+          "Value": {
+            "ObjectName": "CarSettingConstraintRaceStartsAtNight'DA_Peugeot208Rally4Presets:CarSettingConstraintRaceStartsAtNight_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.10"
+          }
+        },
+        {
+          "Key": "Other.Electronic.ABS",
+          "Value": {
+            "ObjectName": "CarSettingConstraintElectronicMap'DA_Peugeot208Rally4Presets:CarSettingConstraintElectronicMap_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.1"
+          }
+        },
+        {
+          "Key": "Other.Electronic.TCS",
+          "Value": {
+            "ObjectName": "CarSettingConstraintElectronicMap'DA_Peugeot208Rally4Presets:CarSettingConstraintElectronicMap_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.2"
+          }
+        },
+        {
+          "Key": "Other.Electronic.ThrottleMap",
+          "Value": {
+            "ObjectName": "CarSettingConstraintElectronicMap'DA_Peugeot208Rally4Presets:CarSettingConstraintElectronicMap_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.3"
+          }
+        },
+        {
+          "Key": "Other.Electronic.EngineMap",
+          "Value": {
+            "ObjectName": "CarSettingConstraintElectronicMap'DA_Peugeot208Rally4Presets:CarSettingConstraintElectronicMap_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.4"
+          }
+        },
+        {
+          "Key": "Other.Lights",
+          "Value": {
+            "ObjectName": "CarSettingConstraintCarPartState'DA_Peugeot208Rally4Presets:CarSettingConstraintCarPartState_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.0"
+          }
+        }
+      ],
+      "SurfacePresets": [
+        {
+          "Key": {
+            "Table": "SurfaceTypes",
+            "Row": "Tarmac"
+          },
+          "Value": {
+            "ObjectName": "CarSetupVariantsSurface'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.163"
+          }
+        },
+        {
+          "Key": {
+            "Table": "SurfaceTypes",
+            "Row": "Gravel"
+          },
+          "Value": {
+            "ObjectName": "CarSetupVariantsSurface'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.164"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CarSetupVariant",
+    "Name": "CarSetupVariant_0",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSetupVariant'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSetupVariant",
+    "Name": "CarSetupVariant_0",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSetupVariant'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSetupVariantsSurface",
+    "Name": "CarSetupVariantsSurface_0",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSetupVariantsSurface'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Default": "Balanced",
+      "ValuesOverrides": [
+        {
+          "Key": "Brakes.FrontLeft.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideValueSetDBReference_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.147"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideValueSetDBReference_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.148"
+          }
+        },
+        {
+          "Key": "Dampers.FrontLeft.SlowBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_8'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.40"
+          }
+        },
+        {
+          "Key": "Dampers.FrontRight.SlowBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_9'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.41"
+          }
+        },
+        {
+          "Key": "Dampers.RearLeft.SlowBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_10'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.20"
+          }
+        },
+        {
+          "Key": "Dampers.RearRight.SlowBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_11'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.21"
+          }
+        },
+        {
+          "Key": "Dampers.FrontLeft.SlowRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_12'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.22"
+          }
+        },
+        {
+          "Key": "Dampers.FrontRight.SlowRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_13'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.23"
+          }
+        },
+        {
+          "Key": "Dampers.RearLeft.SlowRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_14'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.24"
+          }
+        },
+        {
+          "Key": "Dampers.RearRight.SlowRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_15'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.25"
+          }
+        },
+        {
+          "Key": "Dampers.FrontLeft.FastBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_16'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.26"
+          }
+        },
+        {
+          "Key": "Dampers.FrontRight.FastBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_17'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.27"
+          }
+        },
+        {
+          "Key": "Dampers.RearLeft.FastBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_18'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.28"
+          }
+        },
+        {
+          "Key": "Dampers.RearRight.FastBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_19'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.29"
+          }
+        },
+        {
+          "Key": "Dampers.FrontLeft.FastRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_20'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.30"
+          }
+        },
+        {
+          "Key": "Dampers.FrontRight.FastRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_21'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.31"
+          }
+        },
+        {
+          "Key": "Dampers.RearLeft.FastRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_22'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.32"
+          }
+        },
+        {
+          "Key": "Dampers.RearRight.FastRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_23'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.33"
+          }
+        },
+        {
+          "Key": "Wheels.FrontLeft.Camber",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_24'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.34"
+          }
+        },
+        {
+          "Key": "Wheels.FrontRight.Camber",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_25'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.35"
+          }
+        },
+        {
+          "Key": "Axles.Front.ARBStiffness",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_26'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.36"
+          }
+        },
+        {
+          "Key": "Brakes.FrontLeft.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideValueSetDBReference_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.149"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideValueSetDBReference_4'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.151"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideValueSetDBReference_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.150"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideValueSetDBReference_5'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.152"
+          }
+        },
+        {
+          "Key": "Brakes.BrakesMain.ProportioningPreload",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_27'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.37"
+          }
+        },
+        {
+          "Key": "Wheels.RearLeft.Camber",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_28'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.38"
+          }
+        },
+        {
+          "Key": "Wheels.RearRight.Camber",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSettingOverrideFloat_29'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.39"
+          }
+        }
+      ],
+      "Variants": [
+        {
+          "Key": "Balanced",
+          "Value": {
+            "ObjectName": "CarSetupVariant'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_0.CarSetupVariant_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.161"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CarSetupVariantsSurface",
+    "Name": "CarSetupVariantsSurface_1",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'CarSetupVariantsSurface'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Default": "Balanced",
+      "ValuesOverrides": [
+        {
+          "Key": "Brakes.FrontLeft.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.153"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.154"
+          }
+        },
+        {
+          "Key": "Other.Electronic.EngineMap",
+          "Value": {
+            "ObjectName": "CarSettingOverrideInteger'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideInteger_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.68"
+          }
+        },
+        {
+          "Key": "Other.Electronic.ThrottleMap",
+          "Value": {
+            "ObjectName": "CarSettingOverrideInteger'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideInteger_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.69"
+          }
+        },
+        {
+          "Key": "Brakes.FrontLeft.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.155"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.156"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_4'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.157"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_5'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.158"
+          }
+        },
+        {
+          "Key": "Brakes.BrakesMain.ProportioningPreload",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.42"
+          }
+        },
+        {
+          "Key": "Differentials.Front.LSDRamps",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_6'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.159"
+          }
+        },
+        {
+          "Key": "Suspensions.FrontLeft.SpringStiffness",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.43"
+          }
+        },
+        {
+          "Key": "Suspensions.FrontRight.SpringStiffness",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.54"
+          }
+        },
+        {
+          "Key": "Suspensions.RearLeft.SpringStiffness",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.61"
+          }
+        },
+        {
+          "Key": "Suspensions.RearRight.SpringStiffness",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_4'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.62"
+          }
+        },
+        {
+          "Key": "Suspensions.FrontLeft.AdjusterRing",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_5'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.63"
+          }
+        },
+        {
+          "Key": "Suspensions.FrontRight.AdjusterRing",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_6'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.64"
+          }
+        },
+        {
+          "Key": "Suspensions.RearLeft.AdjusterRing",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_7'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.65"
+          }
+        },
+        {
+          "Key": "Suspensions.RearRight.AdjusterRing",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_8'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.66"
+          }
+        },
+        {
+          "Key": "Dampers.FrontLeft.SlowBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_9'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.67"
+          }
+        },
+        {
+          "Key": "Dampers.FrontRight.SlowBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_10'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.44"
+          }
+        },
+        {
+          "Key": "Dampers.RearLeft.SlowBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_11'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.45"
+          }
+        },
+        {
+          "Key": "Dampers.RearRight.SlowBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_12'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.46"
+          }
+        },
+        {
+          "Key": "Dampers.FrontLeft.SlowRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_13'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.47"
+          }
+        },
+        {
+          "Key": "Dampers.FrontRight.SlowRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_14'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.48"
+          }
+        },
+        {
+          "Key": "Dampers.RearLeft.SlowRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_15'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.49"
+          }
+        },
+        {
+          "Key": "Dampers.RearRight.SlowRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_16'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.50"
+          }
+        },
+        {
+          "Key": "Dampers.FrontLeft.FastBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_17'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.51"
+          }
+        },
+        {
+          "Key": "Dampers.FrontRight.FastBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_18'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.52"
+          }
+        },
+        {
+          "Key": "Dampers.RearLeft.FastBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_19'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.53"
+          }
+        },
+        {
+          "Key": "Dampers.RearRight.FastBump",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_20'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.55"
+          }
+        },
+        {
+          "Key": "Dampers.FrontLeft.FastRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_21'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.56"
+          }
+        },
+        {
+          "Key": "Dampers.FrontRight.FastRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_22'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.57"
+          }
+        },
+        {
+          "Key": "Dampers.RearLeft.FastRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_23'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.58"
+          }
+        },
+        {
+          "Key": "Dampers.RearRight.FastRebound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_24'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.59"
+          }
+        },
+        {
+          "Key": "Differentials.Front.LSDPreload",
+          "Value": {
+            "ObjectName": "CarSettingOverrideFloat'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideFloat_25'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.60"
+          }
+        },
+        {
+          "Key": "Differentials.Front.LSDFrictionPlates",
+          "Value": {
+            "ObjectName": "CarSettingOverrideInteger'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSettingOverrideInteger_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.70"
+          }
+        }
+      ],
+      "Variants": [
+        {
+          "Key": "Balanced",
+          "Value": {
+            "ObjectName": "CarSetupVariant'DA_Peugeot208Rally4Presets:CarSetupVariantsSurface_1.CarSetupVariant_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Peugeot208Rally4Presets.162"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PhysicsCarSetup",
+    "Name": "PhysicsCarSetup",
+    "Outer": "DA_Peugeot208Rally4Presets",
+    "Class": "UScriptClass'PhysicsCarSetup'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DrivetrainSetupData": {
+        "FrontDiff": {
+          "LSDRampAngle": {
+            "Table": "LSDRampAngles",
+            "Row": "27_57"
+          },
+          "LSDPlatesNumber": 6,
+          "LSDPreload": 130.0
+        },
+        "RearDiff": {
+          "LSDPlatesNumber": 6,
+          "LSDPreload": 90.0
+        },
+        "FrontBias": 0.5,
+        "GearsSet": {
+          "Table": "GearsSets",
+          "Row": "Peugeot208Rally4Set0"
+        },
+        "CentreDiffRatio": {
+          "Table": "Gears",
+          "Row": "25//25"
+        },
+        "CentreDiffToFrontRatio": {
+          "Table": "Gears",
+          "Row": "25//25"
+        },
+        "CentreDiffToRearRatio": {
+          "Table": "Gears",
+          "Row": "25//25"
+        },
+        "FrontDiffRatio": {
+          "Table": "Gears",
+          "Row": "56//12"
+        },
+        "RearDiffRatio": {
+          "Table": "Gears",
+          "Row": "25//25"
+        }
+      },
+      "MechanicalBalanceSetupData": {
+        "FrontARB": 11663.0,
+        "RearARB": 15200.0,
+        "CFactor": 0.05,
+        "Suspensions": [
+          {
+            "BumpStopGapUp": 0.11,
+            "BumpStopGapDn": 0.095,
+            "WheelRate": 46300.0,
+            "RodLength": 0.0,
+            "AdjusterRing": 0.066
+          },
+          {
+            "BumpStopGapUp": 0.11,
+            "BumpStopGapDn": 0.095,
+            "WheelRate": 46300.0,
+            "RodLength": 0.0,
+            "AdjusterRing": 0.066
+          },
+          {
+            "BumpStopGapUp": 0.12,
+            "BumpStopGapDn": 0.085,
+            "WheelRate": 42400.0,
+            "RodLength": 0.0,
+            "AdjusterRing": 0.062
+          },
+          {
+            "BumpStopGapUp": 0.12,
+            "BumpStopGapDn": 0.085,
+            "WheelRate": 42400.0,
+            "RodLength": 0.0,
+            "AdjusterRing": 0.062
+          }
+        ]
+      },
+      "DampersSetupData": [
+        {
+          "Slow": {
+            "Bump": 4290.0,
+            "Rebound": 7452.0
+          },
+          "Fast": {
+            "Bump": 2348.0,
+            "Rebound": 7452.0
+          },
+          "FastThresholdBump": 0.15,
+          "FastThresholdRebound": 0.15,
+          "BumpMultiplier": 1.0,
+          "ReboundMultiplier": 1.0
+        },
+        {
+          "Slow": {
+            "Bump": 4290.0,
+            "Rebound": 7452.0
+          },
+          "Fast": {
+            "Bump": 2348.0,
+            "Rebound": 7452.0
+          },
+          "FastThresholdBump": 0.15,
+          "FastThresholdRebound": 0.15,
+          "BumpMultiplier": 1.0,
+          "ReboundMultiplier": 1.0
+        },
+        {
+          "Slow": {
+            "Bump": 2765.0,
+            "Rebound": 4050.0
+          },
+          "Fast": {
+            "Bump": 2052.0,
+            "Rebound": 4050.0
+          },
+          "FastThresholdBump": 0.15,
+          "FastThresholdRebound": 0.15,
+          "BumpMultiplier": 1.0,
+          "ReboundMultiplier": 1.0
+        },
+        {
+          "Slow": {
+            "Bump": 2765.0,
+            "Rebound": 4050.0
+          },
+          "Fast": {
+            "Bump": 2052.0,
+            "Rebound": 4050.0
+          },
+          "FastThresholdBump": 0.15,
+          "FastThresholdRebound": 0.15,
+          "BumpMultiplier": 1.0,
+          "ReboundMultiplier": 1.0
+        }
+      ],
+      "TyresSetupData": [
+        {
+          "Pressure": 32.0,
+          "Camber": -1.5,
+          "Toe": 0.0,
+          "Caster": 0.0
+        },
+        {
+          "Pressure": 32.0,
+          "Camber": -1.5,
+          "Toe": 0.0,
+          "Caster": 0.0
+        },
+        {
+          "Pressure": 32.0,
+          "Camber": -3.5,
+          "Toe": 0.0,
+          "Caster": 0.0
+        },
+        {
+          "Pressure": 32.0,
+          "Camber": -3.5,
+          "Toe": 0.0,
+          "Caster": 0.0
+        }
+      ],
+      "BrakesSetupData": {
+        "BrakeBias": 0.6,
+        "BrakePropValvePressure": 4.5,
+        "BrakePropValveRatio": 0.325,
+        "HandbrakeMult": 1.0,
+        "Discs": [
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          }
+        ],
+        "Calipers": [
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          }
+        ],
+        "Pads": [
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          }
+        ]
+      }
+    }
+  }
+]

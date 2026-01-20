@@ -1,0 +1,1962 @@
+[
+  {
+    "Type": "CarSettingConstraintCarPartState",
+    "Name": "CarSettingConstraintCarPartState_0",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingConstraintCarPartState'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CarParts": [
+        {
+          "Key": "Bodywork",
+          "Value": {
+            "bEqual": false,
+            "State": "ECarDamageablePartStateType::Normal"
+          }
+        }
+      ],
+      "Conditions": [
+        {
+          "Value": true,
+          "RangeOverride": null,
+          "ValueOverride": null,
+          "LockOverride": {
+            "ObjectName": "CarSettingOverrideLockByCarPart'DA_Fiat124AbarthPresets:CarSettingConstraintCarPartState_0.CarSettingOverrideLockByCarPart_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.19"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CarSettingConstraintElectronicMap",
+    "Name": "CarSettingConstraintElectronicMap_0",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingConstraintElectronicMap'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MapType": "EElectronicMapType::ABS"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintElectronicMap",
+    "Name": "CarSettingConstraintElectronicMap_1",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingConstraintElectronicMap'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "MapType": "EElectronicMapType::TC1"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintExternalDiscs",
+    "Name": "CarSettingConstraintExternalDiscs_0",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingConstraintExternalDiscs'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::RearRight",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingConstraintExternalDiscs_0.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.22"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingConstraintExternalDiscs",
+    "Name": "CarSettingConstraintExternalDiscs_1",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingConstraintExternalDiscs'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::RearLeft",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingConstraintExternalDiscs_1.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.23"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingConstraintExternalDiscs",
+    "Name": "CarSettingConstraintExternalDiscs_2",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingConstraintExternalDiscs'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::FrontRight",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingConstraintExternalDiscs_2.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.24"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingConstraintExternalDiscs",
+    "Name": "CarSettingConstraintExternalDiscs_3",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingConstraintExternalDiscs'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingConstraintExternalDiscs_3.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.25"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingConstraintProportioningValve",
+    "Name": "CarSettingConstraintProportioningValve_0",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingConstraintProportioningValve'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingConstraintRaceStartsAtNight",
+    "Name": "CarSettingConstraintRaceStartsAtNight_0",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingConstraintRaceStartsAtNight'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Conditions": [
+        {
+          "Value": false,
+          "RangeOverride": {
+            "ObjectName": "CarSettingOverrideRangeBool'DA_Fiat124AbarthPresets:CarSettingConstraintRaceStartsAtNight_0.CarSettingOverrideRangeBool_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.20"
+          },
+          "ValueOverride": {
+            "ObjectName": "CarSettingOverrideBool'DA_Fiat124AbarthPresets:CarSettingConstraintRaceStartsAtNight_0.CarSettingOverrideBool_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.17"
+          },
+          "LockOverride": null
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingCalipers",
+    "Name": "CarSettingConstraintSettingCalipers_0",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingConstraintSettingCalipers'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::RearRight",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingConstraintSettingCalipers_0.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.26"
+      },
+      "Constrainer": "Brakes.RearRight.Disc"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingCalipers",
+    "Name": "CarSettingConstraintSettingCalipers_1",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingConstraintSettingCalipers'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::RearLeft",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingConstraintSettingCalipers_1.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.27"
+      },
+      "Constrainer": "Brakes.RearLeft.Disc"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingCalipers",
+    "Name": "CarSettingConstraintSettingCalipers_2",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingConstraintSettingCalipers'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::FrontRight",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingConstraintSettingCalipers_2.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.28"
+      },
+      "Constrainer": "Brakes.FrontRight.Disc"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingCalipers",
+    "Name": "CarSettingConstraintSettingCalipers_3",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingConstraintSettingCalipers'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingConstraintSettingCalipers_3.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.29"
+      },
+      "Constrainer": "Brakes.FrontLeft.Disc"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingPads",
+    "Name": "CarSettingConstraintSettingPads_0",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingConstraintSettingPads'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::RearRight",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingConstraintSettingPads_0.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.30"
+      },
+      "Constrainer": "Brakes.RearRight.Caliper"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingPads",
+    "Name": "CarSettingConstraintSettingPads_1",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingConstraintSettingPads'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::RearLeft",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingConstraintSettingPads_1.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.31"
+      },
+      "Constrainer": "Brakes.RearLeft.Caliper"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingPads",
+    "Name": "CarSettingConstraintSettingPads_2",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingConstraintSettingPads'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Wheel": "EWheelIndex::FrontRight",
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingConstraintSettingPads_2.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.32"
+      },
+      "Constrainer": "Brakes.FrontRight.Caliper"
+    }
+  },
+  {
+    "Type": "CarSettingConstraintSettingPads",
+    "Name": "CarSettingConstraintSettingPads_3",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingConstraintSettingPads'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "RangeOverrideTemplate": {
+        "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingConstraintSettingPads_3.RangeOverrideTemplate'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.33"
+      },
+      "Constrainer": "Brakes.FrontLeft.Caliper"
+    }
+  },
+  {
+    "Type": "CarSettingOverrideBool",
+    "Name": "CarSettingOverrideBool_0",
+    "Outer": "CarSettingConstraintRaceStartsAtNight_0",
+    "Class": "UScriptClass'CarSettingOverrideBool'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": true
+    }
+  },
+  {
+    "Type": "CarSettingOverrideInteger",
+    "Name": "CarSettingOverrideInteger_0",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": 2
+    }
+  },
+  {
+    "Type": "CarSettingOverrideLockByCarPart",
+    "Name": "CarSettingOverrideLockByCarPart_0",
+    "Outer": "CarSettingConstraintCarPartState_0",
+    "Class": "UScriptClass'CarSettingOverrideLockByCarPart'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CarPart": "Bodywork"
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeBool",
+    "Name": "CarSettingOverrideRangeBool_0",
+    "Outer": "CarSettingConstraintRaceStartsAtNight_0",
+    "Class": "UScriptClass'CarSettingOverrideRangeBool'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Range": 1
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeBool",
+    "Name": "CarSettingOverrideRangeBool_0",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeBool'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintExternalDiscs_0",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBDiscsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBDisc'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintExternalDiscs_1",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBDiscsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBDisc'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintExternalDiscs_2",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBDiscsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBDisc'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintExternalDiscs_3",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBDiscsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBDisc'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingCalipers_0",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBCalipersList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBCaliper'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingCalipers_1",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBCalipersList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBCaliper'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingCalipers_2",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBCalipersList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBCaliper'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingCalipers_3",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBCalipersList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBCaliper'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingPads_0",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBPadsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBPad'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingPads_1",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBPadsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBPad'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingPads_2",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBPadsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBPad'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "RangeOverrideTemplate",
+    "Outer": "CarSettingConstraintSettingPads_3",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBPadsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBPad'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_1",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBGearsSetsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "List": {
+        "Table": "GearsSetsLists",
+        "Row": "Fiat124Abarth"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBGearsSet'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      },
+      "Values": [
+        {
+          "Table": "GearsSets",
+          "Row": "Fiat124AbarthSet0"
+        },
+        {
+          "Table": "GearsSets",
+          "Row": "Fiat124AbarthSet1"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_10",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_11",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_12",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_13",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_14",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBLSDRampAnglesList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "List": {
+        "Table": "LSDRampAnglesLists",
+        "Row": "FIATAbarth124Rally16V_Rear"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBLSDRampAngle'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      },
+      "Values": [
+        {
+          "Table": "LSDRampAngles",
+          "Row": "60_60"
+        },
+        {
+          "Table": "LSDRampAngles",
+          "Row": "45_45"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_15",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "bIsList": true,
+      "ListType": {
+        "ObjectName": "Class'DBGearsList'",
+        "ObjectPath": "/Script/acr"
+      },
+      "ListValuesReference": {
+        "Path": "Values"
+      },
+      "List": {
+        "Table": "RearGearsLists",
+        "Row": "FIATAbarth124Rally16V"
+      },
+      "ValuesType": {
+        "ObjectName": "Class'DBGear'",
+        "ObjectPath": "/Script/acr"
+      },
+      "NameReference": {
+        "Path": "Name"
+      },
+      "Values": [
+        {
+          "Table": "Gears",
+          "Row": "43//7"
+        },
+        {
+          "Table": "Gears",
+          "Row": "43//8"
+        },
+        {
+          "Table": "Gears",
+          "Row": "43//10"
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_2",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_3",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_4",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_5",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_6",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_7",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_8",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeDBReferenceSetFromDB",
+    "Name": "CarSettingOverrideRangeDBReferenceSetFromDB_9",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeDBReferenceSetFromDB'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "RangeOverride",
+    "Outer": "CarSettingConstraintProportioningValve_0",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_0",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Max": 150.0,
+      "Step": 1.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_1",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 10.0,
+      "Max": 45.0,
+      "Step": 1.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_10",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_2",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 10.0,
+      "Max": 45.0,
+      "Step": 1.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_3",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 10.0,
+      "Max": 45.0,
+      "Step": 1.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_4",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 10.0,
+      "Max": 45.0,
+      "Step": 1.0
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_5",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": -0.001,
+      "Max": 0.001,
+      "Step": 0.0001
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_6",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": -0.001,
+      "Max": 0.001,
+      "Step": 0.0001
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_7",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 0.5,
+      "Max": 1.5,
+      "Step": 0.01
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeFloat",
+    "Name": "CarSettingOverrideRangeFloat_9",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeFloat'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Step": 0.01
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeInteger",
+    "Name": "RangeOverride",
+    "Outer": "CarSettingConstraintElectronicMap_0",
+    "Class": "UScriptClass'CarSettingOverrideRangeInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeInteger",
+    "Name": "RangeOverride",
+    "Outer": "CarSettingConstraintElectronicMap_1",
+    "Class": "UScriptClass'CarSettingOverrideRangeInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeInteger",
+    "Name": "CarSettingOverrideRangeInteger_0",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Min": 2,
+      "Max": 6
+    }
+  },
+  {
+    "Type": "CarSettingOverrideRangeInteger",
+    "Name": "CarSettingOverrideRangeInteger_1",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideRangeInteger",
+    "Name": "CarSettingOverrideRangeInteger_2",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSettingOverrideRangeInteger'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_0",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Discs",
+        "Row": "Abarth_256mm_Type3_256x20_Planar_4x98_AbarthDisc03"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_1",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Discs",
+        "Row": "Abarth_256mm_Type2_256x9.6_Planar_4x98_AbarthDisc04"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_2",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Calipers",
+        "Row": "ATE_Porsche_911_S-Type_2x48_ATECaliper00"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_3",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Calipers",
+        "Row": "ATE_Alfa_1750/2000_M_Type_2x38_ATECaliper05"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_4",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Discs",
+        "Row": "Abarth_256mm_Type3_256x20_Planar_4x98_AbarthDisc03"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_5",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Discs",
+        "Row": "Abarth_256mm_Type2_256x9.6_Planar_4x98_AbarthDisc04"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_6",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Calipers",
+        "Row": "ATE_Porsche_911_S-Type_2x48_ATECaliper00"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_7",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Calipers",
+        "Row": "ATE_Alfa_1750/2000_M_Type_2x38_ATECaliper05"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_0",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Discs",
+        "Row": "Abarth_256mm_Type1_256x12.4_Planar_4x98"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_1",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Discs",
+        "Row": "Abarth_256mm_Type2_256x9.6_Planar_4x98_AbarthDisc04"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_2",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Calipers",
+        "Row": "ATE_Alfa_1750/2000_2x48"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_3",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Calipers",
+        "Row": "ATE_Alfa_1750/2000_M_Type_2x38_ATECaliper05"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_4",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Discs",
+        "Row": "Abarth_256mm_Type1_256x12.4_Planar_4x98"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_5",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Discs",
+        "Row": "Abarth_256mm_Type2_256x9.6_Planar_4x98_AbarthDisc04"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_6",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Calipers",
+        "Row": "ATE_Alfa_1750/2000_2x48"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_7",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Calipers",
+        "Row": "ATE_Alfa_1750/2000_M_Type_2x38_ATECaliper05"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_8",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "GearsSets",
+        "Row": "Fiat124AbarthSet1"
+      }
+    }
+  },
+  {
+    "Type": "CarSettingOverrideValueSetDBReference",
+    "Name": "CarSettingOverrideValueSetDBReference_9",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSettingOverrideValueSetDBReference'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Value": {
+        "Table": "Gears",
+        "Row": "43//8"
+      }
+    }
+  },
+  {
+    "Type": "CarSetupPresets",
+    "Name": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSetupPresets'",
+    "Flags": "RF_Public | RF_Standalone | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "CarSetupDefinition": {
+        "ObjectName": "CarSetupDefinition'DA_CarSetupDefinition'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_CarSetupDefinition.214"
+      },
+      "CarData": {
+        "ObjectName": "AcrCarData'DA_Fiat124Abarth'",
+        "ObjectPath": "/Game/Data/Vehicles/Fiat124Abarth/DA_Fiat124Abarth.0"
+      },
+      "PhysicsCarSetup": {
+        "ObjectName": "PhysicsCarSetup'DA_Fiat124AbarthPresets:PhysicsCarSetup'",
+        "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.88"
+      },
+      "Ranges": [
+        {
+          "Key": "Differentials.Rear.DifferentialRatio",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingOverrideRangeDBReferenceSetFromDB_15'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.40"
+          }
+        },
+        {
+          "Key": "Gearbox.GearboxMain.GearsSet",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingOverrideRangeDBReferenceSetFromDB_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.34"
+          }
+        },
+        {
+          "Key": "Brakes.FrontLeft.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingOverrideRangeDBReferenceSetFromDB_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.41"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingOverrideRangeDBReferenceSetFromDB_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.42"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingOverrideRangeDBReferenceSetFromDB_4'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.43"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingOverrideRangeDBReferenceSetFromDB_5'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.44"
+          }
+        },
+        {
+          "Key": "Brakes.FrontLeft.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingOverrideRangeDBReferenceSetFromDB_6'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.45"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingOverrideRangeDBReferenceSetFromDB_7'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.46"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingOverrideRangeDBReferenceSetFromDB_8'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.47"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingOverrideRangeDBReferenceSetFromDB_9'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.48"
+          }
+        },
+        {
+          "Key": "Brakes.FrontLeft.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingOverrideRangeDBReferenceSetFromDB_10'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.35"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingOverrideRangeDBReferenceSetFromDB_11'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.36"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingOverrideRangeDBReferenceSetFromDB_12'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.37"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingOverrideRangeDBReferenceSetFromDB_13'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.38"
+          }
+        },
+        {
+          "Key": "Other.Lights.AdditionalLights",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeBool'DA_Fiat124AbarthPresets:CarSettingOverrideRangeBool_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.21"
+          }
+        },
+        {
+          "Key": "Differentials.Rear.LSDRamps",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeDBReferenceSetFromDB'DA_Fiat124AbarthPresets:CarSettingOverrideRangeDBReferenceSetFromDB_14'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.39"
+          }
+        },
+        {
+          "Key": "Differentials.Rear.LSDPreload",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Fiat124AbarthPresets:CarSettingOverrideRangeFloat_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.50"
+          }
+        },
+        {
+          "Key": "Differentials.Rear.LSDFrictionPlates",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeInteger'DA_Fiat124AbarthPresets:CarSettingOverrideRangeInteger_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.62"
+          }
+        },
+        {
+          "Key": "Wheels.FrontLeft.TyrePressure",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Fiat124AbarthPresets:CarSettingOverrideRangeFloat_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.51"
+          }
+        },
+        {
+          "Key": "Wheels.FrontRight.TyrePressure",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Fiat124AbarthPresets:CarSettingOverrideRangeFloat_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.53"
+          }
+        },
+        {
+          "Key": "Wheels.RearLeft.TyrePressure",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Fiat124AbarthPresets:CarSettingOverrideRangeFloat_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.54"
+          }
+        },
+        {
+          "Key": "Wheels.RearRight.TyrePressure",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Fiat124AbarthPresets:CarSettingOverrideRangeFloat_4'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.55"
+          }
+        },
+        {
+          "Key": "Wheels.FrontLeft.Toe",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Fiat124AbarthPresets:CarSettingOverrideRangeFloat_5'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.56"
+          }
+        },
+        {
+          "Key": "Wheels.FrontRight.Toe",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Fiat124AbarthPresets:CarSettingOverrideRangeFloat_6'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.57"
+          }
+        },
+        {
+          "Key": "Brakes.BrakesMain.HandbrakeForce",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Fiat124AbarthPresets:CarSettingOverrideRangeFloat_7'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.58"
+          }
+        },
+        {
+          "Key": "Brakes.BrakesMain.ProportioningPreload",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Fiat124AbarthPresets:CarSettingOverrideRangeFloat_10'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.52"
+          }
+        },
+        {
+          "Key": "Brakes.BrakesMain.ProportioningRatio",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeFloat'DA_Fiat124AbarthPresets:CarSettingOverrideRangeFloat_9'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.59"
+          }
+        },
+        {
+          "Key": "Other.Electronic.ABS",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeInteger'DA_Fiat124AbarthPresets:CarSettingOverrideRangeInteger_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.63"
+          }
+        },
+        {
+          "Key": "Other.Electronic.TCS",
+          "Value": {
+            "ObjectName": "CarSettingOverrideRangeInteger'DA_Fiat124AbarthPresets:CarSettingOverrideRangeInteger_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.64"
+          }
+        }
+      ],
+      "Constraints": [
+        {
+          "Key": "Brakes.FrontLeft.Disc",
+          "Value": {
+            "ObjectName": "CarSettingConstraintExternalDiscs'DA_Fiat124AbarthPresets:CarSettingConstraintExternalDiscs_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.6"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Disc",
+          "Value": {
+            "ObjectName": "CarSettingConstraintExternalDiscs'DA_Fiat124AbarthPresets:CarSettingConstraintExternalDiscs_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.5"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.Disc",
+          "Value": {
+            "ObjectName": "CarSettingConstraintExternalDiscs'DA_Fiat124AbarthPresets:CarSettingConstraintExternalDiscs_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.4"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.Disc",
+          "Value": {
+            "ObjectName": "CarSettingConstraintExternalDiscs'DA_Fiat124AbarthPresets:CarSettingConstraintExternalDiscs_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.3"
+          }
+        },
+        {
+          "Key": "Brakes.FrontLeft.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingCalipers'DA_Fiat124AbarthPresets:CarSettingConstraintSettingCalipers_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.12"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingCalipers'DA_Fiat124AbarthPresets:CarSettingConstraintSettingCalipers_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.11"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingCalipers'DA_Fiat124AbarthPresets:CarSettingConstraintSettingCalipers_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.10"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingCalipers'DA_Fiat124AbarthPresets:CarSettingConstraintSettingCalipers_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.9"
+          }
+        },
+        {
+          "Key": "Brakes.FrontLeft.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingPads'DA_Fiat124AbarthPresets:CarSettingConstraintSettingPads_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.16"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingPads'DA_Fiat124AbarthPresets:CarSettingConstraintSettingPads_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.15"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingPads'DA_Fiat124AbarthPresets:CarSettingConstraintSettingPads_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.14"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.PadCompound",
+          "Value": {
+            "ObjectName": "CarSettingConstraintSettingPads'DA_Fiat124AbarthPresets:CarSettingConstraintSettingPads_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.13"
+          }
+        },
+        {
+          "Key": "Other.Lights.AdditionalLights",
+          "Value": {
+            "ObjectName": "CarSettingConstraintRaceStartsAtNight'DA_Fiat124AbarthPresets:CarSettingConstraintRaceStartsAtNight_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.8"
+          }
+        },
+        {
+          "Key": "Brakes.BrakesMain.ProportioningPreload",
+          "Value": {
+            "ObjectName": "CarSettingConstraintProportioningValve'DA_Fiat124AbarthPresets:CarSettingConstraintProportioningValve_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.7"
+          }
+        },
+        {
+          "Key": "Other.Electronic.ABS",
+          "Value": {
+            "ObjectName": "CarSettingConstraintElectronicMap'DA_Fiat124AbarthPresets:CarSettingConstraintElectronicMap_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.1"
+          }
+        },
+        {
+          "Key": "Other.Electronic.TCS",
+          "Value": {
+            "ObjectName": "CarSettingConstraintElectronicMap'DA_Fiat124AbarthPresets:CarSettingConstraintElectronicMap_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.2"
+          }
+        },
+        {
+          "Key": "Other.Lights",
+          "Value": {
+            "ObjectName": "CarSettingConstraintCarPartState'DA_Fiat124AbarthPresets:CarSettingConstraintCarPartState_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.0"
+          }
+        }
+      ],
+      "SurfacePresets": [
+        {
+          "Key": {
+            "Table": "SurfaceTypes",
+            "Row": "Tarmac"
+          },
+          "Value": {
+            "ObjectName": "CarSetupVariantsSurface'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.86"
+          }
+        },
+        {
+          "Key": {
+            "Table": "SurfaceTypes",
+            "Row": "Gravel"
+          },
+          "Value": {
+            "ObjectName": "CarSetupVariantsSurface'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.87"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CarSetupVariant",
+    "Name": "CarSetupVariant_0",
+    "Outer": "CarSetupVariantsSurface_0",
+    "Class": "UScriptClass'CarSetupVariant'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSetupVariant",
+    "Name": "CarSetupVariant_0",
+    "Outer": "CarSetupVariantsSurface_1",
+    "Class": "UScriptClass'CarSetupVariant'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted"
+  },
+  {
+    "Type": "CarSetupVariantsSurface",
+    "Name": "CarSetupVariantsSurface_0",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSetupVariantsSurface'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Default": "Balanced",
+      "ValuesOverrides": [
+        {
+          "Key": "Brakes.FrontLeft.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_0.CarSettingOverrideValueSetDBReference_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.65"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_0.CarSettingOverrideValueSetDBReference_4'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.69"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_0.CarSettingOverrideValueSetDBReference_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.66"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_0.CarSettingOverrideValueSetDBReference_5'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.70"
+          }
+        },
+        {
+          "Key": "Brakes.FrontLeft.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_0.CarSettingOverrideValueSetDBReference_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.67"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_0.CarSettingOverrideValueSetDBReference_6'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.71"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_0.CarSettingOverrideValueSetDBReference_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.68"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_0.CarSettingOverrideValueSetDBReference_7'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.72"
+          }
+        }
+      ],
+      "Variants": [
+        {
+          "Key": "Balanced",
+          "Value": {
+            "ObjectName": "CarSetupVariant'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_0.CarSetupVariant_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.84"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "CarSetupVariantsSurface",
+    "Name": "CarSetupVariantsSurface_1",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'CarSetupVariantsSurface'",
+    "Flags": "RF_Public | RF_Transactional | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "Default": "Balanced",
+      "ValuesOverrides": [
+        {
+          "Key": "Brakes.FrontLeft.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.73"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_4'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.77"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_1'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.74"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.Disc",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_5'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.78"
+          }
+        },
+        {
+          "Key": "Brakes.FrontLeft.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_2'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.75"
+          }
+        },
+        {
+          "Key": "Brakes.FrontRight.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_6'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.79"
+          }
+        },
+        {
+          "Key": "Brakes.RearLeft.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_3'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.76"
+          }
+        },
+        {
+          "Key": "Brakes.RearRight.Caliper",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_7'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.80"
+          }
+        },
+        {
+          "Key": "Gearbox.GearboxMain.GearsSet",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_8'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.81"
+          }
+        },
+        {
+          "Key": "Differentials.Rear.DifferentialRatio",
+          "Value": {
+            "ObjectName": "CarSettingOverrideValueSetDBReference'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_1.CarSettingOverrideValueSetDBReference_9'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.82"
+          }
+        },
+        {
+          "Key": "Differentials.Rear.LSDFrictionPlates",
+          "Value": {
+            "ObjectName": "CarSettingOverrideInteger'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_1.CarSettingOverrideInteger_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.18"
+          }
+        }
+      ],
+      "Variants": [
+        {
+          "Key": "Balanced",
+          "Value": {
+            "ObjectName": "CarSetupVariant'DA_Fiat124AbarthPresets:CarSetupVariantsSurface_1.CarSetupVariant_0'",
+            "ObjectPath": "/Game/Data/CarSetups/DA_Fiat124AbarthPresets.85"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "Type": "PhysicsCarSetup",
+    "Name": "PhysicsCarSetup",
+    "Outer": "DA_Fiat124AbarthPresets",
+    "Class": "UScriptClass'PhysicsCarSetup'",
+    "Flags": "RF_Public | RF_Transactional | RF_DefaultSubObject | RF_WasLoaded | RF_LoadCompleted",
+    "Properties": {
+      "DrivetrainSetupData": {
+        "RearDiff": {
+          "LSDRampAngle": {
+            "Table": "LSDRampAngles",
+            "Row": "45_45"
+          },
+          "LSDPlatesNumber": 3,
+          "LSDPreload": 30.0
+        },
+        "GearsSet": {
+          "Table": "GearsSets",
+          "Row": "Fiat124AbarthSet0"
+        },
+        "CentreDiffRatio": {
+          "Table": "Gears",
+          "Row": "25//25"
+        },
+        "CentreDiffToFrontRatio": {
+          "Table": "Gears",
+          "Row": "25//25"
+        },
+        "CentreDiffToRearRatio": {
+          "Table": "Gears",
+          "Row": "25//25"
+        },
+        "FrontDiffRatio": {
+          "Table": "Gears",
+          "Row": "25//25"
+        },
+        "RearDiffRatio": {
+          "Table": "Gears",
+          "Row": "43//10"
+        }
+      },
+      "MechanicalBalanceSetupData": {
+        "FrontARB": 2500.0,
+        "RearARB": 1500.0,
+        "CFactor": 16.4,
+        "Suspensions": [
+          {
+            "BumpStopGapUp": 0.017,
+            "BumpStopGapDn": 0.07,
+            "WheelRate": 185000.0,
+            "RodLength": 0.0,
+            "AdjusterRing": 0.027
+          },
+          {
+            "BumpStopGapUp": 0.017,
+            "BumpStopGapDn": 0.07,
+            "WheelRate": 185000.0,
+            "RodLength": 0.0,
+            "AdjusterRing": 0.027
+          },
+          {
+            "BumpStopGapUp": 0.027,
+            "BumpStopGapDn": 0.055,
+            "WheelRate": 45000.0,
+            "RodLength": 0.0,
+            "AdjusterRing": 0.055
+          },
+          {
+            "BumpStopGapUp": 0.027,
+            "BumpStopGapDn": 0.055,
+            "WheelRate": 45000.0,
+            "RodLength": 0.0,
+            "AdjusterRing": 0.055
+          }
+        ]
+      },
+      "DampersSetupData": [
+        {
+          "Slow": {
+            "Bump": 6000.0,
+            "Rebound": 20000.0
+          },
+          "Fast": {
+            "Bump": 5750.0,
+            "Rebound": 17000.0
+          },
+          "FastThresholdBump": 0.1,
+          "FastThresholdRebound": 0.1,
+          "BumpMultiplier": 1.0,
+          "ReboundMultiplier": 1.0
+        },
+        {
+          "Slow": {
+            "Bump": 6000.0,
+            "Rebound": 20000.0
+          },
+          "Fast": {
+            "Bump": 5750.0,
+            "Rebound": 17000.0
+          },
+          "FastThresholdBump": 0.1,
+          "FastThresholdRebound": 0.1,
+          "BumpMultiplier": 1.0,
+          "ReboundMultiplier": 1.0
+        },
+        {
+          "Slow": {
+            "Bump": 2500.0,
+            "Rebound": 5250.0
+          },
+          "Fast": {
+            "Bump": 2250.0,
+            "Rebound": 4750.0
+          },
+          "FastThresholdBump": 0.15,
+          "FastThresholdRebound": 0.15,
+          "BumpMultiplier": 1.0,
+          "ReboundMultiplier": 1.0
+        },
+        {
+          "Slow": {
+            "Bump": 2500.0,
+            "Rebound": 5250.0
+          },
+          "Fast": {
+            "Bump": 2250.0,
+            "Rebound": 4750.0
+          },
+          "FastThresholdBump": 0.15,
+          "FastThresholdRebound": 0.15,
+          "BumpMultiplier": 1.0,
+          "ReboundMultiplier": 1.0
+        }
+      ],
+      "TyresSetupData": [
+        {
+          "Pressure": 32.0,
+          "Camber": -0.5,
+          "Toe": 0.0,
+          "Caster": 0.0
+        },
+        {
+          "Pressure": 32.0,
+          "Camber": -0.5,
+          "Toe": 0.0,
+          "Caster": 0.0
+        },
+        {
+          "Pressure": 32.0,
+          "Camber": -1.5,
+          "Toe": 0.0,
+          "Caster": 0.0
+        },
+        {
+          "Pressure": 32.0,
+          "Camber": -1.5,
+          "Toe": 0.0,
+          "Caster": 0.0
+        }
+      ],
+      "BrakesSetupData": {
+        "BrakeBias": 0.5,
+        "BrakePropValvePressure": 1.05,
+        "BrakePropValveRatio": 0.6,
+        "HandbrakeMult": 1.0,
+        "Discs": [
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          }
+        ],
+        "Calipers": [
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          }
+        ],
+        "Pads": [
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          },
+          {
+            "Table": "None",
+            "Row": "None"
+          }
+        ]
+      }
+    }
+  }
+]
