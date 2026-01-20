@@ -1,43 +1,42 @@
-# Rally Car Setup Calculator
+# ACR Rally Setup Calculator
 
-A Python-based rally car setup calculator for Assetto Corsa, built using engineering data extracted from ACR Car Setup Pro.
+A Python-based rally car setup tool for Assetto Corsa Rally (ACR). Provides default baseline setups for gravel and tarmac stages, extracted directly from ACR content files.
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 
 ## Overview
 
-This tool generates competition-ready baseline setups for rally cars in Assetto Corsa. It uses real engineering data derived from telemetry analysis and WRC engineering principles, with calculations based on the original ACR Car Setup Pro by [ilborga70](https://github.com/ilborga70).
+This tool loads default car setups from Assetto Corsa Rally and displays them in a clean, organized interface. Select your car and stage, and the appropriate setup (gravel or tarmac) is automatically loaded based on the stage surface type.
 
-**Key difference from original:** This is a Python rewrite with full source code available, making it easy to modify, extend, and understand the engineering calculations.
+**Future Development:** Setup optimization logic based on data from RBR (Richard Burns Rally) and DiRT Rally 2.0 community setups will be implemented to provide improved baseline configurations.
 
 ## Features
 
-### Car Classes Supported
-- **Group A (4WD)** - Lancia Delta Integrale (reference car)
-- **WRC (2017+)** - Modern aero-dependent platforms
-- **R5 / Rally2** - Balanced 4WD performance
-- **Group B (4WD & RWD)** - Historic power machines
-- **Rally4 / Modern RWD** - Precision handling
-- **FWD KitCar** - Front traction priority
-- **RWD Historic** - Escort, BMW E30 style
-- **Rally GT** - Porsche, Mustang high-torque RWD
-- **Crosskart (AWD)** - Lightweight chassis
-- **Group S (Prototype)** - Experimental setups
+- **Direct ACR Data:** Setups extracted directly from Assetto Corsa Rally content files
+- **Surface-Based Selection:** Automatically selects gravel or tarmac setup based on stage
+- **Complete Setup Display:** All setup parameters organized into clear sections:
+  - Drivetrain (differentials, ratios, LSD settings)
+  - Suspension (springs, ARBs, ride height)
+  - Dampers (slow/fast bump and rebound for all corners)
+  - Tyres (pressure, camber, toe)
+  - Brakes (bias, proportioning valve)
 
-### Engineering Modifiers
-- **Surfaces:** Asphalt, Gravel, Snow
-- **Track Conditions:** Smooth, Bumpy, Loose, Mixed, Ice, Deep Gravel, Wet Mud
-- **Weather:** Dry, Damp, Wet/Heavy Rain, Fog, Cold (<5°C), Hot (>25°C)
+## Supported Content
 
-### Output Values
-- Spring rates (N/m)
-- Damper settings (N/m/s) - Slow/Fast Bump & Rebound
-- Anti-roll bar stiffness (Nm)
-- Ride height (meters)
-- Camber & Toe alignment
-- Differential ramp angles & preload
-- Brake bias & pressure
+### Surfaces
+- **Tarmac** - Alsace (France) stages
+- **Gravel** - Wales (UK) stages
+
+### Cars
+Cars from multiple eras including:
+- Group 2 (Mini Cooper S, Alfa Romeo Giulia GTAm)
+- Group 4 (Alpine A110, Fiat 124/131 Abarth, Lancia Stratos)
+- Group B (Lancia Rally 037)
+- Group A / Modern (Lancia Delta HF Integrale)
+- WRC 2000s (Citroen Xsara WRC)
+- Rally2 (Hyundai i20N Rally2)
+- Rally4 (Peugeot 208 Rally4)
 
 ## Installation
 
@@ -48,7 +47,7 @@ This tool generates competition-ready baseline setups for rally cars in Assetto 
 ### Quick Start
 
 ```bash
-# Clone or download this repository
+# Navigate to the rally-setup-calculator folder
 cd rally-setup-calculator
 
 # Run the application
@@ -59,83 +58,48 @@ Or on Windows, double-click `RallySetupCalculator.bat`
 
 ## Usage
 
-1. **Select Surface** - Asphalt, Gravel, or Snow
-2. **Select Car Class** - Choose your vehicle category
-3. **Select Track Condition** - Smooth, Bumpy, Loose, etc.
-4. **Select Weather** - Dry, Wet, Cold, etc.
-5. Click **GET ENGINEERING BASELINE SETUP**
-6. Apply the values to your Assetto Corsa setup
+1. **Select Car** - Choose your car from the dropdown
+2. **Select Stage** - Choose your stage (surface type shown automatically)
+3. The setup is displayed immediately, organized by component group
 
-### Save/Load
-- Save setups as `.json` files
-- Load previously saved configurations
-- Copy results to clipboard
+## Data Files
 
-## Engineering Principles
+The application loads data from TSV files in the project root:
 
-### Damper Ratios
-Professional 1.6:1 Rebound/Bump ratio (industry standard)
-
-### Spring Frequencies by Surface
-| Surface | Frequency | Characteristic |
-|---------|-----------|----------------|
-| Asphalt | 2.8-3.2 Hz | Stiff for grip |
-| Gravel | 1.8-2.2 Hz | Compliance for bumps |
-| Snow | 1.4-1.8 Hz | Maximum traction |
-
-### Differential Logic
-- **Lower ramp angles** = More lock (aggressive)
-- **Higher ramp angles** = Less lock (smooth)
-
-### Surface Multipliers
-| Modifier | Gravel | Snow |
-|----------|--------|------|
-| Springs | ×0.65 | ×0.50 |
-| ARB Front | ×0.45 | ×0.30 |
-| ARB Rear | ×0.40 | ×0.25 |
-| Dampers | ×0.60 | - |
+| File | Description |
+|------|-------------|
+| `cars.tsv` | Car list with metadata (manufacturer, class, drivetrain) |
+| `stages.tsv` | Stage list with location and surface type |
+| `car_setups_gravel.tsv` | Default gravel setups for all cars |
+| `car_setups_tarmac.tsv` | Default tarmac setups for all cars |
 
 ## Project Structure
 
 ```
-rally-setup-calculator/
-├── run.py                    # Main launcher
-├── RallySetupCalculator.bat  # Windows launcher
-├── BUILD_EXE.bat             # Build standalone executable
-├── requirements.txt
-└── src/
-    ├── setup_calculator.py   # Core calculation engine
-    └── gui.py                # Tkinter GUI
+ACR-RSC/
+├── cars.tsv                    # Car metadata
+├── stages.tsv                  # Stage metadata
+├── car_setups_gravel.tsv       # Gravel default setups
+├── car_setups_tarmac.tsv       # Tarmac default setups
+└── rally-setup-calculator/
+    ├── run.py                  # Main launcher
+    ├── RallySetupCalculator.bat
+    └── src/
+        ├── setup_calculator.py # Data loading and setup logic
+        └── gui.py              # Tkinter GUI
 ```
 
-## Building Standalone Executable
+## Roadmap
 
-To create a standalone `.exe` file:
+- [ ] Setup optimization based on RBR/DiRT 2.0 community data
+- [ ] Weather condition adjustments
+- [ ] Stage characteristic modifiers (bumpy, smooth, technical)
+- [ ] Export setups back to ACR format
 
-```bash
-# Install PyInstaller
-pip install pyinstaller
 
-# Run the build script
-BUILD_EXE.bat
-```
-
-The executable will be created in the `dist/` folder.
-
-## Credits
-
-### Original Application
-- **ACR Car Setup Pro** by [ilborga70](https://github.com/ilborga70)
-- Website: [scl-tools.blogspot.com](https://scl-tools.blogspot.com/)
-
-### Engineering References
-- Toyota Gazoo Racing
-- Hyundai Motorsport
-- M-Sport
-- Citroën Racing
-
-### Python Rewrite
-This Python implementation extracts and reimplements the exact engineering calculations from the original PowerShell application, with full source code transparency.
+### Data Sources
+- Default setups extracted from Assetto Corsa Rally content
+- Future: RBR and DiRT Rally 2.0 community setup databases
 
 ## License
 
@@ -143,4 +107,4 @@ MIT License - Feel free to modify and distribute.
 
 ## Disclaimer
 
-This tool is unofficial and is not affiliated with Kunos Simulazioni. Professional engineering principles applied for authentic rally simulation experience.
+This tool is unofficial and is not affiliated with Kunos Simulazioni or the ACR mod team.

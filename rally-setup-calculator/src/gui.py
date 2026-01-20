@@ -1,563 +1,761 @@
 """
-Rally Car Setup Calculator - GUI
-Exact replica of ACR Car Setup Pro output format
+ACR Rally Setup Calculator - GUI
+Modern interface styled to match Assetto Corsa Rally's garage menus.
 """
 
 import tkinter as tk
-from tkinter import ttk, messagebox, filedialog
+from tkinter import ttk, messagebox
 from pathlib import Path
 
+# Try to import PIL for better icon support
 try:
-    from setup_calculator import (
-        SetupCalculator, FullSetup,
-        CarClass, Surface, TrackCondition, Weather,
-        CAR_CLASS_CONFIGS
-    )
+    from PIL import Image, ImageTk
+    HAS_PIL = True
 except ImportError:
-    from src.setup_calculator import (
-        SetupCalculator, FullSetup,
-        CarClass, Surface, TrackCondition, Weather,
-        CAR_CLASS_CONFIGS
-    )
+    HAS_PIL = False
+
+try:
+    from setup_calculator import SetupCalculator, CarSetup
+except ImportError:
+    from src.setup_calculator import SetupCalculator, CarSetup
 
 
 class SetupCalculatorGUI:
-    """Main GUI application matching original ACR Car Setup Pro layout"""
+    """Main GUI application - ACR-styled interface"""
 
     def __init__(self, root: tk.Tk):
         self.root = root
-        self.root.title("Rally Car Setup Calculator - Engineering Edition")
-        self.root.geometry("1000x900")
-        self.root.minsize(950, 850)
+        self.root.title("ACR RallyWorks - Setup Calculator")
+        self.root.geometry("1100x800")
+        self.root.minsize(1000, 750)
 
         # Initialize calculator
         self.calculator = SetupCalculator()
         self.current_setup = None
+        self.setup_loaded = False
 
-        # Color scheme matching original
-        self.bg_color = "#2D2D30"
-        self.fg_color = "#F1F1F1"
-        self.accent_color = "#007ACC"
-        self.card_bg = "#3E3E42"
-        self.success_color = "#4CAF50"
+        # ACR Color scheme - matches the game UI
+        self.colors = {
+            'bg_dark': '#1a1a1a',
+            'bg_panel': '#252525',
+            'bg_section': '#2d2d2d',
+            'bg_input': '#1e1e1e',
+            'fg_primary': '#ffffff',
+            'fg_secondary': '#b0b0b0',
+            'fg_dim': '#666666',
+            'accent_red': '#c41e3a',
+            'accent_red_hover': '#e62850',
+            'accent_red_dark': '#8b1528',
+            'border': '#3a3a3a',
+            'gravel': '#d4a574',
+            'tarmac': '#7da7d9',
+            'selected_bg': '#3d1a1a',
+        }
 
         # Configure root
-        self.root.configure(bg=self.bg_color)
+        self.root.configure(bg=self.colors['bg_dark'])
 
-        # Configure style
+        # Set app icon
+        self.set_app_icon()
+
+        # Current tab
+        self.current_tab = "SUSPENSIONS"
+
+        # Setup styles first
         self.setup_styles()
 
         # Build UI
         self.create_widgets()
 
-    def setup_styles(self):
-        """Configure ttk styles for dark theme"""
-        style = ttk.Style()
+    def set_app_icon(self):
+        """Set the application icon from logo.png"""
+        try:
+            # Look for logo in project root
+            logo_path = Path(__file__).parent.parent.parent / "logo.png"
+            ico_path = Path(__file__).parent.parent.parent / "logo.ico"
 
-        # Use clam as base for better customization
+            # Try .ico file first on Windows (better taskbar support)
+            if ico_path.exists():
+                self.root.iconbitmap(str(ico_path))
+                return
+
+            # Fall back to PNG with PIL if available
+            if logo_path.exists() and HAS_PIL:
+                icon_image = Image.open(logo_path)
+                icon_photo = ImageTk.PhotoImage(icon_image)
+                self.root.iconphoto(True, icon_photo)
+                # Keep reference to prevent garbage collection
+                self._icon_photo = icon_photo
+        except Exception as e:
+            print(f"Could not load icon: {e}")
+
+    def setup_styles(self):
+        """Configure ttk styles"""
+        style = ttk.Style()
         style.theme_use('clam')
 
-        # Configure colors
-        style.configure('.', background=self.bg_color, foreground=self.fg_color)
-        style.configure('TFrame', background=self.bg_color)
-        style.configure('TLabel', background=self.bg_color, foreground=self.fg_color)
-        style.configure('TLabelframe', background=self.card_bg, foreground=self.accent_color)
-        style.configure('TLabelframe.Label', background=self.card_bg, foreground=self.accent_color,
-                       font=('Segoe UI', 10, 'bold'))
-        style.configure('TCombobox', fieldbackground=self.card_bg, background=self.card_bg)
-        style.configure('TRadiobutton', background=self.bg_color, foreground=self.fg_color)
-        style.configure('TButton', background=self.accent_color, foreground='white')
+        # Configure the dropdown list colors globally
+        self.root.option_add('*TCombobox*Listbox.background', self.colors['bg_section'])
+        self.root.option_add('*TCombobox*Listbox.foreground', self.colors['fg_primary'])
+        self.root.option_add('*TCombobox*Listbox.selectBackground', self.colors['accent_red'])
+        self.root.option_add('*TCombobox*Listbox.selectForeground', '#ffffff')
 
-        # Custom styles
-        style.configure('Title.TLabel', font=('Segoe UI', 14, 'bold'), foreground=self.accent_color)
-        style.configure('Subtitle.TLabel', font=('Segoe UI', 9, 'italic'),
-                       foreground='#B4B4B4')
-        style.configure('Section.TLabel', font=('Segoe UI', 10, 'bold'), foreground=self.accent_color)
-        style.configure('Calculate.TButton', font=('Segoe UI', 11, 'bold'))
+        # Car combobox style
+        style.configure(
+            'Car.TCombobox',
+            fieldbackground=self.colors['bg_section'],
+            background=self.colors['bg_section'],
+            foreground=self.colors['fg_primary'],
+            arrowcolor=self.colors['fg_primary'],
+            borderwidth=1,
+            relief='flat',
+            padding=5
+        )
+        style.map('Car.TCombobox',
+                  fieldbackground=[('readonly', self.colors['bg_section'])],
+                  selectbackground=[('readonly', self.colors['accent_red'])],
+                  selectforeground=[('readonly', '#ffffff')])
+
+        # Stage combobox style
+        style.configure(
+            'Stage.TCombobox',
+            fieldbackground=self.colors['bg_section'],
+            background=self.colors['bg_section'],
+            foreground=self.colors['fg_primary'],
+            arrowcolor=self.colors['fg_primary'],
+            borderwidth=1,
+            relief='flat',
+            padding=5
+        )
+        style.map('Stage.TCombobox',
+                  fieldbackground=[('readonly', self.colors['bg_section'])],
+                  selectbackground=[('readonly', self.colors['accent_red'])],
+                  selectforeground=[('readonly', '#ffffff')])
 
     def create_widgets(self):
         """Create all UI widgets"""
-
         # Main container
-        main_frame = ttk.Frame(self.root, padding="15")
+        main_frame = tk.Frame(self.root, bg=self.colors['bg_dark'])
         main_frame.pack(fill=tk.BOTH, expand=True)
 
-        # Header
-        header_frame = ttk.Frame(main_frame)
-        header_frame.pack(fill=tk.X, pady=(0, 10))
-
-        ttk.Label(header_frame, text="ACR CAR SETUP PRO - ENGINEERING EDITION",
-                 style='Title.TLabel').pack(anchor='w')
-        ttk.Label(header_frame, text="Professional Rally Engineering Database",
-                 style='Subtitle.TLabel').pack(anchor='w')
-
-        # Create notebook for tabs
-        self.notebook = ttk.Notebook(main_frame)
-        self.notebook.pack(fill=tk.BOTH, expand=True)
-
-        # Tab 1: Car Setup Preparation
-        self.tab_setup = ttk.Frame(self.notebook, padding="10")
-        self.notebook.add(self.tab_setup, text="Car Setup Preparation")
-
-        # Tab 2: Fine-Tuning Guide
-        self.tab_guide = ttk.Frame(self.notebook, padding="10")
-        self.notebook.add(self.tab_guide, text="Fine-Tuning Guide")
-
-        # Tab 3: Save/Load
-        self.tab_save = ttk.Frame(self.notebook, padding="10")
-        self.notebook.add(self.tab_save, text="Save / Load & Notes")
-
-        # Build each tab
-        self.create_setup_tab()
-        self.create_guide_tab()
-        self.create_save_tab()
-
-    def create_setup_tab(self):
-        """Create the main setup configuration tab"""
-
-        # Top row - Selection controls
-        top_frame = ttk.Frame(self.tab_setup)
-        top_frame.pack(fill=tk.X, pady=(0, 10))
-
-        # Surface selection (left)
-        surface_frame = ttk.LabelFrame(top_frame, text="1. Surface Type", padding="10")
-        surface_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=(0, 5))
-
-        ttk.Label(surface_frame, text="Select the primary surface:").pack(anchor='w')
-        self.surface_var = tk.StringVar(value="Asphalt")
-        self.surface_combo = ttk.Combobox(surface_frame, textvariable=self.surface_var,
-                                          values=["Asphalt", "Gravel", "Snow"],
-                                          state="readonly", width=40)
-        self.surface_combo.pack(fill=tk.X, pady=(5, 0))
-
-        # Car class selection (right)
-        car_frame = ttk.LabelFrame(top_frame, text="2. Car Class", padding="10")
-        car_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=(5, 0))
-
-        ttk.Label(car_frame, text="Select the car category:").pack(anchor='w')
-
-        car_classes = [
-            "Group A (4WD) - Lancia Delta",
-            "WRC (2017+) (4WD)",
-            "R5 / Rally2 (4WD)",
-            "Group B (4WD) - Historic",
-            "Group B (RWD) - Historic",
-            "Modern RWD - Rally4",
-            "FWD (KitCar/Rally4)",
-            "RWD (Historic) - Escort/BMW",
-            "Rally GT (RWD) - Porsche/Mustang",
-            "Crosskart (AWD)",
-            "Group S (Prototype)"
-        ]
-
-        self.car_class_var = tk.StringVar(value=car_classes[0])
-        self.car_class_combo = ttk.Combobox(car_frame, textvariable=self.car_class_var,
-                                            values=car_classes, state="readonly", width=40)
-        self.car_class_combo.pack(fill=tk.X, pady=(5, 0))
-
-        # Map display names to enums
-        self.car_class_map = {
-            "Group A (4WD) - Lancia Delta": CarClass.GROUP_A_4WD,
-            "WRC (2017+) (4WD)": CarClass.WRC,
-            "R5 / Rally2 (4WD)": CarClass.R5_RALLY2,
-            "Group B (4WD) - Historic": CarClass.GROUP_B_4WD,
-            "Group B (RWD) - Historic": CarClass.GROUP_B_RWD,
-            "Modern RWD - Rally4": CarClass.RALLY4_RWD,
-            "FWD (KitCar/Rally4)": CarClass.FWD_KITCAR,
-            "RWD (Historic) - Escort/BMW": CarClass.RWD_HISTORIC,
-            "Rally GT (RWD) - Porsche/Mustang": CarClass.RALLY_GT,
-            "Crosskart (AWD)": CarClass.CROSSKART,
-            "Group S (Prototype)": CarClass.GROUP_S,
-        }
-
-        # Second row - Condition and Weather
-        second_frame = ttk.Frame(self.tab_setup)
-        second_frame.pack(fill=tk.X, pady=(0, 10))
-
-        # Track condition (left)
-        track_frame = ttk.LabelFrame(second_frame, text="3. Track Condition", padding="10")
-        track_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=(0, 5))
-
-        ttk.Label(track_frame, text="Select the track condition:").pack(anchor='w')
-
-        track_conditions = [
-            "Smooth & Fast (Tarmac)",
-            "Bumpy / Damaged (Rough)",
-            "Loose & Slippery (Gravel)",
-            "Mixed (Tarmac/Gravel)",
-            "Ice (Packed Snow)",
-            "Deep Gravel/Ruts",
-            "Wet Mud/Clay"
-        ]
-
-        self.track_var = tk.StringVar(value=track_conditions[0])
-        self.track_combo = ttk.Combobox(track_frame, textvariable=self.track_var,
-                                        values=track_conditions, state="readonly", width=40)
-        self.track_combo.pack(fill=tk.X, pady=(5, 0))
-
-        self.track_map = {
-            "Smooth & Fast (Tarmac)": TrackCondition.SMOOTH,
-            "Bumpy / Damaged (Rough)": TrackCondition.BUMPY,
-            "Loose & Slippery (Gravel)": TrackCondition.LOOSE,
-            "Mixed (Tarmac/Gravel)": TrackCondition.MIXED,
-            "Ice (Packed Snow)": TrackCondition.ICE,
-            "Deep Gravel/Ruts": TrackCondition.DEEP_GRAVEL,
-            "Wet Mud/Clay": TrackCondition.WET_MUD,
-        }
-
-        # Weather (right)
-        weather_frame = ttk.LabelFrame(second_frame, text="4. Weather", padding="10")
-        weather_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=(5, 0))
-
-        ttk.Label(weather_frame, text="Select the weather condition:").pack(anchor='w')
-
-        weather_options = [
-            "Dry",
-            "Damp / Humid",
-            "Wet / Heavy Rain",
-            "Fog/Mist",
-            "Cold (Below 5°C)",
-            "Hot (Above 25°C)"
-        ]
-
-        self.weather_var = tk.StringVar(value=weather_options[0])
-        self.weather_combo = ttk.Combobox(weather_frame, textvariable=self.weather_var,
-                                          values=weather_options, state="readonly", width=40)
-        self.weather_combo.pack(fill=tk.X, pady=(5, 0))
-
-        self.weather_map = {
-            "Dry": Weather.DRY,
-            "Damp / Humid": Weather.DAMP,
-            "Wet / Heavy Rain": Weather.WET,
-            "Fog/Mist": Weather.FOG,
-            "Cold (Below 5°C)": Weather.COLD,
-            "Hot (Above 25°C)": Weather.HOT,
-        }
-
-        # Calculate button
-        calc_btn = tk.Button(self.tab_setup, text="GET ENGINEERING BASELINE SETUP",
-                            command=self.calculate_setup,
-                            bg=self.success_color, fg='white',
-                            font=('Segoe UI', 11, 'bold'),
-                            relief='flat', cursor='hand2', height=2)
-        calc_btn.pack(fill=tk.X, pady=(0, 10))
-
-        # Results area - split panes
-        results_frame = ttk.Frame(self.tab_setup)
-        results_frame.pack(fill=tk.BOTH, expand=True)
-
-        # Left panel - Setup results
-        left_panel = ttk.LabelFrame(results_frame, text="ENGINEERING SETUP RESULTS", padding="10")
-        left_panel.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=(0, 5))
-
-        self.setup_text = tk.Text(left_panel, font=('Consolas', 9),
-                                  bg='#323232', fg=self.fg_color,
-                                  relief='flat', wrap=tk.WORD)
-        self.setup_text.pack(fill=tk.BOTH, expand=True)
-
-        # Right panel - Differential results
-        right_panel = ttk.LabelFrame(results_frame, text="DIFFERENTIAL ENGINEERING", padding="10")
-        right_panel.pack(side=tk.LEFT, fill=tk.BOTH, expand=True, padx=(5, 0))
-
-        self.diff_text = tk.Text(right_panel, font=('Consolas', 9),
-                                 bg='#323232', fg=self.fg_color,
-                                 relief='flat', wrap=tk.WORD)
-        self.diff_text.pack(fill=tk.BOTH, expand=True)
-
-    def create_guide_tab(self):
-        """Create the tuning guide tab"""
-
-        guide_text = tk.Text(self.tab_guide, font=('Segoe UI', 9),
-                            bg='#323232', fg=self.fg_color,
-                            relief='flat', wrap=tk.WORD, padx=15, pady=15)
-        guide_text.pack(fill=tk.BOTH, expand=True)
-
-        guide_content = """*** RALLY ENGINEERING PRINCIPLES ***
-Based on Real-World WRC Engineering Data
-
-DIFFERENTIAL ENGINEERING:
-- POWER RAMP: Lower angle = MORE lock under acceleration
-- COAST RAMP: Lower angle = MORE lock during deceleration
-- PRELOAD: Higher values = Immediate locking response
-
-DAMPER RATIOS (Competition Standard):
-- Slow Rebound/Slow Bump: 1.6:1 ratio (Industry Standard)
-- Fast Rebound/Fast Bump: 1.5:1 ratio (Bump Control)
-- Transition Points: 0.15 m/s (AC Standard)
-
-SPRING FREQUENCY ENGINEERING:
-- Asphalt: 2.8-3.2 Hz (Stiff for aero platforms)
-- Gravel: 1.8-2.2 Hz (Compliance for bumps)
-- Snow: 1.4-1.8 Hz (Maximum traction)
-
--------------------------------------------------------
-
-PROBLEM: UNDERSTEER on CORNER ENTRY
-ENGINEERING SOLUTIONS:
-- DIFFERENTIAL: Increase Front Coast Ramp angle (+10-15°)
-- SUSPENSION: Soften Front ARB (-20-30%)
-- DAMPERS: Increase Rear Slow Rebound (+15-20%)
-- ALIGNMENT: More Front Toe-Out (-0.10 to -0.15°)
-
-PROBLEM: OVERSTEER on CORNER ENTRY
-ENGINEERING SOLUTIONS:
-- DIFFERENTIAL: Decrease Rear Coast Ramp angle (-10°)
-- SUSPENSION: Stiffen Front ARB (+20%)
-- DAMPERS: Increase Front Slow Bump (+15%)
-- BRAKES: Move bias forward (+2-3%)
-
-PROBLEM: TRACTION ISSUES on EXIT
-ENGINEERING SOLUTIONS:
-- DIFFERENTIAL: Decrease Rear Power Ramp angle (-10-15°)
-- SUSPENSION: Soften Rear Springs (-10%)
-- DAMPERS: Soften Rear Fast Bump (-20%)
-- RIDE HEIGHT: Lower Rear (+5mm rake)
-
-PROBLEM: BUMPY SURFACE INSTABILITY
-ENGINEERING SOLUTIONS:
-- DAMPERS: Soften Fast settings (-30-40%)
-- SPRINGS: Reduce rates (-15-20%)
-- RIDE HEIGHT: Increase (+10-15mm)
-- ARB: Soften significantly (-40-50%)
-
-WEATHER ADJUSTMENTS:
-- WET: Softer ARB, higher ride height, open diffs
-- COLD: Stiffer springs, more camber
-- HOT: Softer springs, less camber
-
--------------------------------------------------------
-
-MODERN RALLY ENGINEERING REFERENCES:
-- WRC Teams: Toyota Gazoo Racing, Hyundai Motorsport
-- Development: M-Sport, Citroën Racing
-- Data Source: ACR Extracted Engineering Setups
-
-USEFUL LINKS:
-- Github ilborga70: https://github.com/ilborga70
-- Pro Sim FOV Utility: https://github.com/ilborga70/Pro-Sim-FOV-Utility
-- Website: https://scl-tools.blogspot.com/
-"""
-
-        guide_text.insert('1.0', guide_content)
-        guide_text.config(state=tk.DISABLED)
-
-    def create_save_tab(self):
-        """Create the save/load tab"""
-
-        # Buttons frame
-        btn_frame = ttk.Frame(self.tab_save)
-        btn_frame.pack(fill=tk.X, pady=(0, 10))
-
-        tk.Button(btn_frame, text="Save Current Setup", command=self.save_setup,
-                 bg=self.accent_color, fg='white', font=('Segoe UI', 9, 'bold'),
-                 relief='flat', padx=20, pady=5).pack(side=tk.LEFT, padx=(0, 10))
-
-        tk.Button(btn_frame, text="Load Setup", command=self.load_setup,
-                 bg=self.accent_color, fg='white', font=('Segoe UI', 9, 'bold'),
-                 relief='flat', padx=20, pady=5).pack(side=tk.LEFT, padx=(0, 10))
-
-        tk.Button(btn_frame, text="Copy to Clipboard", command=self.copy_to_clipboard,
-                 bg=self.accent_color, fg='white', font=('Segoe UI', 9, 'bold'),
-                 relief='flat', padx=20, pady=5).pack(side=tk.LEFT)
-
-        # Notes area
-        notes_frame = ttk.LabelFrame(self.tab_save, text="Engineering Notes", padding="10")
-        notes_frame.pack(fill=tk.BOTH, expand=True)
-
-        self.notes_text = tk.Text(notes_frame, font=('Segoe UI', 10),
-                                  bg='#323232', fg=self.fg_color,
-                                  relief='flat', wrap=tk.WORD)
-        self.notes_text.pack(fill=tk.BOTH, expand=True)
-        self.notes_text.insert('1.0', "Enter your engineering notes here...\n\n"
-                              "Document:\n"
-                              "- Stage-specific adjustments\n"
-                              "- Handling observations\n"
-                              "- Weather/condition notes\n"
-                              "- Setup iterations and results")
-
-    def calculate_setup(self):
-        """Generate the setup based on selections"""
-
-        try:
-            # Map selections to enums
-            surface_map = {
-                "Asphalt": Surface.ASPHALT,
-                "Gravel": Surface.GRAVEL,
-                "Snow": Surface.SNOW,
-            }
-
-            surface = surface_map[self.surface_var.get()]
-            car_class = self.car_class_map[self.car_class_var.get()]
-            track_condition = self.track_map[self.track_var.get()]
-            weather = self.weather_map[self.weather_var.get()]
-
-            # Calculate
-            self.current_setup = self.calculator.calculate_setup(
-                car_class=car_class,
-                surface=surface,
-                track_condition=track_condition,
-                weather=weather,
-                setup_name="Engineering Baseline"
-            )
-
-            # Display results
-            self.display_setup_results()
-            self.display_diff_results()
-
-        except Exception as e:
-            messagebox.showerror("Error", f"Failed to calculate setup: {str(e)}")
-
-    def display_setup_results(self):
-        """Display setup results matching original format"""
-
-        setup = self.current_setup
-        self.setup_text.config(state=tk.NORMAL)
-        self.setup_text.delete('1.0', tk.END)
-
-        lines = []
-        lines.append("--- ENGINEERING INPUTS ---")
-        lines.append(f"Surface: {setup.surface} | Car: {setup.car_class}")
-        lines.append(f"Condition: {setup.track_condition} | Weather: {setup.weather}")
-        lines.append(f"Engineering Profile: {setup.engineering_profile}")
-        lines.append("")
-
-        lines.append("--- GEOMETRY & SUSPENSION (ENGINEERING SPEC) ---")
-        lines.append(f"Ride Height (F/R): {setup.suspension.ride_height_front:.3f} m / {setup.suspension.ride_height_rear:.3f} m")
-        lines.append(f"Spring Rate (F/R): {setup.suspension.spring_rate_front} N/m / {setup.suspension.spring_rate_rear} N/m")
-        lines.append(f"Anti-Roll Bar (F/R): {setup.arb.front} Nm / {setup.arb.rear} Nm")
-        lines.append(f"Camber (F/R): {setup.suspension.camber_front:.1f}° / {setup.suspension.camber_rear:.1f}°")
-        lines.append(f"Toe (F/R): {setup.suspension.toe_front:.4f} / {setup.suspension.toe_rear:.4f}")
-        lines.append("")
-
-        lines.append("--- DAMPERS (N/m/s) [Engineering Ratios] ---")
-        lines.append(f"Slow Bump (F/R): {setup.dampers.slow_bump_front} / {setup.dampers.slow_bump_rear}")
-        lines.append(f"Slow Rebound (F/R): {setup.dampers.slow_rebound_front} / {setup.dampers.slow_rebound_rear}")
-        lines.append(f"Fast Bump (F/R): {setup.dampers.fast_bump_front} / {setup.dampers.fast_bump_rear}")
-        lines.append(f"Fast Rebound (F/R): {setup.dampers.fast_rebound_front} / {setup.dampers.fast_rebound_rear}")
-        lines.append("")
-
-        lines.append("--- BRAKES ---")
-        lines.append(f"Brake Bias: {setup.brakes.bias:.2f}")
-        lines.append(f"Brake Pressure: {setup.brakes.pressure}%")
-
-        self.setup_text.insert('1.0', '\n'.join(lines))
-
-        # Color based on surface
-        surface_colors = {
-            "asphalt": "#6495ED",   # Cornflower blue
-            "gravel": "#D2B48C",    # Tan
-            "snow": "#E0FFFF",      # Light cyan
-        }
-        color = surface_colors.get(setup.surface, self.fg_color)
-        self.setup_text.config(fg=color)
-        self.setup_text.config(state=tk.DISABLED)
-
-    def display_diff_results(self):
-        """Display differential results matching original format"""
-
-        setup = self.current_setup
-        self.diff_text.config(state=tk.NORMAL)
-        self.diff_text.delete('1.0', tk.END)
-
-        lines = []
-        lines.append("--- DIFFERENTIAL ENGINEERING (ACR) ---")
-        lines.append("Engineering Logic: Lower Angle = MORE Lock (Aggressive)")
-        lines.append("                   Higher Angle = LESS Lock (Smooth)")
-        lines.append("")
-
-        if setup.traction in ["FWD", "4WD"]:
-            lines.append("--- FRONT DIFFERENTIAL ---")
-            lines.append(f"Accel Ramp (Power): {setup.differential.front_accel}°")
-            lines.append(f"Coast Ramp (Decel): {setup.differential.front_coast}°")
-            lines.append(f"Preload: {setup.differential.front_preload} Nm")
-            lines.append("")
-
-        if setup.traction in ["RWD", "4WD"]:
-            lines.append("--- REAR DIFFERENTIAL ---")
-            lines.append(f"Accel Ramp (Power): {setup.differential.rear_accel}°")
-            lines.append(f"Coast Ramp (Decel): {setup.differential.rear_coast}°")
-            lines.append(f"Preload: {setup.differential.rear_preload} Nm")
-            lines.append("")
-
-        if setup.traction == "4WD":
-            lines.append("--- CENTER DIFFERENTIAL ---")
-            lines.append("Torque Split: 50/50 (Default)")
-            lines.append("Note: Adjust in-car for specific stage requirements")
-
-        self.diff_text.insert('1.0', '\n'.join(lines))
-
-        # Match color
-        surface_colors = {
-            "asphalt": "#6495ED",
-            "gravel": "#D2B48C",
-            "snow": "#E0FFFF",
-        }
-        color = surface_colors.get(setup.surface, self.fg_color)
-        self.diff_text.config(fg=color)
-        self.diff_text.config(state=tk.DISABLED)
-
-    def save_setup(self):
-        """Save current setup to JSON file"""
-
-        if not self.current_setup:
-            messagebox.showwarning("No Setup", "Generate a setup first before saving.")
-            return
-
-        filepath = filedialog.asksaveasfilename(
-            defaultextension=".json",
-            filetypes=[("JSON files", "*.json"), ("All files", "*.*")],
-            initialfile="rally_setup.json"
+        # Header bar with title and car/stage selection
+        self.create_header(main_frame)
+
+        # Info bar showing selected car/stage
+        self.create_info_bar(main_frame)
+
+        # Tab bar
+        self.create_tab_bar(main_frame)
+
+        # Content area
+        self.content_frame = tk.Frame(main_frame, bg=self.colors['bg_dark'])
+        self.content_frame.pack(fill=tk.BOTH, expand=True, padx=20, pady=(0, 20))
+
+        # Results widgets storage
+        self.results_widgets = {}
+
+        # Create initial content
+        self.create_tab_content()
+
+    def create_header(self, parent):
+        """Create the header with title and selection dropdowns"""
+        header = tk.Frame(parent, bg=self.colors['bg_panel'], height=90)
+        header.pack(fill=tk.X)
+        header.pack_propagate(False)
+
+        # Left side - Title
+        title_frame = tk.Frame(header, bg=self.colors['bg_panel'])
+        title_frame.pack(side=tk.LEFT, padx=20, pady=15)
+
+        title_label = tk.Label(
+            title_frame,
+            text="CAR SETUP",
+            font=('Segoe UI', 22, 'bold'),
+            fg=self.colors['fg_primary'],
+            bg=self.colors['bg_panel']
         )
+        title_label.pack(anchor='w')
 
-        if filepath:
-            try:
-                self.current_setup.notes = self.notes_text.get('1.0', tk.END).strip()
-                self.current_setup.save_to_file(filepath)
-                messagebox.showinfo("Saved", f"Setup saved to:\n{filepath}")
-            except Exception as e:
-                messagebox.showerror("Error", f"Failed to save: {str(e)}")
+        subtitle_label = tk.Label(
+            title_frame,
+            text="ACR RallyWorks",
+            font=('Segoe UI', 10),
+            fg=self.colors['fg_secondary'],
+            bg=self.colors['bg_panel']
+        )
+        subtitle_label.pack(anchor='w')
+
+        # Right side - Selection controls
+        selection_frame = tk.Frame(header, bg=self.colors['bg_panel'])
+        selection_frame.pack(side=tk.RIGHT, padx=20, pady=15)
+
+        # Car selection
+        car_container = tk.Frame(selection_frame, bg=self.colors['bg_panel'])
+        car_container.pack(side=tk.LEFT, padx=(0, 15))
+
+        car_label = tk.Label(
+            car_container,
+            text="CAR",
+            font=('Segoe UI', 9, 'bold'),
+            fg=self.colors['fg_secondary'],
+            bg=self.colors['bg_panel']
+        )
+        car_label.pack(anchor='w')
+
+        self.car_var = tk.StringVar()
+        cars = self.calculator.get_cars()
+        self.car_combo = ttk.Combobox(
+            car_container,
+            textvariable=self.car_var,
+            values=cars,
+            state="readonly",
+            width=32,
+            style='Car.TCombobox',
+            font=('Segoe UI', 10)
+        )
+        self.car_combo.pack()
+
+        # Stage selection
+        stage_container = tk.Frame(selection_frame, bg=self.colors['bg_panel'])
+        stage_container.pack(side=tk.LEFT, padx=(0, 15))
+
+        stage_label = tk.Label(
+            stage_container,
+            text="STAGE",
+            font=('Segoe UI', 9, 'bold'),
+            fg=self.colors['fg_secondary'],
+            bg=self.colors['bg_panel']
+        )
+        stage_label.pack(anchor='w')
+
+        self.stage_var = tk.StringVar()
+        stages = self.calculator.get_stages()
+        self.stage_combo = ttk.Combobox(
+            stage_container,
+            textvariable=self.stage_var,
+            values=stages,
+            state="readonly",
+            width=32,
+            style='Stage.TCombobox',
+            font=('Segoe UI', 10)
+        )
+        self.stage_combo.pack()
+
+        # Load button
+        self.load_button = tk.Button(
+            selection_frame,
+            text="LOAD BASELINE SETUP",
+            font=('Segoe UI', 10, 'bold'),
+            fg='#ffffff',
+            bg=self.colors['accent_red'],
+            activebackground=self.colors['accent_red_hover'],
+            activeforeground='#ffffff',
+            relief='flat',
+            padx=20,
+            pady=8,
+            cursor='hand2',
+            command=self.load_setup
+        )
+        self.load_button.pack(side=tk.LEFT)
+
+        # Hover effects for button
+        self.load_button.bind('<Enter>', lambda e: self.load_button.configure(bg=self.colors['accent_red_hover']))
+        self.load_button.bind('<Leave>', lambda e: self.load_button.configure(bg=self.colors['accent_red']))
+
+    def create_info_bar(self, parent):
+        """Create the info bar showing current car/stage selection"""
+        self.info_bar = tk.Frame(parent, bg=self.colors['bg_dark'], height=50)
+        self.info_bar.pack(fill=tk.X, padx=20, pady=(15, 0))
+
+        # Left side - Car and Stage info
+        info_left = tk.Frame(self.info_bar, bg=self.colors['bg_dark'])
+        info_left.pack(side=tk.LEFT)
+
+        # Car label
+        self.car_display = tk.Label(
+            info_left,
+            text="Car: Not selected",
+            font=('Segoe UI', 11),
+            fg=self.colors['fg_secondary'],
+            bg=self.colors['bg_dark']
+        )
+        self.car_display.pack(side=tk.LEFT, padx=(0, 30))
+
+        # Stage label
+        self.stage_display = tk.Label(
+            info_left,
+            text="Stage: Not selected",
+            font=('Segoe UI', 11),
+            fg=self.colors['fg_secondary'],
+            bg=self.colors['bg_dark']
+        )
+        self.stage_display.pack(side=tk.LEFT, padx=(0, 30))
+
+        # Surface indicator (right side)
+        self.surface_label = tk.Label(
+            self.info_bar,
+            text="",
+            font=('Segoe UI', 11, 'bold'),
+            fg=self.colors['bg_dark'],
+            bg=self.colors['bg_dark'],
+            padx=15,
+            pady=5
+        )
+        self.surface_label.pack(side=tk.RIGHT)
+
+    def create_tab_bar(self, parent):
+        """Create the tab navigation bar"""
+        tab_bar = tk.Frame(parent, bg=self.colors['bg_dark'], height=45)
+        tab_bar.pack(fill=tk.X, padx=20, pady=(15, 0))
+        tab_bar.pack_propagate(False)
+
+        self.tabs = {}
+        tab_names = ["SUSPENSIONS", "DAMPERS", "DIFFERENTIALS", "TYRES", "BRAKES"]
+
+        for tab_name in tab_names:
+            tab_btn = tk.Label(
+                tab_bar,
+                text=tab_name,
+                font=('Segoe UI', 10, 'bold'),
+                fg=self.colors['fg_secondary'],
+                bg=self.colors['bg_dark'],
+                padx=20,
+                pady=10,
+                cursor='hand2'
+            )
+            tab_btn.pack(side=tk.LEFT)
+            tab_btn.bind('<Button-1>', lambda e, t=tab_name: self.switch_tab(t))
+            tab_btn.bind('<Enter>', lambda e, btn=tab_btn: self.on_tab_hover(btn, True))
+            tab_btn.bind('<Leave>', lambda e, btn=tab_btn: self.on_tab_hover(btn, False))
+            self.tabs[tab_name] = tab_btn
+
+        # Update initial tab appearance
+        self.update_tab_styles()
+
+    def on_tab_hover(self, btn, entering):
+        """Handle tab hover effect"""
+        tab_name = btn.cget('text')
+        if tab_name != self.current_tab:
+            if entering:
+                btn.configure(fg=self.colors['fg_primary'])
+            else:
+                btn.configure(fg=self.colors['fg_secondary'])
+
+    def update_tab_styles(self):
+        """Update tab styles based on current selection"""
+        for name, btn in self.tabs.items():
+            if name == self.current_tab:
+                btn.configure(
+                    fg=self.colors['accent_red'],
+                    bg=self.colors['bg_dark']
+                )
+            else:
+                btn.configure(
+                    fg=self.colors['fg_secondary'],
+                    bg=self.colors['bg_dark']
+                )
+
+    def switch_tab(self, tab_name):
+        """Switch to a different tab"""
+        self.current_tab = tab_name
+        self.update_tab_styles()
+        self.create_tab_content()
+
+        # Re-display current setup if available
+        if self.current_setup:
+            self.display_setup(self.current_setup)
+
+    def create_tab_content(self):
+        """Create content for the current tab"""
+        # Clear existing content
+        for widget in self.content_frame.winfo_children():
+            widget.destroy()
+
+        self.results_widgets = {}
+
+        # Create content based on current tab
+        if self.current_tab == "SUSPENSIONS":
+            self.create_suspensions_tab()
+        elif self.current_tab == "DAMPERS":
+            self.create_dampers_tab()
+        elif self.current_tab == "DIFFERENTIALS":
+            self.create_differentials_tab()
+        elif self.current_tab == "TYRES":
+            self.create_tyres_tab()
+        elif self.current_tab == "BRAKES":
+            self.create_brakes_tab()
+
+    def create_panel(self, parent, title, row=0, col=0, rowspan=1, colspan=1):
+        """Create a styled panel with title and red border on top"""
+        # Outer frame for border effect
+        outer = tk.Frame(parent, bg=self.colors['accent_red'])
+        outer.grid(row=row, column=col, rowspan=rowspan, columnspan=colspan,
+                   sticky='nsew', padx=8, pady=8)
+
+        # Inner panel
+        panel = tk.Frame(outer, bg=self.colors['bg_panel'])
+        panel.pack(fill=tk.BOTH, expand=True, padx=(0, 0), pady=(3, 0))
+
+        # Title bar
+        title_bar = tk.Frame(panel, bg=self.colors['bg_panel'])
+        title_bar.pack(fill=tk.X, padx=15, pady=(12, 8))
+
+        title_label = tk.Label(
+            title_bar,
+            text=title,
+            font=('Segoe UI', 11, 'bold'),
+            fg=self.colors['fg_primary'],
+            bg=self.colors['bg_panel']
+        )
+        title_label.pack(anchor='w')
+
+        # Content area
+        content = tk.Frame(panel, bg=self.colors['bg_panel'])
+        content.pack(fill=tk.BOTH, expand=True, padx=15, pady=(0, 15))
+
+        return content
+
+    def create_value_row(self, parent, label_text, key, row, show_unit=True):
+        """Create a label-value row in ACR style"""
+        row_frame = tk.Frame(parent, bg=self.colors['bg_panel'])
+        row_frame.grid(row=row, column=0, sticky='ew', pady=3)
+        parent.columnconfigure(0, weight=1)
+
+        # Label
+        label = tk.Label(
+            row_frame,
+            text=label_text,
+            font=('Segoe UI', 10),
+            fg=self.colors['fg_secondary'],
+            bg=self.colors['bg_panel'],
+            anchor='w'
+        )
+        label.pack(side=tk.LEFT)
+
+        # Value (styled like a read-only input)
+        value_frame = tk.Frame(row_frame, bg=self.colors['bg_input'], padx=10, pady=5)
+        value_frame.pack(side=tk.RIGHT)
+
+        value_label = tk.Label(
+            value_frame,
+            text="-",
+            font=('Segoe UI', 10),
+            fg=self.colors['fg_primary'],
+            bg=self.colors['bg_input'],
+            width=12,
+            anchor='e'
+        )
+        value_label.pack()
+
+        self.results_widgets[key] = value_label
+
+    def create_suspensions_tab(self):
+        """Create the suspensions tab content"""
+        # Grid layout: 2x2 for corners
+        self.content_frame.columnconfigure(0, weight=1)
+        self.content_frame.columnconfigure(1, weight=1)
+        self.content_frame.rowconfigure(0, weight=1)
+        self.content_frame.rowconfigure(1, weight=1)
+
+        # Front Left
+        fl_content = self.create_panel(self.content_frame, "FRONT LEFT", 0, 0)
+        self.create_value_row(fl_content, "Ride Height", "ride_height_fl", 0)
+        self.create_value_row(fl_content, "Spring Stiffness", "spring_fl", 1)
+
+        # Front Right
+        fr_content = self.create_panel(self.content_frame, "FRONT RIGHT", 0, 1)
+        self.create_value_row(fr_content, "Ride Height", "ride_height_fr", 0)
+        self.create_value_row(fr_content, "Spring Stiffness", "spring_fr", 1)
+
+        # Rear Left
+        rl_content = self.create_panel(self.content_frame, "REAR LEFT", 1, 0)
+        self.create_value_row(rl_content, "Ride Height", "ride_height_rl", 0)
+        self.create_value_row(rl_content, "Spring Stiffness", "spring_rl", 1)
+
+        # Rear Right
+        rr_content = self.create_panel(self.content_frame, "REAR RIGHT", 1, 1)
+        self.create_value_row(rr_content, "Ride Height", "ride_height_rr", 0)
+        self.create_value_row(rr_content, "Spring Stiffness", "spring_rr", 1)
+
+        # Center panel for ARBs (add a third row)
+        self.content_frame.rowconfigure(2, weight=0)
+
+        arb_frame = tk.Frame(self.content_frame, bg=self.colors['bg_dark'])
+        arb_frame.grid(row=2, column=0, columnspan=2, sticky='ew', padx=8, pady=(0, 8))
+        arb_frame.columnconfigure(0, weight=1)
+        arb_frame.columnconfigure(1, weight=1)
+
+        # Front ARB
+        front_arb_panel = self.create_mini_panel(arb_frame, "FRONT ARB", 0, 0)
+        self.create_value_row(front_arb_panel, "Stiffness", "front_arb", 0)
+
+        # Rear ARB
+        rear_arb_panel = self.create_mini_panel(arb_frame, "REAR ARB", 0, 1)
+        self.create_value_row(rear_arb_panel, "Stiffness", "rear_arb", 0)
+
+    def create_mini_panel(self, parent, title, row, col):
+        """Create a smaller panel for single values"""
+        outer = tk.Frame(parent, bg=self.colors['accent_red'])
+        outer.grid(row=row, column=col, sticky='ew', padx=8, pady=8)
+
+        panel = tk.Frame(outer, bg=self.colors['bg_panel'])
+        panel.pack(fill=tk.BOTH, expand=True, padx=(0, 0), pady=(3, 0))
+
+        title_label = tk.Label(
+            panel,
+            text=title,
+            font=('Segoe UI', 10, 'bold'),
+            fg=self.colors['fg_primary'],
+            bg=self.colors['bg_panel']
+        )
+        title_label.pack(anchor='w', padx=15, pady=(10, 5))
+
+        content = tk.Frame(panel, bg=self.colors['bg_panel'])
+        content.pack(fill=tk.X, padx=15, pady=(0, 10))
+
+        return content
+
+    def create_dampers_tab(self):
+        """Create the dampers tab content"""
+        self.content_frame.columnconfigure(0, weight=1)
+        self.content_frame.columnconfigure(1, weight=1)
+        self.content_frame.rowconfigure(0, weight=1)
+        self.content_frame.rowconfigure(1, weight=1)
+
+        # Front Left
+        fl_content = self.create_panel(self.content_frame, "FRONT LEFT", 0, 0)
+        self.create_value_row(fl_content, "Slow Bump", "damper_fl_slow_bump", 0)
+        self.create_value_row(fl_content, "Slow Rebound", "damper_fl_slow_rebound", 1)
+        self.create_value_row(fl_content, "Fast Bump", "damper_fl_fast_bump", 2)
+        self.create_value_row(fl_content, "Fast Rebound", "damper_fl_fast_rebound", 3)
+
+        # Front Right
+        fr_content = self.create_panel(self.content_frame, "FRONT RIGHT", 0, 1)
+        self.create_value_row(fr_content, "Slow Bump", "damper_fr_slow_bump", 0)
+        self.create_value_row(fr_content, "Slow Rebound", "damper_fr_slow_rebound", 1)
+        self.create_value_row(fr_content, "Fast Bump", "damper_fr_fast_bump", 2)
+        self.create_value_row(fr_content, "Fast Rebound", "damper_fr_fast_rebound", 3)
+
+        # Rear Left
+        rl_content = self.create_panel(self.content_frame, "REAR LEFT", 1, 0)
+        self.create_value_row(rl_content, "Slow Bump", "damper_rl_slow_bump", 0)
+        self.create_value_row(rl_content, "Slow Rebound", "damper_rl_slow_rebound", 1)
+        self.create_value_row(rl_content, "Fast Bump", "damper_rl_fast_bump", 2)
+        self.create_value_row(rl_content, "Fast Rebound", "damper_rl_fast_rebound", 3)
+
+        # Rear Right
+        rr_content = self.create_panel(self.content_frame, "REAR RIGHT", 1, 1)
+        self.create_value_row(rr_content, "Slow Bump", "damper_rr_slow_bump", 0)
+        self.create_value_row(rr_content, "Slow Rebound", "damper_rr_slow_rebound", 1)
+        self.create_value_row(rr_content, "Fast Bump", "damper_rr_fast_bump", 2)
+        self.create_value_row(rr_content, "Fast Rebound", "damper_rr_fast_rebound", 3)
+
+    def create_differentials_tab(self):
+        """Create the differentials tab content"""
+        self.content_frame.columnconfigure(0, weight=1)
+        self.content_frame.columnconfigure(1, weight=1)
+        self.content_frame.rowconfigure(0, weight=0)
+        self.content_frame.rowconfigure(1, weight=1)
+
+        # Drive Type info at top
+        info_frame = tk.Frame(self.content_frame, bg=self.colors['bg_panel'])
+        info_frame.grid(row=0, column=0, columnspan=2, sticky='ew', padx=8, pady=8)
+
+        self.drive_type_label = tk.Label(
+            info_frame,
+            text="DRIVE TYPE: -",
+            font=('Segoe UI', 12, 'bold'),
+            fg=self.colors['accent_red'],
+            bg=self.colors['bg_panel'],
+            pady=10
+        )
+        self.drive_type_label.pack()
+        self.results_widgets['drive_type_display'] = self.drive_type_label
+
+        # Front Diff
+        front_content = self.create_panel(self.content_frame, "FRONT", 1, 0)
+        self.create_value_row(front_content, "Diff Ratio", "front_diff_ratio", 0)
+        self.create_value_row(front_content, "LSD Ramp Angle", "front_diff_lsd_ramp_angle", 1)
+        self.create_value_row(front_content, "LSD Plates", "front_diff_lsd_plates", 2)
+        self.create_value_row(front_content, "LSD Preload", "front_diff_lsd_preload", 3)
+
+        # Rear Diff
+        rear_content = self.create_panel(self.content_frame, "REAR", 1, 1)
+        self.create_value_row(rear_content, "Diff Ratio", "rear_diff_ratio", 0)
+        self.create_value_row(rear_content, "LSD Ramp Angle", "rear_diff_lsd_ramp_angle", 1)
+        self.create_value_row(rear_content, "LSD Plates", "rear_diff_lsd_plates", 2)
+        self.create_value_row(rear_content, "LSD Preload", "rear_diff_lsd_preload", 3)
+
+        # Center Diff (if AWD)
+        self.content_frame.rowconfigure(2, weight=0)
+        center_frame = tk.Frame(self.content_frame, bg=self.colors['bg_dark'])
+        center_frame.grid(row=2, column=0, columnspan=2, sticky='ew')
+
+        center_content = self.create_mini_panel(center_frame, "CENTER", 0, 0)
+        center_frame.columnconfigure(0, weight=1)
+        self.create_value_row(center_content, "Front Bias", "front_bias", 0)
+        self.create_value_row(center_content, "Centre Diff Ratio", "centre_diff_ratio", 1)
+
+    def create_tyres_tab(self):
+        """Create the tyres tab content"""
+        self.content_frame.columnconfigure(0, weight=1)
+        self.content_frame.columnconfigure(1, weight=1)
+        self.content_frame.rowconfigure(0, weight=1)
+        self.content_frame.rowconfigure(1, weight=1)
+
+        # Front Left
+        fl_content = self.create_panel(self.content_frame, "FRONT LEFT", 0, 0)
+        self.create_value_row(fl_content, "Pressure", "tyre_fl_pressure", 0)
+        self.create_value_row(fl_content, "Camber", "tyre_fl_camber", 1)
+        self.create_value_row(fl_content, "Toe", "tyre_fl_toe", 2)
+
+        # Front Right
+        fr_content = self.create_panel(self.content_frame, "FRONT RIGHT", 0, 1)
+        self.create_value_row(fr_content, "Pressure", "tyre_fr_pressure", 0)
+        self.create_value_row(fr_content, "Camber", "tyre_fr_camber", 1)
+        self.create_value_row(fr_content, "Toe", "tyre_fr_toe", 2)
+
+        # Rear Left
+        rl_content = self.create_panel(self.content_frame, "REAR LEFT", 1, 0)
+        self.create_value_row(rl_content, "Pressure", "tyre_rl_pressure", 0)
+        self.create_value_row(rl_content, "Camber", "tyre_rl_camber", 1)
+        self.create_value_row(rl_content, "Toe", "tyre_rl_toe", 2)
+
+        # Rear Right
+        rr_content = self.create_panel(self.content_frame, "REAR RIGHT", 1, 1)
+        self.create_value_row(rr_content, "Pressure", "tyre_rr_pressure", 0)
+        self.create_value_row(rr_content, "Camber", "tyre_rr_camber", 1)
+        self.create_value_row(rr_content, "Toe", "tyre_rr_toe", 2)
+
+    def create_brakes_tab(self):
+        """Create the brakes tab content"""
+        self.content_frame.columnconfigure(0, weight=1)
+        self.content_frame.rowconfigure(0, weight=1)
+
+        # Main brakes panel
+        brakes_content = self.create_panel(self.content_frame, "BRAKES", 0, 0)
+        self.create_value_row(brakes_content, "Brake Bias", "brake_bias", 0)
+        self.create_value_row(brakes_content, "Prop Valve Pressure", "prop_valve_pressure", 1)
 
     def load_setup(self):
-        """Load setup from JSON file"""
+        """Load the setup when button is clicked"""
+        car = self.car_var.get()
+        stage = self.stage_var.get()
 
-        filepath = filedialog.askopenfilename(
-            filetypes=[("JSON files", "*.json"), ("All files", "*.*")]
-        )
-
-        if filepath:
-            try:
-                self.current_setup = FullSetup.load_from_file(filepath)
-                self.display_setup_results()
-                self.display_diff_results()
-
-                self.notes_text.delete('1.0', tk.END)
-                self.notes_text.insert('1.0', self.current_setup.notes)
-
-                messagebox.showinfo("Loaded", f"Setup loaded: {self.current_setup.name}")
-
-            except Exception as e:
-                messagebox.showerror("Error", f"Failed to load: {str(e)}")
-
-    def copy_to_clipboard(self):
-        """Copy results to clipboard"""
-
-        if not self.current_setup:
-            messagebox.showwarning("No Setup", "Generate a setup first.")
+        if not car:
+            messagebox.showwarning("Selection Required", "Please select a car.")
             return
 
-        self.setup_text.config(state=tk.NORMAL)
-        setup_content = self.setup_text.get('1.0', tk.END)
-        self.setup_text.config(state=tk.DISABLED)
+        if not stage:
+            messagebox.showwarning("Selection Required", "Please select a stage.")
+            return
 
-        self.diff_text.config(state=tk.NORMAL)
-        diff_content = self.diff_text.get('1.0', tk.END)
-        self.diff_text.config(state=tk.DISABLED)
+        # Update info bar
+        self.car_display.config(text=f"Car: {car}", fg=self.colors['fg_primary'])
+        self.stage_display.config(text=f"Stage: {stage}", fg=self.colors['fg_primary'])
 
-        full_content = setup_content + "\n" + diff_content
+        # Update surface indicator
+        surface = self.calculator.get_stage_surface(stage)
+        if surface.lower() == 'gravel':
+            self.surface_label.config(
+                text="GRAVEL",
+                bg=self.colors['gravel'],
+                fg=self.colors['bg_dark']
+            )
+        else:
+            self.surface_label.config(
+                text="TARMAC",
+                bg=self.colors['tarmac'],
+                fg=self.colors['bg_dark']
+            )
 
-        self.root.clipboard_clear()
-        self.root.clipboard_append(full_content)
-        messagebox.showinfo("Copied", "Setup copied to clipboard!")
+        # Get and display setup
+        setup = self.calculator.get_setup(car, stage)
+        if setup:
+            self.current_setup = setup
+            self.setup_loaded = True
+            self.display_setup(setup)
+        else:
+            self.current_setup = None
+            self.setup_loaded = False
+            self.clear_results()
+            messagebox.showwarning("No Setup",
+                                   f"No {surface.lower()} setup found for {car}")
+
+    def display_setup(self, setup: CarSetup):
+        """Display setup values in the UI"""
+        # Map setup attributes to widget keys
+        attr_map = {
+            "drive_type": setup.drive_type,
+            "front_bias": setup.front_bias,
+            "front_diff_ratio": setup.front_diff_ratio,
+            "front_diff_lsd_ramp_angle": setup.front_diff_lsd_ramp_angle,
+            "front_diff_lsd_plates": setup.front_diff_lsd_plates,
+            "front_diff_lsd_preload": setup.front_diff_lsd_preload,
+            "rear_diff_ratio": setup.rear_diff_ratio,
+            "rear_diff_lsd_ramp_angle": setup.rear_diff_lsd_ramp_angle,
+            "rear_diff_lsd_plates": setup.rear_diff_lsd_plates,
+            "rear_diff_lsd_preload": setup.rear_diff_lsd_preload,
+            "centre_diff_ratio": setup.centre_diff_ratio,
+            "front_arb": setup.front_arb,
+            "rear_arb": setup.rear_arb,
+            "spring_fl": setup.spring_fl,
+            "spring_fr": setup.spring_fr,
+            "spring_rl": setup.spring_rl,
+            "spring_rr": setup.spring_rr,
+            "ride_height_fl": setup.ride_height_fl,
+            "ride_height_fr": setup.ride_height_fr,
+            "ride_height_rl": setup.ride_height_rl,
+            "ride_height_rr": setup.ride_height_rr,
+            "damper_fl_slow_bump": setup.damper_fl_slow_bump,
+            "damper_fl_slow_rebound": setup.damper_fl_slow_rebound,
+            "damper_fl_fast_bump": setup.damper_fl_fast_bump,
+            "damper_fl_fast_rebound": setup.damper_fl_fast_rebound,
+            "damper_fr_slow_bump": setup.damper_fr_slow_bump,
+            "damper_fr_slow_rebound": setup.damper_fr_slow_rebound,
+            "damper_fr_fast_bump": setup.damper_fr_fast_bump,
+            "damper_fr_fast_rebound": setup.damper_fr_fast_rebound,
+            "damper_rl_slow_bump": setup.damper_rl_slow_bump,
+            "damper_rl_slow_rebound": setup.damper_rl_slow_rebound,
+            "damper_rl_fast_bump": setup.damper_rl_fast_bump,
+            "damper_rl_fast_rebound": setup.damper_rl_fast_rebound,
+            "damper_rr_slow_bump": setup.damper_rr_slow_bump,
+            "damper_rr_slow_rebound": setup.damper_rr_slow_rebound,
+            "damper_rr_fast_bump": setup.damper_rr_fast_bump,
+            "damper_rr_fast_rebound": setup.damper_rr_fast_rebound,
+            "tyre_fl_pressure": setup.tyre_fl_pressure,
+            "tyre_fl_camber": setup.tyre_fl_camber,
+            "tyre_fl_toe": setup.tyre_fl_toe,
+            "tyre_fr_pressure": setup.tyre_fr_pressure,
+            "tyre_fr_camber": setup.tyre_fr_camber,
+            "tyre_fr_toe": setup.tyre_fr_toe,
+            "tyre_rl_pressure": setup.tyre_rl_pressure,
+            "tyre_rl_camber": setup.tyre_rl_camber,
+            "tyre_rl_toe": setup.tyre_rl_toe,
+            "tyre_rr_pressure": setup.tyre_rr_pressure,
+            "tyre_rr_camber": setup.tyre_rr_camber,
+            "tyre_rr_toe": setup.tyre_rr_toe,
+            "brake_bias": setup.brake_bias,
+            "prop_valve_pressure": setup.prop_valve_pressure,
+        }
+
+        for key, value in attr_map.items():
+            if key in self.results_widgets:
+                display_value = value if value else "-"
+                self.results_widgets[key].config(text=display_value)
+
+        # Special handling for drive type display in differentials tab
+        if 'drive_type_display' in self.results_widgets:
+            drive_type = setup.drive_type if setup.drive_type else "Unknown"
+            self.results_widgets['drive_type_display'].config(text=f"DRIVE TYPE: {drive_type}")
+
+    def clear_results(self):
+        """Clear all result values"""
+        for key, widget in self.results_widgets.items():
+            if key == 'drive_type_display':
+                widget.config(text="DRIVE TYPE: -")
+            else:
+                widget.config(text="-")
 
 
 def main():
