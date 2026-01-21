@@ -1,145 +1,224 @@
 """
 ACR Rally Setup Calculator
-Loads default car setups directly from Assetto Corsa Rally content files.
+Loads default car setups directly from TSV files extracted from Assetto Corsa Rally.
 
-Data Sources:
-- car_setups_gravel.tsv - Gravel surface default setups
-- car_setups_tarmac.tsv - Tarmac surface default setups
-- cars.tsv - Car list with metadata
-- stages.tsv - Stage list with surface types
+No modifiers or calculations - just the raw default values for gravel and tarmac stages.
 """
 
 import csv
-from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional
 
 
-# =============================================================================
-# DATA CLASSES
-# =============================================================================
+class SetupData:
+    """Container for car setup data organized by category."""
 
-@dataclass
-class Car:
-    """Car metadata"""
-    name: str
-    manufacturer: str
-    car_class: str
-    drivetrain: str
-    notes: str
+    def __init__(self, car: str, drive_type: str, surface: str):
+        self.car = car
+        self.drive_type = drive_type
+        self.surface = surface
+        self.raw_data: Dict[str, str] = {}  # path -> value (keeps original paths)
+
+    def add_value(self, path: str, value: str):
+        """Add a setup value by its path."""
+        self.raw_data[path] = value
+
+    def get(self, path: str, default: str = "N/A") -> str:
+        """Get a value by path."""
+        return self.raw_data.get(path, default)
+
+    def get_drivetrain(self) -> Dict[str, str]:
+        """Get drivetrain settings grouped logically."""
+        result = {}
+
+        # Gear set
+        if "drivetrain.gearsSet" in self.raw_data:
+            result["Gear Set"] = self.raw_data["drivetrain.gearsSet"]
+
+        # Front bias (AWD only)
+        if "drivetrain.frontBias" in self.raw_data:
+            result["Front Bias"] = self.raw_data["drivetrain.frontBias"]
+
+        # Centre diff (AWD only)
+        if "drivetrain.centreDiffRatio" in self.raw_data:
+            result["Centre Diff Ratio"] = self.raw_data["drivetrain.centreDiffRatio"]
+
+        # Front differential (FWD and AWD)
+        front_diff = {}
+        for key in ["ratio", "lsdRampAngle", "lsdPlates", "lsdPreload"]:
+            path = f"drivetrain.frontDiff.{key}"
+            if path in self.raw_data and self.raw_data[path] != "N/A":
+                display_key = {
+                    "ratio": "Ratio",
+                    "lsdRampAngle": "LSD Ramp Angle",
+                    "lsdPlates": "LSD Plates",
+                    "lsdPreload": "LSD Preload"
+                }[key]
+                front_diff[display_key] = self.raw_data[path]
+        if front_diff:
+            result["Front Diff"] = front_diff
+
+        # Rear differential (RWD and AWD)
+        rear_diff = {}
+        for key in ["ratio", "lsdRampAngle", "lsdPlates", "lsdPreload"]:
+            path = f"drivetrain.rearDiff.{key}"
+            if path in self.raw_data:
+                display_key = {
+                    "ratio": "Ratio",
+                    "lsdRampAngle": "LSD Ramp Angle",
+                    "lsdPlates": "LSD Plates",
+                    "lsdPreload": "LSD Preload"
+                }[key]
+                rear_diff[display_key] = self.raw_data[path]
+        if rear_diff:
+            result["Rear Diff"] = rear_diff
+
+        return result
+
+    def get_suspension(self) -> Dict[str, str]:
+        """Get suspension settings grouped logically."""
+        result = {}
+
+        # ARBs
+        if "suspension.frontARB" in self.raw_data:
+            result["Front ARB"] = self.raw_data["suspension.frontARB"]
+        if "suspension.rearARB" in self.raw_data:
+            result["Rear ARB"] = self.raw_data["suspension.rearARB"]
+
+        # Springs
+        springs = {}
+        for corner in ["FL", "FR", "RL", "RR"]:
+            path = f"suspension.springs.{corner}"
+            if path in self.raw_data:
+                springs[corner] = self.raw_data[path]
+        if springs:
+            result["Springs"] = springs
+
+        # Ride height
+        ride_height = {}
+        for corner in ["FL", "FR", "RL", "RR"]:
+            path = f"suspension.rideHeight.{corner}"
+            if path in self.raw_data:
+                ride_height[corner] = self.raw_data[path]
+        if ride_height:
+            result["Ride Height"] = ride_height
+
+        return result
+
+    def get_dampers(self) -> Dict[str, Dict[str, str]]:
+        """Get damper settings grouped by corner."""
+        result = {}
+
+        for corner in ["FL", "FR", "RL", "RR"]:
+            corner_data = {}
+            for setting in ["slowBump", "slowRebound", "fastBump", "fastRebound"]:
+                path = f"dampers.{corner}.{setting}"
+                if path in self.raw_data:
+                    display_key = {
+                        "slowBump": "Slow Bump",
+                        "slowRebound": "Slow Rebound",
+                        "fastBump": "Fast Bump",
+                        "fastRebound": "Fast Rebound"
+                    }[setting]
+                    corner_data[display_key] = self.raw_data[path]
+            if corner_data:
+                result[corner] = corner_data
+
+        return result
+
+    def get_tyres(self) -> Dict[str, Dict[str, str]]:
+        """Get tyre settings grouped by corner."""
+        result = {}
+
+        for corner in ["FL", "FR", "RL", "RR"]:
+            corner_data = {}
+            for setting in ["pressure", "camber", "toe"]:
+                path = f"tyres.{corner}.{setting}"
+                if path in self.raw_data:
+                    display_key = setting.capitalize()
+                    value = self.raw_data[path]
+                    # Clean up the ? character in camber/toe values
+                    if "?" in value:
+                        value = value.replace("?", "°")
+                    corner_data[display_key] = value
+            if corner_data:
+                result[corner] = corner_data
+
+        return result
+
+    def get_brakes(self) -> Dict[str, str]:
+        """Get brake settings."""
+        result = {}
+
+        if "brakes.brakeBias" in self.raw_data:
+            result["Brake Bias"] = self.raw_data["brakes.brakeBias"]
+        if "brakes.propValvePressure" in self.raw_data:
+            result["Prop Valve Pressure"] = self.raw_data["brakes.propValvePressure"]
+        if "brakes.handbrakeMultiplier" in self.raw_data:
+            result["Handbrake Multiplier"] = self.raw_data["brakes.handbrakeMultiplier"]
+
+        return result
 
 
-@dataclass
-class Stage:
-    """Stage metadata"""
-    name: str
-    location: str
-    surface: str  # "Gravel" or "Tarmac"
-    style: str
-    length: str
-    notes: str
+class StageData:
+    """Container for stage information."""
+
+    def __init__(self, name: str, location: str, surface: str, style: str, length: str, notes: str):
+        self.name = name
+        self.location = location
+        self.surface = surface.lower()  # "tarmac" or "gravel"
+        self.style = style
+        self.length = length
+        self.notes = notes
 
 
-@dataclass
-class CarSetup:
-    """Complete car setup loaded from TSV"""
-    car: str
-    drive_type: str
-    surface: str
+class CarData:
+    """Container for car information."""
 
-    # Drivetrain
-    gears_set: Optional[str] = None
-    front_bias: Optional[str] = None
-    front_diff_ratio: Optional[str] = None
-    front_diff_lsd_ramp_angle: Optional[str] = None
-    front_diff_lsd_plates: Optional[str] = None
-    front_diff_lsd_preload: Optional[str] = None
-    rear_diff_ratio: Optional[str] = None
-    rear_diff_lsd_ramp_angle: Optional[str] = None
-    rear_diff_lsd_plates: Optional[str] = None
-    rear_diff_lsd_preload: Optional[str] = None
-    centre_diff_ratio: Optional[str] = None
-
-    # Suspension
-    front_arb: Optional[str] = None
-    rear_arb: Optional[str] = None
-    spring_fl: Optional[str] = None
-    spring_fr: Optional[str] = None
-    spring_rl: Optional[str] = None
-    spring_rr: Optional[str] = None
-    ride_height_fl: Optional[str] = None
-    ride_height_fr: Optional[str] = None
-    ride_height_rl: Optional[str] = None
-    ride_height_rr: Optional[str] = None
-
-    # Dampers
-    damper_fl_slow_bump: Optional[str] = None
-    damper_fl_slow_rebound: Optional[str] = None
-    damper_fl_fast_bump: Optional[str] = None
-    damper_fl_fast_rebound: Optional[str] = None
-    damper_fr_slow_bump: Optional[str] = None
-    damper_fr_slow_rebound: Optional[str] = None
-    damper_fr_fast_bump: Optional[str] = None
-    damper_fr_fast_rebound: Optional[str] = None
-    damper_rl_slow_bump: Optional[str] = None
-    damper_rl_slow_rebound: Optional[str] = None
-    damper_rl_fast_bump: Optional[str] = None
-    damper_rl_fast_rebound: Optional[str] = None
-    damper_rr_slow_bump: Optional[str] = None
-    damper_rr_slow_rebound: Optional[str] = None
-    damper_rr_fast_bump: Optional[str] = None
-    damper_rr_fast_rebound: Optional[str] = None
-
-    # Tyres
-    tyre_fl_pressure: Optional[str] = None
-    tyre_fl_camber: Optional[str] = None
-    tyre_fl_toe: Optional[str] = None
-    tyre_fr_pressure: Optional[str] = None
-    tyre_fr_camber: Optional[str] = None
-    tyre_fr_toe: Optional[str] = None
-    tyre_rl_pressure: Optional[str] = None
-    tyre_rl_camber: Optional[str] = None
-    tyre_rl_toe: Optional[str] = None
-    tyre_rr_pressure: Optional[str] = None
-    tyre_rr_camber: Optional[str] = None
-    tyre_rr_toe: Optional[str] = None
-
-    # Brakes
-    brake_bias: Optional[str] = None
-    prop_valve_pressure: Optional[str] = None
-    handbrake_multiplier: Optional[str] = None
+    def __init__(self, name: str, manufacturer: str, car_class: str, drivetrain: str, notes: str):
+        self.name = name
+        self.manufacturer = manufacturer
+        self.car_class = car_class
+        self.drivetrain = drivetrain
+        self.notes = notes
 
 
-# =============================================================================
-# DATA LOADER
-# =============================================================================
+class SetupCalculator:
+    """
+    Main calculator class that loads and provides access to car setup data.
 
-class SetupDataLoader:
-    """Loads setup data from TSV files"""
+    Loads data from TSV files:
+    - cars.tsv: Car list with metadata
+    - stages.tsv: Stage list with surface types
+    - car_setups_gravel.tsv: Default gravel setups
+    - car_setups_tarmac.tsv: Default tarmac setups
+    """
 
     def __init__(self, data_dir: Optional[Path] = None):
+        """Initialize calculator and load data from TSV files."""
+
+        # Find data directory (parent of rally-setup-calculator folder)
         if data_dir is None:
-            # Default to parent of rally-setup-calculator folder
-            self.data_dir = Path(__file__).parent.parent.parent.parent
-        else:
-            self.data_dir = Path(data_dir)
+            # Try to find data files relative to this script
+            script_dir = Path(__file__).parent
+            data_dir = script_dir.parent.parent  # Go up from src to rally-setup-calculator to root
 
-        self.cars: Dict[str, Car] = {}
-        self.stages: Dict[str, Stage] = {}
-        self.gravel_setups: Dict[str, CarSetup] = {}
-        self.tarmac_setups: Dict[str, CarSetup] = {}
+        self.data_dir = Path(data_dir)
 
-        self._load_all_data()
+        # Data containers
+        self.cars: Dict[str, CarData] = {}
+        self.stages: Dict[str, StageData] = {}
+        self.gravel_setups: Dict[str, SetupData] = {}
+        self.tarmac_setups: Dict[str, SetupData] = {}
 
-    def _load_all_data(self):
-        """Load all data files"""
+        # Load all data
         self._load_cars()
         self._load_stages()
         self._load_setups("gravel")
         self._load_setups("tarmac")
 
     def _load_cars(self):
-        """Load cars.tsv"""
+        """Load car data from cars.tsv."""
         cars_file = self.data_dir / "cars.tsv"
         if not cars_file.exists():
             print(f"Warning: {cars_file} not found")
@@ -148,17 +227,18 @@ class SetupDataLoader:
         with open(cars_file, 'r', encoding='utf-8') as f:
             reader = csv.DictReader(f, delimiter='\t')
             for row in reader:
-                car = Car(
-                    name=row.get('Car Name', ''),
-                    manufacturer=row.get('Manufacturer', ''),
-                    car_class=row.get('Class/Era', ''),
-                    drivetrain=row.get('Drivetrain', ''),
-                    notes=row.get('Notes', '')
-                )
-                self.cars[car.name] = car
+                name = row.get("Car Name", "").strip()
+                if name:
+                    self.cars[name] = CarData(
+                        name=name,
+                        manufacturer=row.get("Manufacturer", ""),
+                        car_class=row.get("Class/Era", ""),
+                        drivetrain=row.get("Drivetrain", ""),
+                        notes=row.get("Notes", "")
+                    )
 
     def _load_stages(self):
-        """Load stages.tsv"""
+        """Load stage data from stages.tsv."""
         stages_file = self.data_dir / "stages.tsv"
         if not stages_file.exists():
             print(f"Warning: {stages_file} not found")
@@ -167,228 +247,154 @@ class SetupDataLoader:
         with open(stages_file, 'r', encoding='utf-8') as f:
             reader = csv.DictReader(f, delimiter='\t')
             for row in reader:
-                stage = Stage(
-                    name=row.get('Stage Name (Variant)', ''),
-                    location=row.get('Location', ''),
-                    surface=row.get('Surface', ''),
-                    style=row.get('Style/Character', ''),
-                    length=row.get('Length', ''),
-                    notes=row.get('Notes', '')
-                )
-                self.stages[stage.name] = stage
+                name = row.get("Stage Name (Variant)", "").strip()
+                if name:
+                    self.stages[name] = StageData(
+                        name=name,
+                        location=row.get("Location", ""),
+                        surface=row.get("Surface", ""),
+                        style=row.get("Style/Character", ""),
+                        length=row.get("Length", ""),
+                        notes=row.get("Notes", "")
+                    )
 
     def _load_setups(self, surface: str):
-        """Load car setups from TSV file"""
-        filename = f"car_setups_{surface}.tsv"
-        setups_file = self.data_dir / filename
-
+        """Load setup data from car_setups_{surface}.tsv."""
+        setups_file = self.data_dir / f"car_setups_{surface}.tsv"
         if not setups_file.exists():
             print(f"Warning: {setups_file} not found")
             return
 
-        # Path to attribute mapping
-        path_map = {
-            "drivetrain.gearsSet": "gears_set",
-            "drivetrain.frontBias": "front_bias",
-            "drivetrain.frontDiff.ratio": "front_diff_ratio",
-            "drivetrain.frontDiff.lsdRampAngle": "front_diff_lsd_ramp_angle",
-            "drivetrain.frontDiff.lsdPlates": "front_diff_lsd_plates",
-            "drivetrain.frontDiff.lsdPreload": "front_diff_lsd_preload",
-            "drivetrain.rearDiff.ratio": "rear_diff_ratio",
-            "drivetrain.rearDiff.lsdRampAngle": "rear_diff_lsd_ramp_angle",
-            "drivetrain.rearDiff.lsdPlates": "rear_diff_lsd_plates",
-            "drivetrain.rearDiff.lsdPreload": "rear_diff_lsd_preload",
-            "drivetrain.centreDiffRatio": "centre_diff_ratio",
-            "suspension.frontARB": "front_arb",
-            "suspension.rearARB": "rear_arb",
-            "suspension.springs.FL": "spring_fl",
-            "suspension.springs.FR": "spring_fr",
-            "suspension.springs.RL": "spring_rl",
-            "suspension.springs.RR": "spring_rr",
-            "suspension.rideHeight.FL": "ride_height_fl",
-            "suspension.rideHeight.FR": "ride_height_fr",
-            "suspension.rideHeight.RL": "ride_height_rl",
-            "suspension.rideHeight.RR": "ride_height_rr",
-            "dampers.FL.slowBump": "damper_fl_slow_bump",
-            "dampers.FL.slowRebound": "damper_fl_slow_rebound",
-            "dampers.FL.fastBump": "damper_fl_fast_bump",
-            "dampers.FL.fastRebound": "damper_fl_fast_rebound",
-            "dampers.FR.slowBump": "damper_fr_slow_bump",
-            "dampers.FR.slowRebound": "damper_fr_slow_rebound",
-            "dampers.FR.fastBump": "damper_fr_fast_bump",
-            "dampers.FR.fastRebound": "damper_fr_fast_rebound",
-            "dampers.RL.slowBump": "damper_rl_slow_bump",
-            "dampers.RL.slowRebound": "damper_rl_slow_rebound",
-            "dampers.RL.fastBump": "damper_rl_fast_bump",
-            "dampers.RL.fastRebound": "damper_rl_fast_rebound",
-            "dampers.RR.slowBump": "damper_rr_slow_bump",
-            "dampers.RR.slowRebound": "damper_rr_slow_rebound",
-            "dampers.RR.fastBump": "damper_rr_fast_bump",
-            "dampers.RR.fastRebound": "damper_rr_fast_rebound",
-            "tyres.FL.pressure": "tyre_fl_pressure",
-            "tyres.FL.camber": "tyre_fl_camber",
-            "tyres.FL.toe": "tyre_fl_toe",
-            "tyres.FR.pressure": "tyre_fr_pressure",
-            "tyres.FR.camber": "tyre_fr_camber",
-            "tyres.FR.toe": "tyre_fr_toe",
-            "tyres.RL.pressure": "tyre_rl_pressure",
-            "tyres.RL.camber": "tyre_rl_camber",
-            "tyres.RL.toe": "tyre_rl_toe",
-            "tyres.RR.pressure": "tyre_rr_pressure",
-            "tyres.RR.camber": "tyre_rr_camber",
-            "tyres.RR.toe": "tyre_rr_toe",
-            "brakes.brakeBias": "brake_bias",
-            "brakes.propValvePressure": "prop_valve_pressure",
-            "brakes.handbrakeMultiplier": "handbrake_multiplier",
-        }
-
-        # Read the TSV and group by car
-        car_data: Dict[str, Dict[str, str]] = {}
-        car_drive_types: Dict[str, str] = {}
+        setups_dict = self.gravel_setups if surface == "gravel" else self.tarmac_setups
 
         with open(setups_file, 'r', encoding='utf-8') as f:
             reader = csv.DictReader(f, delimiter='\t')
             for row in reader:
-                car = row.get('car', '').strip('"')
-                drive_type = row.get('driveType', '').strip('"')
-                path = row.get('path', '').strip('"')
-                value = row.get('value', '').strip('"')
+                car = row.get("car", "").strip().strip('"')
+                drive_type = row.get("driveType", "").strip().strip('"')
+                path = row.get("path", "").strip().strip('"')
+                value = row.get("value", "").strip().strip('"')
 
-                if car not in car_data:
-                    car_data[car] = {}
-                    car_drive_types[car] = drive_type
+                if car and path:
+                    # Create setup data if not exists
+                    if car not in setups_dict:
+                        setups_dict[car] = SetupData(car, drive_type, surface)
 
-                if path in path_map:
-                    attr_name = path_map[path]
-                    car_data[car][attr_name] = value
-
-        # Create CarSetup objects
-        target_dict = self.gravel_setups if surface == "gravel" else self.tarmac_setups
-
-        for car_name, data in car_data.items():
-            setup = CarSetup(
-                car=car_name,
-                drive_type=car_drive_types.get(car_name, ''),
-                surface=surface,
-                **data
-            )
-            target_dict[car_name] = setup
+                    setups_dict[car].add_value(path, value)
 
     def get_car_list(self) -> List[str]:
-        """Get list of all cars with setups"""
-        # Return cars that have both gravel and tarmac setups
-        gravel_cars = set(self.gravel_setups.keys())
-        tarmac_cars = set(self.tarmac_setups.keys())
-        all_cars = gravel_cars | tarmac_cars
-        return sorted(list(all_cars))
+        """Get list of available cars from setup data."""
+        # Use cars from gravel setups as the canonical list
+        return sorted(self.gravel_setups.keys())
 
     def get_stage_list(self) -> List[str]:
-        """Get list of all stages"""
-        return sorted(list(self.stages.keys()))
+        """Get list of available stages."""
+        return sorted(self.stages.keys())
 
-    def get_gravel_stages(self) -> List[str]:
-        """Get list of gravel stages"""
-        return sorted([s.name for s in self.stages.values() if s.surface.lower() == 'gravel'])
+    def get_car_info(self, car_name: str) -> Optional[CarData]:
+        """Get car information by name."""
+        # Try exact match first
+        if car_name in self.cars:
+            return self.cars[car_name]
 
-    def get_tarmac_stages(self) -> List[str]:
-        """Get list of tarmac stages"""
-        return sorted([s.name for s in self.stages.values() if s.surface.lower() == 'tarmac'])
+        # Try partial match (setup names may differ from car names)
+        for name, data in self.cars.items():
+            if car_name in name or name in car_name:
+                return data
 
-    def get_setup(self, car: str, stage: str) -> Optional[CarSetup]:
-        """Get setup for a car based on stage surface"""
-        stage_obj = self.stages.get(stage)
-        if not stage_obj:
-            return None
+        return None
 
-        surface = stage_obj.surface.lower()
-        if surface == 'gravel':
-            return self.gravel_setups.get(car)
+    def get_stage_info(self, stage_name: str) -> Optional[StageData]:
+        """Get stage information by name."""
+        return self.stages.get(stage_name)
+
+    def get_surface_for_stage(self, stage_name: str) -> str:
+        """Get the surface type for a stage (gravel or tarmac)."""
+        stage = self.stages.get(stage_name)
+        if stage:
+            return stage.surface
+        return "tarmac"  # Default to tarmac
+
+    def get_setup(self, car_name: str, surface: str) -> Optional[SetupData]:
+        """Get setup data for a car and surface type."""
+        if surface == "gravel":
+            return self.gravel_setups.get(car_name)
         else:
-            return self.tarmac_setups.get(car)
+            return self.tarmac_setups.get(car_name)
 
-    def get_stage_surface(self, stage: str) -> str:
-        """Get the surface type for a stage"""
-        stage_obj = self.stages.get(stage)
-        if stage_obj:
-            return stage_obj.surface
-        return "Unknown"
+    def get_setup_for_stage(self, car_name: str, stage_name: str) -> Optional[SetupData]:
+        """Get setup data for a car based on stage surface."""
+        surface = self.get_surface_for_stage(stage_name)
+        return self.get_setup(car_name, surface)
 
-    def get_stage_info(self, stage: str) -> Optional[Stage]:
-        """Get full stage info"""
-        return self.stages.get(stage)
-
-    def get_car_info(self, car: str) -> Optional[Car]:
-        """Get full car info"""
-        return self.cars.get(car)
-
-
-# =============================================================================
-# SETUP CALCULATOR
-# =============================================================================
-
-class SetupCalculator:
-    """Main calculator - now simply loads default setups from TSV files"""
-
-    def __init__(self, data_dir: Optional[Path] = None):
-        self.loader = SetupDataLoader(data_dir)
-
-    def get_cars(self) -> List[str]:
-        """Get list of available cars"""
-        return self.loader.get_car_list()
-
-    def get_stages(self) -> List[str]:
-        """Get list of available stages"""
-        return self.loader.get_stage_list()
-
-    def get_setup(self, car: str, stage: str) -> Optional[CarSetup]:
-        """Get setup for car and stage"""
-        return self.loader.get_setup(car, stage)
-
-    def get_stage_surface(self, stage: str) -> str:
-        """Get surface type for a stage"""
-        return self.loader.get_stage_surface(stage)
-
-    def get_stage_info(self, stage: str) -> Optional[Stage]:
-        """Get stage information"""
-        return self.loader.get_stage_info(stage)
-
-    def get_car_info(self, car: str) -> Optional[Car]:
-        """Get car information"""
-        return self.loader.get_car_info(car)
-
-
-# =============================================================================
-# CLI TESTING
-# =============================================================================
 
 def main():
-    """Test the setup calculator"""
-    print("\nACR Rally Setup Calculator")
+    """Test the setup calculator."""
+    calculator = SetupCalculator()
+
+    print("ACR Rally Setup Calculator")
     print("=" * 50)
 
-    calc = SetupCalculator()
+    print("\nAvailable Cars:")
+    for car in calculator.get_car_list():
+        print(f"  - {car}")
 
-    print(f"\nLoaded {len(calc.get_cars())} cars")
-    print(f"Loaded {len(calc.get_stages())} stages")
+    print("\nAvailable Stages:")
+    for stage in calculator.get_stage_list():
+        stage_info = calculator.get_stage_info(stage)
+        if stage_info:
+            print(f"  - {stage} ({stage_info.surface.capitalize()})")
 
-    # Test getting a setup
-    cars = calc.get_cars()
-    stages = calc.get_stages()
+    # Test loading a setup
+    test_car = "Lancia Delta HF Integrale Evo"
+    test_stage = "Cwmbiga – Afon Biga"
 
-    if cars and stages:
-        test_car = cars[0]
-        test_stage = stages[0]
+    print(f"\n\nTest Setup: {test_car} on {test_stage}")
+    print("=" * 50)
 
-        print(f"\nTest: {test_car} on {test_stage}")
-        print(f"Surface: {calc.get_stage_surface(test_stage)}")
+    setup = calculator.get_setup_for_stage(test_car, test_stage)
+    if setup:
+        print(f"\nSurface: {setup.surface}")
+        print(f"Drive Type: {setup.drive_type}")
 
-        setup = calc.get_setup(test_car, test_stage)
-        if setup:
-            print(f"\nDrivetrain: {setup.drive_type}")
-            print(f"Front ARB: {setup.front_arb}")
-            print(f"Rear ARB: {setup.rear_arb}")
-            print(f"Springs FL: {setup.spring_fl}")
-            print(f"Brake Bias: {setup.brake_bias}")
+        print("\n--- DRIVETRAIN ---")
+        drivetrain = setup.get_drivetrain()
+        for key, value in drivetrain.items():
+            if isinstance(value, dict):
+                print(f"  {key}:")
+                for k, v in value.items():
+                    print(f"    {k}: {v}")
+            else:
+                print(f"  {key}: {value}")
+
+        print("\n--- SUSPENSION ---")
+        suspension = setup.get_suspension()
+        for key, value in suspension.items():
+            if isinstance(value, dict):
+                print(f"  {key}:")
+                for k, v in value.items():
+                    print(f"    {k}: {v}")
+            else:
+                print(f"  {key}: {value}")
+
+        print("\n--- DAMPERS ---")
+        dampers = setup.get_dampers()
+        for corner, values in dampers.items():
+            print(f"  {corner}:")
+            for k, v in values.items():
+                print(f"    {k}: {v}")
+
+        print("\n--- TYRES ---")
+        tyres = setup.get_tyres()
+        for corner, values in tyres.items():
+            print(f"  {corner}:")
+            for k, v in values.items():
+                print(f"    {k}: {v}")
+
+        print("\n--- BRAKES ---")
+        brakes = setup.get_brakes()
+        for key, value in brakes.items():
+            print(f"  {key}: {value}")
 
 
 if __name__ == "__main__":

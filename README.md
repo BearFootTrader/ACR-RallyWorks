@@ -1,110 +1,158 @@
-# ACR Rally Setup Calculator
+# ACR RallyWorks
 
-A Python-based rally car setup tool for Assetto Corsa Rally (ACR). Provides default baseline setups for gravel and tarmac stages, extracted directly from ACR content files.
+<p align="center">
+  <img src="logo_textonly.png" alt="ACR RallyWorks Logo" width="400">
+</p>
+
+A rally car setup tool for **Assetto Corsa Rally (ACR)** with baseline setups extracted directly from ACR content files. Features an ACR-inspired dark theme UI and the experimental **RallyWorks+** optimization system.
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
-
-## Overview
-
-This tool loads default car setups from Assetto Corsa Rally and displays them in a clean, organized interface. Select your car and stage, and the appropriate setup (gravel or tarmac) is automatically loaded based on the stage surface type.
-
-**Future Development:** Setup optimization logic based on data from RBR (Richard Burns Rally) and DiRT Rally 2.0 community setups will be implemented to provide improved baseline configurations.
+![Version](https://img.shields.io/badge/Version-1.0-orange.svg)
 
 ## Features
 
-- **Direct ACR Data:** Setups extracted directly from Assetto Corsa Rally content files
-- **Surface-Based Selection:** Automatically selects gravel or tarmac setup based on stage
-- **Complete Setup Display:** All setup parameters organized into clear sections:
-  - Drivetrain (differentials, ratios, LSD settings)
-  - Suspension (springs, ARBs, ride height)
-  - Dampers (slow/fast bump and rebound for all corners)
-  - Tyres (pressure, camber, toe)
-  - Brakes (bias, proportioning valve)
+### Core Features
+- **ACR Default Setups** - Baseline setups extracted directly from Assetto Corsa Rally content files
+- **Surface-Based Selection** - Automatically loads gravel or tarmac setup based on stage selection
+- **Dark Theme UI** - ACR-inspired interface with red accent styling
+- **Save/Load Setups** - Save your custom setups locally and reload them anytime
 
-## Supported Content
+### RallyWorks+ (Experimental)
+RallyWorks+ is an experimental feature that provides optimized setup suggestions based on rally engineering principles and community data from DiRT Rally 2.0.
 
-### Surfaces
-- **Tarmac** - Alsace (France) stages
-- **Gravel** - Wales (UK) stages
+**Currently Available For:**
+- Lancia Delta HF Integrale Evo (Gravel)
 
-### Cars
-Cars from multiple eras including:
-- Group 2 (Mini Cooper S, Alfa Romeo Giulia GTAm)
-- Group 4 (Alpine A110, Fiat 124/131 Abarth, Lancia Stratos)
-- Group B (Lancia Rally 037)
-- Group A / Modern (Lancia Delta HF Integrale)
-- WRC 2000s (Citroen Xsara WRC)
-- Rally2 (Hyundai i20N Rally2)
-- Rally4 (Peugeot 208 Rally4)
+**How It Works:**
+- Toggle RallyWorks+ to see suggested modifications alongside ACR defaults
+- **Blue (↑)** indicates increased values
+- **Red (↓)** indicates decreased values
+- All suggestions are clamped to valid ACR parameter ranges
 
-## Installation
+## Quick Start
 
 ### Requirements
 - Python 3.8 or higher
 - tkinter (included with Python on Windows)
+- Pillow (optional, for logo display)
 
-### Quick Start
+### Installation
 
 ```bash
-# Navigate to the rally-setup-calculator folder
-cd rally-setup-calculator
+# Clone the repository
+git clone https://github.com/yourusername/ACR-RallyWorks.git
+cd ACR-RallyWorks
+
+# Install optional dependencies
+pip install -r rally-setup-calculator/requirements.txt
 
 # Run the application
+cd rally-setup-calculator
 python run.py
 ```
 
-Or on Windows, double-click `RallySetupCalculator.bat`
+Or on Windows, double-click `rally-setup-calculator/RallySetupCalculator.bat`
 
 ## Usage
 
 1. **Select Car** - Choose your car from the dropdown
-2. **Select Stage** - Choose your stage (surface type shown automatically)
-3. The setup is displayed immediately, organized by component group
+2. **Select Stage** - Choose your stage (surface type is determined automatically)
+3. **Click LOAD SETUP** - Load the baseline setup for your selection
+4. **Toggle RallyWorks+** - (If available) See optimized suggestions
+5. **Save Setup** - Save your configuration for later use
 
-## Data Files
+## Setup Parameters
 
-The application loads data from TSV files in the project root:
+The tool displays all setup parameters organized by category:
 
-| File | Description |
-|------|-------------|
-| `cars.tsv` | Car list with metadata (manufacturer, class, drivetrain) |
-| `stages.tsv` | Stage list with location and surface type |
-| `car_setups_gravel.tsv` | Default gravel setups for all cars |
-| `car_setups_tarmac.tsv` | Default tarmac setups for all cars |
+| Category | Parameters |
+|----------|------------|
+| **Drivetrain** | Gear set, Front/Rear/Centre differentials, LSD settings |
+| **Suspension** | Spring rates, Anti-roll bars, Ride height |
+| **Dampers** | Slow/Fast bump and rebound for all corners |
+| **Tyres** | Pressure, Camber, Toe for each corner |
+| **Brakes** | Brake bias, Proportioning valve |
+
+## Supported Content
+
+### Cars
+- **Group 2:** Mini Cooper S, Alfa Romeo Giulia GTA Junior
+- **Group 4:** Alpine A110, Fiat 124/131 Abarth, Lancia Stratos
+- **Group B:** Lancia Rally 037 Evo 2
+- **Group A:** Lancia Delta HF Integrale Evo
+- **WRC 2000s:** Citroen Xsara WRC
+- **Rally2:** Hyundai i20N Rally2
+- **Rally4:** Peugeot 208 Rally4
+
+### Stages
+- **France (Tarmac):** Vallee de Munster, Foret de Munster, Col du petit Ballon, and more
+- **Wales (Gravel):** Cwmbiga, Afon Biga, Fedw Fain, Banc Gwyn, and more
 
 ## Project Structure
 
 ```
-ACR-RSC/
+ACR-RallyWorks/
+├── README.md
+├── LICENSE
+├── logo.ico / logo.png / logo_textonly.png
 ├── cars.tsv                    # Car metadata
 ├── stages.tsv                  # Stage metadata
 ├── car_setups_gravel.tsv       # Gravel default setups
 ├── car_setups_tarmac.tsv       # Tarmac default setups
+├── docs/                       # Rally setup knowledge base
 └── rally-setup-calculator/
     ├── run.py                  # Main launcher
+    ├── requirements.txt
     ├── RallySetupCalculator.bat
+    ├── saved_setups/           # User saved setups
     └── src/
         ├── setup_calculator.py # Data loading and setup logic
+        ├── dirt_converter.py   # RallyWorks+ conversion engine
         └── gui.py              # Tkinter GUI
 ```
 
 ## Roadmap
 
-- [ ] Setup optimization based on RBR/DiRT 2.0 community data
-- [ ] Weather condition adjustments
-- [ ] Stage characteristic modifiers (bumpy, smooth, technical)
-- [ ] Export setups back to ACR format
+### v1.1 - RallyWorks+ Expansion
+- [ ] Add RallyWorks+ support for all Group A cars
+- [ ] Add tarmac surface support for RallyWorks+
+- [ ] Improve damper calculation algorithms
 
+### v1.2 - Advanced Features
+- [ ] Weather condition modifiers (wet, damp, cold, hot)
+- [ ] Stage characteristic adjustments (bumpy, smooth, technical)
+- [ ] Setup comparison tool
 
-### Data Sources
-- Default setups extracted from Assetto Corsa Rally content
-- Future: RBR and DiRT Rally 2.0 community setup databases
+### Future
+- [ ] Export setups to ACR format
+- [ ] Import setups from ACR
+- [ ] Community setup sharing
+- [ ] RBR setup data integration
+
+## Knowledge Base
+
+The `docs/knowledge_week1/` folder contains rally setup guides covering:
+- Suspension effects and tuning
+- Differential setup principles
+- Surface-specific tuning (gravel, tarmac)
+- Troubleshooting handling issues
+
+## Contributing
+
+Contributions are welcome! Areas where help is needed:
+- RallyWorks+ data for additional cars
+- Testing and feedback on setup suggestions
+- UI/UX improvements
 
 ## License
 
-MIT License - Feel free to modify and distribute.
+MIT License - See [LICENSE](LICENSE) for details.
 
 ## Disclaimer
 
-This tool is unofficial and is not affiliated with Kunos Simulazioni or the ACR mod team.
+This tool is unofficial and is not affiliated with Kunos Simulazioni or the ACR mod team. Setup data is extracted from publicly available ACR content files.
+
+---
+
+**Made for the rally sim community**
